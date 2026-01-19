@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "furtivium-sculk",
+	"version": "${version}",
+	"name": "Furtivium",
+	"description": "A Mod The Shows The True Power Of The Sculk!",
+	"authors": [
+		"DJ Sanigo & Ivory moth"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/furtivium-sculk/A_Vial_Of_Dormant_Sculk.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"furtivium.Sculk.Minecraft.Mod.Furtivium"
+		],
+		"client": [
+			"furtivium.Sculk.Minecraft.Mod.FurtiviumClient"
+		],
+		"fabric-datagen": [
+			"furtivium.Sculk.Minecraft.Mod.FurtiviumDataGenerator"
+		]
+	},
+	"mixins": [
+		"furtivium-sculk.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
