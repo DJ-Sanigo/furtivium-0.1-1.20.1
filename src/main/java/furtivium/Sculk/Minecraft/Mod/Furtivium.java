@@ -12,6 +12,7 @@ public class Furtivium implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
