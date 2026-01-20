@@ -12,7 +12,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/furtivium-sculk/A_Vial_Of_Dormant_Sculk.png",
+	"icon": "A_Vial_Of_Dormant_Sculk.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
