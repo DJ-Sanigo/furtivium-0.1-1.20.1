@@ -1,4 +1,8 @@
 {
   "item.furtivium-sculk.vial_of_dormant_sculk": "Vial Of Dormant Sculk",
-  "item.furtivium-sculk.furtivium_ingot": "Furtivium Ingot"
+  "item.furtivium-sculk.furtivium_ingot": "Furtivium Ingot",
+
+  "block.furtivium-sculk.furtivium_block": "Furtivium Block",
+
+  "itemgroup.furtivium": "Furtivium Mod Group"
 }

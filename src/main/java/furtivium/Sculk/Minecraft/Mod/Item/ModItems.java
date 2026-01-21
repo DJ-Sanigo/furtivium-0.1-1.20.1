@@ -28,6 +28,5 @@ public class ModItems {
     public static void registerModItems() {
         Furtivium.LOGGER.debug("Registering Mod Items for " + Furtivium.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
 }
