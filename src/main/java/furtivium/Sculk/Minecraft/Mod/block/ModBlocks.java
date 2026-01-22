@@ -2,6 +2,7 @@ package furtivium.Sculk.Minecraft.Mod.block;
 
 import furtivium.Sculk.Minecraft.Mod.Furtivium;
 import furtivium.Sculk.Minecraft.Mod.Item.ModItems;
+import furtivium.Sculk.Minecraft.Mod.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -17,8 +18,8 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block FURTIVIUM_BLOCK = registerBlock("furtivium_block", new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(BlockSoundGroup.SCULK)));
-
+    public static final Block FURTIVIUM_BLOCK = registerBlock("furtivium_block", new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(ModSounds.FURTIVIUM_BLOCK_SOUNDS)));
+    public static final Block SCULK_BONE_BLOCK = registerBlock("sculk_bone_block", new Block(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

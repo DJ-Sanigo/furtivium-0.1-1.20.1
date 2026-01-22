@@ -16,9 +16,13 @@ public class ModItemGroups {
             new Identifier(Furtivium.MOD_ID, "furtivium"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.furtivium"))
                     .icon(() -> new ItemStack(ModItems.FURTIVIUM_INGOT)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.FURTIVIUM_INGOT);
                         entries.add(ModItems.VIAL_OF_DORMANT_SCULK);
+                        entries.add(ModItems.FURTIVIUM_INGOT);
                         entries.add(ModBlocks.FURTIVIUM_BLOCK);
+                        entries.add(ModItems.SCULK_BONE);
+                        entries.add(ModBlocks.SCULK_BONE_BLOCK);
+
+                        entries.add(ModItems.A_WARDENS_LULLABY_MUSIC_DISC);
 
                         entries.add(Items.SCULK);
                         entries.add(Items.SCULK_VEIN);

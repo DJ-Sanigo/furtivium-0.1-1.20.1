@@ -1,0 +1,85 @@
+{
+  "furtivium_block_break": {
+    "subtitle": "furtivium-sculk.furtivium_block_break",
+    "sounds": [
+      "furtivium-sculk:furtivium_block_break_1",
+      "furtivium-sculk:furtivium_block_break_2",
+      "furtivium-sculk:furtivium_block_break_3",
+      "furtivium-sculk:furtivium_block_break_4",
+      "furtivium-sculk:furtivium_block_break_5",
+      "furtivium-sculk:furtivium_block_break_6",
+      "furtivium-sculk:furtivium_block_break_7",
+      "furtivium-sculk:furtivium_block_break_8",
+      "furtivium-sculk:furtivium_block_break_9",
+      "furtivium-sculk:furtivium_block_break_10",
+      "furtivium-sculk:furtivium_block_break_11",
+      "furtivium-sculk:furtivium_block_break_12",
+      "furtivium-sculk:furtivium_block_break_13",
+      "furtivium-sculk:furtivium_block_break_14",
+      "furtivium-sculk:furtivium_block_break_15",
+      "furtivium-sculk:furtivium_block_break_16",
+      "furtivium-sculk:furtivium_block_break_17",
+      "furtivium-sculk:furtivium_block_break_18",
+      "furtivium-sculk:furtivium_block_break_19",
+      "furtivium-sculk:furtivium_block_break_20",
+      "furtivium-sculk:furtivium_block_break_21",
+      "furtivium-sculk:furtivium_block_break_22",
+      "furtivium-sculk:furtivium_block_break_23",
+      "furtivium-sculk:furtivium_block_break_24",
+      "furtivium-sculk:furtivium_block_break_26",
+      "furtivium-sculk:furtivium_block_break_27",
+      "furtivium-sculk:furtivium_block_break_28"
+    ]
+  },
+  "furtivium_block_step": {
+    "subtitle": "furtivium-sculk.furtivium_block_step",
+    "sounds": [
+      "furtivium-sculk:furtivium_block_fall_step_1",
+      "furtivium-sculk:furtivium_block_fall_step_2",
+      "furtivium-sculk:furtivium_block_fall_step_3",
+      "furtivium-sculk:furtivium_block_fall_step_4",
+      "furtivium-sculk:furtivium_block_fall_step_5",
+      "furtivium-sculk:furtivium_block_fall_step_6"
+    ]
+  },
+  "furtivium_block_place": {
+    "subtitle": "furtivium-sculk.furtivium_block_place",
+    "sounds": [
+      "furtivium-sculk:furtivium_block_place_1",
+      "furtivium-sculk:furtivium_block_place_2",
+      "furtivium-sculk:furtivium_block_place_3",
+      "furtivium-sculk:furtivium_block_place_4",
+      "furtivium-sculk:furtivium_block_place_5"
+    ]
+  },
+  "furtivium_block_hit": {
+    "subtitle": "furtivium-sculk.furtivium_block_hit",
+    "sounds": [
+      "furtivium-sculk:furtivium_block_hit_1",
+      "furtivium-sculk:furtivium_block_hit_2",
+      "furtivium-sculk:furtivium_block_hit_3",
+      "furtivium-sculk:furtivium_block_hit_4",
+      "furtivium-sculk:furtivium_block_hit_5",
+      "furtivium-sculk:furtivium_block_hit_6"
+    ]
+  },
+  "furtivium_block_fall": {
+    "subtitle": "furtivium-sculk.furtivium_block_fall",
+    "sounds": [
+      "furtivium-sculk:furtivium_block_fall_step_1",
+      "furtivium-sculk:furtivium_block_fall_step_2",
+      "furtivium-sculk:furtivium_block_fall_step_3",
+      "furtivium-sculk:furtivium_block_fall_step_4",
+      "furtivium-sculk:furtivium_block_fall_step_5",
+      "furtivium-sculk:furtivium_block_fall_step_6"
+    ]
+  },
+  "a_wardens_lullaby": {
+    "sounds": [
+      {
+        "name": "furtivium-sculk:a_wardens_lullaby",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -1,8 +1,14 @@
 {
   "item.furtivium-sculk.vial_of_dormant_sculk": "Vial Of Dormant Sculk",
   "item.furtivium-sculk.furtivium_ingot": "Furtivium Ingot",
+  "item.furtivium-sculk.sculk_bone": "Sculk Bone",
 
   "block.furtivium-sculk.furtivium_block": "Furtivium Block",
+  "block.furtivium-sculk.sculk_bone_block": "Sculk Bone Block",
+
+  "item.furtivium-sculk.a_wardens_lullaby_music_disc": "A Warden's Lullaby Music Disc",
+  "item.furtivium-sculk.a_wardens_lullaby_music_disc.desc": "A Warden's Lullaby - DJ Sanigo",
+
 
   "itemgroup.furtivium": "Furtivium Mod Group"
 }

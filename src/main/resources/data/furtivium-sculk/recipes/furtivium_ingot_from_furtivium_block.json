@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "furtivium-sculk:furtivium_block"
+    }
+  ],
+  "result": {
+    "item": "furtivium-sculk:furtivium_ingot",
+    "count": 9
+  }
+}

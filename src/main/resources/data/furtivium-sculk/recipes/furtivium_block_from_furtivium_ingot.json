@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "furtivium-sculk:furtivium_ingot"
+    }
+  },
+  "result": {
+    "item": "furtivium-sculk:furtivium_block"
+  }
+}
