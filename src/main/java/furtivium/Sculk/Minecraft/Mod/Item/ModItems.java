@@ -21,6 +21,8 @@ public class ModItems {
 
     public static final Item A_WARDENS_LULLABY_MUSIC_DISC = registerItem("a_wardens_lullaby_music_disc",
             new MusicDiscItem(7, ModSounds.A_WARDENS_LULLABY, new FabricItemSettings().maxCount(1), 220));
+    public static final Item A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC = registerItem("a_wardens_lullaby_music_box_version_music_disc",
+            new MusicDiscItem(7, ModSounds.A_WARDENS_LULLABY_MUSIC_BOX_VERSION, new FabricItemSettings().maxCount(1), 64));
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
@@ -28,6 +30,7 @@ public class ModItems {
         entries.add(FURTIVIUM_INGOT);
         entries.add(SCULK_BONE);
         entries.add(A_WARDENS_LULLABY_MUSIC_DISC);
+        entries.add(A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC);
     }
 
     private static Item registerItem(String name, Item item) {

@@ -17,7 +17,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
 
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
-                .add(ModItems.A_WARDENS_LULLABY_MUSIC_DISC);
+                .add(ModItems.A_WARDENS_LULLABY_MUSIC_DISC,  ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC);
 
 
     }

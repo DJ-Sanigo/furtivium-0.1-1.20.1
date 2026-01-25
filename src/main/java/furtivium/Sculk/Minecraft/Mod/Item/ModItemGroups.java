@@ -23,6 +23,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SCULK_BONE_BLOCK);
 
                         entries.add(ModItems.A_WARDENS_LULLABY_MUSIC_DISC);
+                        entries.add(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC);
 
                         entries.add(Items.SCULK);
                         entries.add(Items.SCULK_VEIN);
