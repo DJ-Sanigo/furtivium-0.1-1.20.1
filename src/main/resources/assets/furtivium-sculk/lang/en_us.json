@@ -1,5 +1,6 @@
 {
   "item.furtivium-sculk.vial_of_dormant_sculk": "Vial Of Dormant Sculk",
+  "item.furtivium-sculk.vial_of_active_sculk": "Vial Of Active Sculk",
   "item.furtivium-sculk.furtivium_ingot": "Furtivium Ingot",
   "item.furtivium-sculk.sculk_bone": "Sculk Bone",
 
@@ -13,5 +14,5 @@
   "item.furtivium-sculk.a_wardens_lullaby_music_box_version_music_disc.desc": "A Warden's Lullaby (Music Box Version) - DJ Sanigo",
 
 
-  "itemgroup.furtivium": "Furtivium Mod Group"
+  "itemgroup.furtivium": "Furtivium"
 }

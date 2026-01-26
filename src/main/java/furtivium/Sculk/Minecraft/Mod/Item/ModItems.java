@@ -16,6 +16,8 @@ public class ModItems {
 
     public static final Item VIAL_OF_DORMANT_SCULK = registerItem("vial_of_dormant_sculk",
     new Item(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_DORMANT_SCULK).maxCount(16)));
+    public static final Item VIAL_OF_ACTIVE_SCULK = registerItem("vial_of_active_sculk",
+            new Item(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_ACTIVE_SCULK).maxCount(16)));
     public static final Item FURTIVIUM_INGOT = registerItem("furtivium_ingot", new Item(new FabricItemSettings()));
     public static final Item SCULK_BONE = registerItem("sculk_bone", new Item(new FabricItemSettings()));
 
@@ -27,6 +29,7 @@ public class ModItems {
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(VIAL_OF_DORMANT_SCULK);
+        entries.add(VIAL_OF_ACTIVE_SCULK);
         entries.add(FURTIVIUM_INGOT);
         entries.add(SCULK_BONE);
         entries.add(A_WARDENS_LULLABY_MUSIC_DISC);

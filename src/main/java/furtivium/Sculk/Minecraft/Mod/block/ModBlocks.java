@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -19,7 +20,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block FURTIVIUM_BLOCK = registerBlock("furtivium_block", new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(ModSounds.FURTIVIUM_BLOCK_SOUNDS)));
-    public static final Block SCULK_BONE_BLOCK = registerBlock("sculk_bone_block", new Block(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK)));
+    public static final Block SCULK_BONE_BLOCK = registerBlock("sculk_bone_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

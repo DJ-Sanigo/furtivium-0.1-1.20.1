@@ -1,8 +1,8 @@
 package furtivium.Sculk.Minecraft.Mod;
 
+import furtivium.Sculk.Minecraft.Mod.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import furtivium.Sculk.Minecraft.Mod.datagen.ModItemTagProvider;
 
 public class FurtiviumDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -10,6 +10,10 @@ public class FurtiviumDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(ModItemTagProvider::new);
+		pack.addProvider(ModBlockTagProvider::new);
+		pack.addProvider(ModLootTableProvider::new);
+		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModRecipeProvider::new);
 
 	}
 }
