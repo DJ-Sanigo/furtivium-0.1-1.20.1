@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "furtivium-sculk:item/vial_of_dormant_sculk"
-  }
-}
