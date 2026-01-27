@@ -1,0 +1,4 @@
+// 1.20.1	2026-01-27T10:55:44.4393528	Furtivium/Tags for minecraft:block
+60bf64965a40c1f47de24586a056211bb5040462 data\minecraft\tags\blocks\mineable\pickaxe.json
+423bd5034bcb90dd3bf157446692247e227e9f0a data\minecraft\tags\blocks\needs_diamond_tool.json
+dea3c442ce5adfa20f8804ccc43163e17dd1f628 data\minecraft\tags\blocks\needs_stone_tool.json

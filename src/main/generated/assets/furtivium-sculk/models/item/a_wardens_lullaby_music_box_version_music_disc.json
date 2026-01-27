@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "furtivium-sculk:item/a_wardens_lullaby_music_box_version_music_disc"
+  }
+}
