@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "furtivium-sculk:block/sculk_bone_block"
+    "end": "furtivium-sculk:block/sculk_bone_block_top",
+    "side": "furtivium-sculk:block/sculk_bone_block_side"
   }
 }
