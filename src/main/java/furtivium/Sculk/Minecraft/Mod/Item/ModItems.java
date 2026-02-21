@@ -1,6 +1,7 @@
 package furtivium.Sculk.Minecraft.Mod.Item;
 
 import furtivium.Sculk.Minecraft.Mod.Furtivium;
+import furtivium.Sculk.Minecraft.Mod.Item.custom.VialOfActiveSculkItem;
 import furtivium.Sculk.Minecraft.Mod.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -17,7 +18,7 @@ public class ModItems {
     public static final Item VIAL_OF_DORMANT_SCULK = registerItem("vial_of_dormant_sculk",
     new Item(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_DORMANT_SCULK).maxCount(16)));
     public static final Item VIAL_OF_ACTIVE_SCULK = registerItem("vial_of_active_sculk",
-            new Item(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_ACTIVE_SCULK).maxCount(16)));
+                new Item(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_ACTIVE_SCULK).maxCount(16)));
     public static final Item FURTIVIUM_INGOT = registerItem("furtivium_ingot", new Item(new FabricItemSettings()));
     public static final Item SCULK_BONE = registerItem("sculk_bone", new Item(new FabricItemSettings()));
 

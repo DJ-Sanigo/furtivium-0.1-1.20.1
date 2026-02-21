@@ -15,6 +15,7 @@ public class ModSounds {
     public static final SoundEvent FURTIVIUM_BLOCK_HIT = registerSoundEvent("furtivium_block_hit");
     public static final SoundEvent FURTIVIUM_BLOCK_FALL = registerSoundEvent("furtivium_block_fall");
 
+
     public static final SoundEvent A_WARDENS_LULLABY = registerSoundEvent("a_wardens_lullaby");
     public static final SoundEvent A_WARDENS_LULLABY_MUSIC_BOX_VERSION = registerSoundEvent("a_wardens_lullaby_music_box_version");
 
