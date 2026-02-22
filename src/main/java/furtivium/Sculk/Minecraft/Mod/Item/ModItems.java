@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.MusicDiscItem;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -26,6 +27,9 @@ public class ModItems {
             new MusicDiscItem(7, ModSounds.A_WARDENS_LULLABY, new FabricItemSettings().maxCount(1), 220));
     public static final Item A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC = registerItem("a_wardens_lullaby_music_box_version_music_disc",
             new MusicDiscItem(7, ModSounds.A_WARDENS_LULLABY_MUSIC_BOX_VERSION, new FabricItemSettings().maxCount(1), 64));
+
+    public static final Item FURTIVIUM_SPADONE = registerItem("furtivium_spadone",
+            new SwordItem(ModToolMaterial.FURTIVIUM, 8, 2f, new FabricItemSettings()));
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {

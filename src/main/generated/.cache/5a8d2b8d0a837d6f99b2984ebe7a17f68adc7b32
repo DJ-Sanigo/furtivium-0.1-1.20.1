@@ -1,5 +1,11 @@
-// 1.20.1	2026-02-22T11:35:13.3841119	Furtivium/Recipes
+// 1.20.1	2026-02-22T22:40:53.4611014	Furtivium/Recipes
 62883b2b1ac19f9073565b0ec0a9c7af591761b6 data\furtivium-sculk\recipes\furtivium_block.json
 d087a0b39bd11886b1a5017df6308f191486fe71 data\furtivium-sculk\advancements\recipes\decorations\furtivium_block.json
+974ae4a4bde0c58b3a81b1720f579d94603de5c9 data\furtivium-sculk\recipes\sculk_bone_block.json
 b8a59559b0a8b091f30a7fb21d7f78d451349f38 data\furtivium-sculk\recipes\furtivium_ingot.json
+e7abc45fd03db8358889c7605f0b48449b234f69 data\furtivium-sculk\recipes\furtivium_spadone.json
+ab3b7846a9d85e6c1ce5fb6d08faa0d4fdb2214d data\furtivium-sculk\recipes\sculk_bone.json
+40f4d8adde65acc708eb85f3caae7eb8b1ce1653 data\furtivium-sculk\advancements\recipes\building_blocks\sculk_bone.json
+dca4d4dccc9ef9f8593980aab75c178bb7f247b5 data\furtivium-sculk\advancements\recipes\decorations\sculk_bone_block.json
+a6858574a2658bf1feabc64f64871e4fe105e441 data\furtivium-sculk\advancements\recipes\misc\furtivium_spadone.json
 0900894816abffe847c92f09c88092f8a2bf6f13 data\furtivium-sculk\advancements\recipes\building_blocks\furtivium_ingot.json

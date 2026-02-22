@@ -26,6 +26,8 @@ public class ModItemGroups {
                         entries.add(ModItems.A_WARDENS_LULLABY_MUSIC_DISC);
                         entries.add(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC);
 
+                        entries.add(ModItems.FURTIVIUM_SPADONE);
+
                         entries.add(Items.SCULK);
                         entries.add(Items.SCULK_VEIN);
                         entries.add(Items.SCULK_CATALYST);

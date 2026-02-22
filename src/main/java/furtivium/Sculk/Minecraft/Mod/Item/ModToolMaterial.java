@@ -6,7 +6,8 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial  implements ToolMaterial {
-    ;
+    FURTIVIUM(3, 1987, 7f, 4f, 20,
+            () -> Ingredient.ofItems(ModItems.FURTIVIUM_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;

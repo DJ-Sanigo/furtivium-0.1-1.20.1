@@ -29,5 +29,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.VIAL_OF_DORMANT_SCULK, Models.GENERATED);
         itemModelGenerator.register(ModItems.A_WARDENS_LULLABY_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FURTIVIUM_SPADONE, Models.GENERATED);
     }
 }
