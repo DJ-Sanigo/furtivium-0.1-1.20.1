@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "furtivium-sculk:sculk_bone"
+    },
+    "F": {
+      "item": "furtivium-sculk:furtivium_ingot"
+    }
+  },
+  "pattern": [
+    "  B",
+    "FB ",
+    "FF "
+  ],
+  "result": {
+    "item": "furtivium-sculk:furtivium_spadone"
+  },
+  "show_notification": true
+}
