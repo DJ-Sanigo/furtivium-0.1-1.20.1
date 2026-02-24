@@ -29,7 +29,7 @@ public class ModItems {
             new MusicDiscItem(7, ModSounds.A_WARDENS_LULLABY_MUSIC_BOX_VERSION, new FabricItemSettings().maxCount(1), 64));
 
     public static final Item FURTIVIUM_SPADONE = registerItem("furtivium_spadone",
-            new SwordItem(ModToolMaterial.FURTIVIUM, 8, 2f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.FURTIVIUM, 8, 10f, new FabricItemSettings()));
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
