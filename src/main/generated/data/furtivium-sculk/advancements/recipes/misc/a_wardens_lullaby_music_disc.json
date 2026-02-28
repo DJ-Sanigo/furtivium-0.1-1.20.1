@@ -1,0 +1,61 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_a_wardens_lullaby_music_box_version_music_disc": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "furtivium-sculk:a_wardens_lullaby_music_box_version_music_disc"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_furtivium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "furtivium-sculk:furtivium_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sculk": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:sculk"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:a_wardens_lullaby_music_disc"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_a_wardens_lullaby_music_box_version_music_disc",
+      "has_furtivium_ingot",
+      "has_sculk",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:a_wardens_lullaby_music_disc"
+    ]
+  },
+  "sends_telemetry_event": false
+}

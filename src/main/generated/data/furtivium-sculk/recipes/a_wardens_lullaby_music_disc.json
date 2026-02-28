@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "furtivium-sculk:a_wardens_lullaby_music_box_version_music_disc"
+    },
+    "F": {
+      "item": "furtivium-sculk:furtivium_ingot"
+    },
+    "S": {
+      "item": "minecraft:sculk"
+    }
+  },
+  "pattern": [
+    "SFS",
+    "FDF",
+    "SFS"
+  ],
+  "result": {
+    "item": "furtivium-sculk:a_wardens_lullaby_music_disc"
+  },
+  "show_notification": true
+}
