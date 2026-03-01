@@ -44,6 +44,7 @@ public class ModItems {
         entries.add(SCULK_BONE);
         entries.add(A_WARDENS_LULLABY_MUSIC_DISC);
         entries.add(A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC);
+
     }
 
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries) {
@@ -55,6 +56,7 @@ public class ModItems {
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries) {
         entries.add(SCULK_BONE_AND_TENDRIL_BROTH);
     }
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Furtivium.MOD_ID, name), item);
