@@ -26,7 +26,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.SCULK_BONE, RecipeCategory.DECORATIONS,
                 ModBlocks.SCULK_BONE_BLOCK);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FURTIVIUM_SPADONE, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FURTIVIUM_SPADONE, 1)
                 .pattern("  B")
                 .pattern("FB ")
                 .pattern("FF ")
@@ -36,7 +36,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SCULK_BONE), conditionsFromItem(ModItems.SCULK_BONE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.FURTIVIUM_SPADONE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FURTIVIUM_GLADIUS, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FURTIVIUM_GLADIUS, 1)
                 .pattern("  B")
                 .pattern(" F ")
                 .pattern("F  ")
@@ -66,6 +66,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.FURTIVIUM_INGOT), conditionsFromItem(ModItems.FURTIVIUM_INGOT))
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.A_WARDENS_LULLABY_MUSIC_DISC)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_BONE_AND_TENDRIL_BROTH, 1)
+                .pattern("TS")
+                .pattern(" B")
+                .input('B', Items.BOWL)
+                .input('S', ModItems.SCULK_BONE)
+                .input('T', Items.SCULK_SENSOR)
+                .criterion(hasItem(ModItems.SCULK_BONE), conditionsFromItem(ModItems.SCULK_BONE))
+                .criterion(hasItem(Items.BOWL), conditionsFromItem(Items.BOWL))
+                .criterion(hasItem(Items.SCULK_SENSOR), conditionsFromItem(Items.SCULK_SENSOR))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_BONE_AND_TENDRIL_BROTH)));
     }
 }
 

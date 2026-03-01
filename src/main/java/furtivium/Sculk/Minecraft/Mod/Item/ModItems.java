@@ -6,10 +6,7 @@ import furtivium.Sculk.Minecraft.Mod.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.MusicDiscItem;
-import net.minecraft.item.SwordItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -20,6 +17,10 @@ public class ModItems {
     new Item(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_DORMANT_SCULK).maxCount(16)));
     public static final Item VIAL_OF_ACTIVE_SCULK = registerItem("vial_of_active_sculk",
                 new Item(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_ACTIVE_SCULK).maxCount(16)));
+
+    public static final Item SCULK_BONE_AND_TENDRIL_BROTH = registerItem("sculk_bone_and_tendril_broth",
+            new StewItem(new FabricItemSettings().food(ModFoodComponents.SCULK_BONE_AND_TENDRIL_BROTH).maxCount(1)));
+
     public static final Item FURTIVIUM_INGOT = registerItem("furtivium_ingot", new Item(new FabricItemSettings()));
     public static final Item SCULK_BONE = registerItem("sculk_bone", new Item(new FabricItemSettings()));
 
@@ -32,6 +33,8 @@ public class ModItems {
             new SwordItem(ModToolMaterial.FURTIVIUM, 5, 0.00000005f, new FabricItemSettings()));
     public static final Item FURTIVIUM_GLADIUS = registerItem("furtivium_gladius",
             new SwordItem(ModToolMaterial.FURTIVIUM, 3, 0.5f, new FabricItemSettings()));
+    public static final Item FURTIVIUM_GLAVE = registerItem("furtivium_glave",
+            new SwordItem(ModToolMaterial.FURTIVIUM, 4, 0.05f, new FabricItemSettings()));
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
@@ -41,6 +44,16 @@ public class ModItems {
         entries.add(SCULK_BONE);
         entries.add(A_WARDENS_LULLABY_MUSIC_DISC);
         entries.add(A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC);
+    }
+
+    private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries) {
+        entries.add(FURTIVIUM_SPADONE);
+        entries.add(FURTIVIUM_GLADIUS);
+        entries.add(FURTIVIUM_GLAVE);
+    }
+
+    private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries) {
+        entries.add(SCULK_BONE_AND_TENDRIL_BROTH);
     }
 
     private static Item registerItem(String name, Item item) {

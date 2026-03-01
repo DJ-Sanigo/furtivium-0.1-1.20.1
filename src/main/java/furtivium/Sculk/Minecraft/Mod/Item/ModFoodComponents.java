@@ -15,4 +15,11 @@ public class ModFoodComponents {
                     .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 1000, 4), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 1000, 4), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.WITHER, 1000, 4), 1f ).build();
+
+    public static final FoodComponent SCULK_BONE_AND_TENDRIL_BROTH =
+            new FoodComponent.Builder().hunger(14).saturationModifier(1.25F)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 120, 1), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 120, 4), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 1200, 4), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 600, 4), 1f ).build();
 }

@@ -23,6 +23,9 @@ public abstract class ItemRendererMixin {
         if (stack.isOf(ModItems.FURTIVIUM_GLADIUS) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Furtivium.MOD_ID, "furtivium_gladius_3d", "inventory"));
         }
+        if (stack.isOf(ModItems.FURTIVIUM_GLAVE) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Furtivium.MOD_ID, "furtivium_glave_3d", "inventory"));
+        }
 
         return value;
 

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bowl"
+    },
+    "S": {
+      "item": "furtivium-sculk:sculk_bone"
+    },
+    "T": {
+      "item": "minecraft:sculk_sensor"
+    }
+  },
+  "pattern": [
+    "TS",
+    " B"
+  ],
+  "result": {
+    "item": "furtivium-sculk:sculk_bone_and_tendril_broth"
+  },
+  "show_notification": true
+}

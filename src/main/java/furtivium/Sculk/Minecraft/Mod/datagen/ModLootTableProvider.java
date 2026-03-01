@@ -14,6 +14,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.FURTIVIUM_BLOCK);
         addDrop(ModBlocks.SCULK_BONE_BLOCK);
 
+        addDrop(ModBlocks.SCULK_ROOTS);
+        addPottedPlantDrops(ModBlocks.SCULK_ROOTS);
+
 
     }
 }

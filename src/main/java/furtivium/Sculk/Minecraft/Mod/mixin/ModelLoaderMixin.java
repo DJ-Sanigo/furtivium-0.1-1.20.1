@@ -31,4 +31,9 @@ public abstract class ModelLoaderMixin {
         this.addModel(new ModelIdentifier(Furtivium.MOD_ID, "furtivium_gladius_3d", "inventory"));
     }
 
+    @Inject(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/model/ModelLoader;addModel(Lnet/minecraft/client/util/ModelIdentifier;)V", ordinal = 3, shift = At.Shift.AFTER))
+    public void addFurtiviumGlave(BlockColors blockColors, Profiler profiler, Map<Identifier, JsonUnbakedModel> jsonUnbakedModels, Map<Identifier, List<ModelLoader.SourceTrackedData>> blockStates, CallbackInfo ci) {
+        this.addModel(new ModelIdentifier(Furtivium.MOD_ID, "furtivium_glave_3d", "inventory"));
+    }
+
 }
