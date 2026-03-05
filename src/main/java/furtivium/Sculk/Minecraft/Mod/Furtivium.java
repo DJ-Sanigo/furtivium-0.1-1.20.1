@@ -19,8 +19,6 @@ public class Furtivium implements ModInitializer {
 
 		ModItemGroups.registerItemGroups();
 
-		ModLootTableModifiers.modifyLootTables();
-
 		ModSounds.registerSounds();
 
 		LOGGER.info("Hello Fabric world!");
