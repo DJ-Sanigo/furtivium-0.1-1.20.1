@@ -33,7 +33,9 @@ public class ModItemGroups {
                         entries.add(ModItems.FURTIVIUM_GLAVE);
 
                         entries.add(ModBlocks.SCULK_ROOTS);
-                        entries.add(ModBlocks.POTTED_SCULK_ROOTS);
+                        entries.add(ModBlocks.SCULK_MUSHROOM);
+                        entries.add(ModBlocks.SCULK_ORCHID);
+                        entries.add(ModBlocks.SCULK_CARNATION);
 
                         entries.add(Items.SCULK);
                         entries.add(Items.SCULK_VEIN);

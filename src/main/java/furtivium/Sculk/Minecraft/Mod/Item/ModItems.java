@@ -1,11 +1,9 @@
 package furtivium.Sculk.Minecraft.Mod.Item;
 
 import furtivium.Sculk.Minecraft.Mod.Furtivium;
-import furtivium.Sculk.Minecraft.Mod.Item.custom.VialOfActiveSculkItem;
 import furtivium.Sculk.Minecraft.Mod.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

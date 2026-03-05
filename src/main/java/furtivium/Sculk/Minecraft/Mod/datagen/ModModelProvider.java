@@ -21,6 +21,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSingleton(ModBlocks.SCULK_BONE_BLOCK, TexturedModel.CUBE_COLUMN);
 
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.SCULK_ROOTS, ModBlocks.POTTED_SCULK_ROOTS, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.SCULK_MUSHROOM, ModBlocks.POTTED_SCULK_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.SCULK_ORCHID, ModBlocks.POTTED_SCULK_ORCHID, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.SCULK_CARNATION, ModBlocks.POTTED_SCULK_CARNATION, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override

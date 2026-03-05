@@ -68,11 +68,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.A_WARDENS_LULLABY_MUSIC_DISC)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_BONE_AND_TENDRIL_BROTH, 1)
-                .pattern("TS")
+                .pattern("RS")
                 .pattern(" B")
                 .input('B', Items.BOWL)
                 .input('S', ModItems.SCULK_BONE)
-                .input('T', Items.SCULK_SENSOR)
+                .input('R', ModBlocks.SCULK_ROOTS)
                 .criterion(hasItem(ModItems.SCULK_BONE), conditionsFromItem(ModItems.SCULK_BONE))
                 .criterion(hasItem(Items.BOWL), conditionsFromItem(Items.BOWL))
                 .criterion(hasItem(Items.SCULK_SENSOR), conditionsFromItem(Items.SCULK_SENSOR))

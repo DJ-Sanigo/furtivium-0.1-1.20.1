@@ -1,3 +1,11 @@
-// 1.20.1	2026-03-01T21:04:55.9859338	Furtivium/Block Loot Tables
+// 1.20.1	2026-03-02T23:40:15.4944311	Furtivium/Block Loot Tables
+b1216a7a1c8e14a24aa1c490295914805693dfb6 data\furtivium-sculk\loot_tables\blocks\sculk_orchid.json
+2aaa7d430c53beb55a1a84a334a411275811642e data\furtivium-sculk\loot_tables\blocks\sculk_carnation.json
+cefeaf26bd3e0b7305dfd891d4004ee8e26e3cdc data\furtivium-sculk\loot_tables\blocks\potted_sculk_roots.json
+04916b1cd54cec0f949c7dfa71e00e5e8a1279d5 data\furtivium-sculk\loot_tables\blocks\potted_sculk_mushroom.json
+b92aadbb99700938bcc89ff8d89eed0c7504958f data\furtivium-sculk\loot_tables\blocks\potted_sculk_orchid.json
+106598ca3815df655dffe6fbbce252b72ccaf038 data\furtivium-sculk\loot_tables\blocks\sculk_roots.json
 2c96e622c8d62452270e23bca5bf49310a7255ba data\furtivium-sculk\loot_tables\blocks\furtivium_block.json
+f2c0b386617651679316ca8883b0223d802a9283 data\furtivium-sculk\loot_tables\blocks\sculk_mushroom.json
+519056ecf86f502d42565cf27c74186485d34ad5 data\furtivium-sculk\loot_tables\blocks\potted_sculk_carnation.json
 f423218b910447946709ad6be7a284164db1d330 data\furtivium-sculk\loot_tables\blocks\sculk_bone_block.json

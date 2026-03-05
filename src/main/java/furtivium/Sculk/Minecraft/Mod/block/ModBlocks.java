@@ -24,10 +24,21 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK)));
 
     public static final Block SCULK_ROOTS = registerBlock("sculk_roots",
-            new FlowerBlock(StatusEffects.DARKNESS, 3,
-                    FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).nonOpaque().noCollision()));
+            new SculkBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).nonOpaque().noCollision()));
     public static final Block POTTED_SCULK_ROOTS = Registry.register(Registries.BLOCK, new Identifier(Furtivium.MOD_ID, "potted_sculk_roots"),
             new FlowerPotBlock(SCULK_ROOTS, FabricBlockSettings.copyOf(Blocks.POTTED_CRIMSON_ROOTS).nonOpaque()));
+    public static final Block SCULK_MUSHROOM = registerBlock("sculk_mushroom",
+            new SculkBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).nonOpaque().noCollision()));
+    public static final Block POTTED_SCULK_MUSHROOM = Registry.register(Registries.BLOCK, new Identifier(Furtivium.MOD_ID, "potted_sculk_mushroom"),
+            new FlowerPotBlock(SCULK_MUSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_CRIMSON_ROOTS).nonOpaque()));
+    public static final Block SCULK_ORCHID = registerBlock("sculk_orchid",
+            new SculkSensorBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).nonOpaque().noCollision()));
+    public static final Block POTTED_SCULK_ORCHID = Registry.register(Registries.BLOCK, new Identifier(Furtivium.MOD_ID, "potted_sculk_orchid"),
+            new FlowerPotBlock(SCULK_ORCHID, FabricBlockSettings.copyOf(Blocks.POTTED_CRIMSON_ROOTS).nonOpaque()));
+    public static final Block SCULK_CARNATION = registerBlock("sculk_carnation",
+            new SculkSensorBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).nonOpaque().noCollision()));
+    public static final Block POTTED_SCULK_CARNATION = Registry.register(Registries.BLOCK, new Identifier(Furtivium.MOD_ID, "potted_sculk_carnation"),
+            new FlowerPotBlock(SCULK_CARNATION, FabricBlockSettings.copyOf(Blocks.POTTED_CRIMSON_ROOTS).nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

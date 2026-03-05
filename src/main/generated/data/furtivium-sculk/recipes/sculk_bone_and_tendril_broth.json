@@ -5,15 +5,15 @@
     "B": {
       "item": "minecraft:bowl"
     },
+    "R": {
+      "item": "furtivium-sculk:sculk_roots"
+    },
     "S": {
       "item": "furtivium-sculk:sculk_bone"
-    },
-    "T": {
-      "item": "minecraft:sculk_sensor"
     }
   },
   "pattern": [
-    "TS",
+    "RS",
     " B"
   ],
   "result": {

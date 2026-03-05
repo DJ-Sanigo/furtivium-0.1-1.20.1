@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "furtivium-sculk:block/sculk_roots"
+  }
+}
