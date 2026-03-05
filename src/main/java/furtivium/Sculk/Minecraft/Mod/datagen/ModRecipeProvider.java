@@ -56,14 +56,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.A_WARDENS_LULLABY_MUSIC_DISC, 1)
-                .pattern("SFS")
-                .pattern("FDF")
-                .pattern("SFS")
+                .pattern("SSS")
+                .pattern("SDS")
+                .pattern("SSS")
                 .input('D', ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC)
-                .input('F', ModItems.FURTIVIUM_INGOT)
                 .input('S', Items.SCULK)
                 .criterion(hasItem(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC), conditionsFromItem(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC))
-                .criterion(hasItem(ModItems.FURTIVIUM_INGOT), conditionsFromItem(ModItems.FURTIVIUM_INGOT))
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.A_WARDENS_LULLABY_MUSIC_DISC)));
 
