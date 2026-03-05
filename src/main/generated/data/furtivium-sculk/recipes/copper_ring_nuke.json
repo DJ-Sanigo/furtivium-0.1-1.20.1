@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "S": {
+      "item": "minecraft:sculk"
+    }
+  },
+  "pattern": [
+    "SE ",
+    "C C",
+    " C "
+  ],
+  "result": {
+    "item": "furtivium-sculk:copper_ring_nuke"
+  },
+  "show_notification": true
+}

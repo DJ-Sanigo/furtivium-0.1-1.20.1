@@ -22,6 +22,9 @@ public class ModItems {
     public static final Item FURTIVIUM_INGOT = registerItem("furtivium_ingot", new Item(new FabricItemSettings()));
     public static final Item SCULK_BONE = registerItem("sculk_bone", new Item(new FabricItemSettings()));
 
+    public static final Item SCULK_RING_TOKEN = registerItem("sculk_ring_token", new Item(new FabricItemSettings()));
+    public static final Item COPPER_RING_NUKE = registerItem("copper_ring_nuke", new Item(new FabricItemSettings()));
+
     public static final Item A_WARDENS_LULLABY_MUSIC_DISC = registerItem("a_wardens_lullaby_music_disc",
             new MusicDiscItem(7, ModSounds.A_WARDENS_LULLABY, new FabricItemSettings().maxCount(1), 220));
     public static final Item A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC = registerItem("a_wardens_lullaby_music_box_version_music_disc",

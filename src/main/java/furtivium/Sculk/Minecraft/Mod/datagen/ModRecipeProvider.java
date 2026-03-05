@@ -75,8 +75,30 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('R', ModBlocks.SCULK_ROOTS)
                 .criterion(hasItem(ModItems.SCULK_BONE), conditionsFromItem(ModItems.SCULK_BONE))
                 .criterion(hasItem(Items.BOWL), conditionsFromItem(Items.BOWL))
-                .criterion(hasItem(Items.SCULK_SENSOR), conditionsFromItem(Items.SCULK_SENSOR))
+                .criterion(hasItem(ModBlocks.SCULK_ROOTS), conditionsFromItem(ModBlocks.SCULK_ROOTS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_BONE_AND_TENDRIL_BROTH)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SCULK_RING_TOKEN, 1)
+                .pattern(" S ")
+                .pattern("VSV")
+                .pattern(" V ")
+                .input('S', Items.SCULK)
+                .input('V', Items.SCULK_VEIN)
+                .criterion(hasItem(Items.SCULK_VEIN), conditionsFromItem(Items.SCULK_VEIN))
+                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_RING_TOKEN)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COPPER_RING_NUKE, 1)
+                .pattern("SE ")
+                .pattern("C C")
+                .pattern(" C ")
+                .input('S', Items.SCULK)
+                .input('C', Items.COPPER_INGOT)
+                .input('E', Items.EMERALD)
+                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
+                .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.COPPER_RING_NUKE)));
     }
 }
 

@@ -23,6 +23,9 @@ public class ModItemGroups {
                         entries.add(ModItems.SCULK_BONE);
                         entries.add(ModBlocks.SCULK_BONE_BLOCK);
 
+                        entries.add(ModItems.COPPER_RING_NUKE);
+                        entries.add(ModItems.SCULK_RING_TOKEN);
+
                         entries.add(ModItems.SCULK_BONE_AND_TENDRIL_BROTH);
 
                         entries.add(ModItems.A_WARDENS_LULLABY_MUSIC_DISC);

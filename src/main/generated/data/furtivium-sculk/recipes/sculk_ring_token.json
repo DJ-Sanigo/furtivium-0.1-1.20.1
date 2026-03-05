@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:sculk"
+    },
+    "V": {
+      "item": "minecraft:sculk_vein"
+    }
+  },
+  "pattern": [
+    " S ",
+    "VSV",
+    " V "
+  ],
+  "result": {
+    "item": "furtivium-sculk:sculk_ring_token"
+  },
+  "show_notification": true
+}
