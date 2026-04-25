@@ -1,6 +1,7 @@
 package furtivium.Sculk.Minecraft.Mod.Item;
 
 import furtivium.Sculk.Minecraft.Mod.Furtivium;
+import furtivium.Sculk.Minecraft.Mod.Item.custom.TheHomoBlasterItem;
 import furtivium.Sculk.Minecraft.Mod.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -37,6 +38,12 @@ public class ModItems {
     public static final Item FURTIVIUM_GLAVE = registerItem("furtivium_glave",
             new SwordItem(ModToolMaterial.FURTIVIUM, 4, 0.05f, new FabricItemSettings()));
 
+    //everyone say that noelle is the best ever
+    public static final Item HOMO_BLASTER = registerItem("homo_blaster",
+            new TheHomoBlasterItem(ModToolMaterial.FURTIVIUM, 4, 0.05f, new FabricItemSettings()));
+
+
+
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(VIAL_OF_DORMANT_SCULK);
@@ -52,6 +59,7 @@ public class ModItems {
         entries.add(FURTIVIUM_SPADONE);
         entries.add(FURTIVIUM_GLADIUS);
         entries.add(FURTIVIUM_GLAVE);
+        entries.add(HOMO_BLASTER);
     }
 
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries) {
