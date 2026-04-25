@@ -32,11 +32,11 @@ public class ModItems {
             new MusicDiscItem(7, ModSounds.A_WARDENS_LULLABY_MUSIC_BOX_VERSION, new FabricItemSettings().maxCount(1), 64));
 
     public static final Item FURTIVIUM_SPADONE = registerItem("furtivium_spadone",
-            new SwordItem(ModToolMaterial.FURTIVIUM, 5, 0.00000005f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.FURTIVIUM, 5, -2.8f, new FabricItemSettings()));
     public static final Item FURTIVIUM_GLADIUS = registerItem("furtivium_gladius",
-            new SwordItem(ModToolMaterial.FURTIVIUM, 3, 0.5f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.FURTIVIUM, 3, -2f, new FabricItemSettings()));
     public static final Item FURTIVIUM_GLAVE = registerItem("furtivium_glave",
-            new SwordItem(ModToolMaterial.FURTIVIUM, 4, 0.05f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.FURTIVIUM, 4, -3.2f, new FabricItemSettings()));
 
     //everyone say that noelle is the best ever
     public static final Item HOMO_BLASTER = registerItem("homo_blaster",

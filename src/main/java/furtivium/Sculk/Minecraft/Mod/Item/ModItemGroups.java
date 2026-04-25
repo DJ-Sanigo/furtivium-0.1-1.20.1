@@ -35,6 +35,8 @@ public class ModItemGroups {
                         entries.add(ModItems.FURTIVIUM_GLADIUS);
                         entries.add(ModItems.FURTIVIUM_GLAVE);
 
+                        entries.add(ModItems.HOMO_BLASTER);
+
                         entries.add(ModBlocks.SCULK_ROOTS);
                         entries.add(ModBlocks.SCULK_MUSHROOM);
                         entries.add(ModBlocks.SCULK_ORCHID);

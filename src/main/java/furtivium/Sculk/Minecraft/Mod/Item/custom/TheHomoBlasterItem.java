@@ -3,6 +3,8 @@ package furtivium.Sculk.Minecraft.Mod.Item.custom;
 import furtivium.Sculk.Minecraft.Mod.Item.ModToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
@@ -15,8 +17,11 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldAccess;
 
 import java.util.List;
+
+import static net.minecraft.entity.effect.StatusEffects.SLOW_FALLING;
 
 public class TheHomoBlasterItem extends ToolItem {
 
@@ -40,7 +45,7 @@ public class TheHomoBlasterItem extends ToolItem {
                 serverWorld.spawnParticles(
                         ParticleTypes.SONIC_BOOM,
                         pos.x, pos.y, pos.z,
-                        1, 0, 0, 0, 0
+                        2, 0, 0, 0, 0
                 );
             }
 
@@ -58,16 +63,16 @@ public class TheHomoBlasterItem extends ToolItem {
 
                 if (projection >= 0 && projection <= 20) {
                     Vec3d closestPoint = start.add(look.multiply(projection));
-                    if (target.getBoundingBox().expand(0.5).contains(closestPoint)) {
+                    if (target.getBoundingBox().expand(0.5).contains(closestPoint)) { // Range - 0.5 = 1 Block
                         target.damage(
                                 world.getDamageSources().sonicBoom(user),
-                                10.0F
+                                10.0F // Damage - 2 = 1 Heart/ 1 = Half A Heart
                         );
 
                         target.addVelocity(
                                 look.x * 3,
                                 0.5,
-                                look.z * 2.5
+                                look.z * 2.5 //Knockback - 0.5 = 1 Block
                         );
 
                         target.velocityModified = true;
@@ -85,7 +90,7 @@ public class TheHomoBlasterItem extends ToolItem {
             );
 
 
-            user.getItemCooldownManager().set(this, 60);
+            user.getItemCooldownManager().set(this, 200); // Cooldown - 1 = 1 Tick/ 20 = 1 Second
         }
 
         return TypedActionResult.success(stack, world.isClient());
@@ -95,8 +100,11 @@ public class TheHomoBlasterItem extends ToolItem {
         super.postHit(stack, target, attacker);
 
         Vec3d velocity = target.getVelocity();
-        target.setVelocity(velocity.x, 0.7, velocity.z);
+        target.setVelocity(velocity.x, 1, velocity.z); // Airblast Punch - 0.5 = 1 Block
         target.velocityModified = true;
+
+
+        //new StatusEffects(new StatusEffectInstance(SLOW_FALLING, 20, 1));// Under Constuction
 
         return true;
     }

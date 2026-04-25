@@ -5,17 +5,23 @@
     "B": {
       "item": "furtivium-sculk:sculk_bone"
     },
+    "C": {
+      "item": "minecraft:sculk_shrieker"
+    },
     "F": {
       "item": "furtivium-sculk:furtivium_ingot"
+    },
+    "S": {
+      "item": "minecraft:sculk"
     }
   },
   "pattern": [
-    "  B",
     " B ",
-    "F  "
+    "SSC",
+    "FS "
   ],
   "result": {
-    "item": "furtivium-sculk:furtivium_gladius"
+    "item": "furtivium-sculk:homo_blaster"
   },
   "show_notification": true
 }

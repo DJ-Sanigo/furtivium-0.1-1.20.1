@@ -11,11 +11,11 @@
   },
   "pattern": [
     "  B",
-    " B ",
+    " FB",
     "F  "
   ],
   "result": {
-    "item": "furtivium-sculk:furtivium_gladius"
+    "item": "furtivium-sculk:furtivium_glave"
   },
   "show_notification": true
 }

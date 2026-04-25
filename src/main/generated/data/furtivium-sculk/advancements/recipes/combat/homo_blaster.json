@@ -1,0 +1,74 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_furtivium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "furtivium-sculk:furtivium_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sculk": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:sculk"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sculk_bone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "furtivium-sculk:sculk_bone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sculk_shrieker": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:sculk_shrieker"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:homo_blaster"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_furtivium_ingot",
+      "has_sculk_bone",
+      "has_sculk",
+      "has_sculk_shrieker",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:homo_blaster"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -38,13 +38,37 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FURTIVIUM_GLADIUS, 1)
                 .pattern("  B")
-                .pattern(" F ")
+                .pattern(" B ")
                 .pattern("F  ")
                 .input('B', ModItems.SCULK_BONE)
                 .input('F', ModItems.FURTIVIUM_INGOT)
                 .criterion(hasItem(ModItems.FURTIVIUM_INGOT), conditionsFromItem(ModItems.FURTIVIUM_INGOT))
                 .criterion(hasItem(ModItems.SCULK_BONE), conditionsFromItem(ModItems.SCULK_BONE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.FURTIVIUM_GLADIUS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FURTIVIUM_GLAVE, 1)
+                .pattern("  B")
+                .pattern(" FB")
+                .pattern("F  ")
+                .input('B', ModItems.SCULK_BONE)
+                .input('F', ModItems.FURTIVIUM_INGOT)
+                .criterion(hasItem(ModItems.FURTIVIUM_INGOT), conditionsFromItem(ModItems.FURTIVIUM_INGOT))
+                .criterion(hasItem(ModItems.SCULK_BONE), conditionsFromItem(ModItems.SCULK_BONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FURTIVIUM_GLAVE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.HOMO_BLASTER, 1)
+                .pattern(" B ")
+                .pattern("SSC")
+                .pattern("FS ")
+                .input('B', ModItems.SCULK_BONE)
+                .input('S', Items.SCULK)
+                .input('C', Items.SCULK_SHRIEKER)
+                .input('F', ModItems.FURTIVIUM_INGOT)
+                .criterion(hasItem(ModItems.FURTIVIUM_INGOT), conditionsFromItem(ModItems.FURTIVIUM_INGOT))
+                .criterion(hasItem(ModItems.SCULK_BONE), conditionsFromItem(ModItems.SCULK_BONE))
+                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
+                .criterion(hasItem(Items.SCULK_SHRIEKER), conditionsFromItem(Items.SCULK_SHRIEKER))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HOMO_BLASTER)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC, 1)
                 .pattern(" E ")
