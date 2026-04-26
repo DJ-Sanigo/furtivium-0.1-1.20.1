@@ -30,12 +30,17 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.FURTIVIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_BONE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARDEN_HEART, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SCULK_TENDRIL, Models.GENERATED);
         itemModelGenerator.register(ModItems.VIAL_OF_ACTIVE_SCULK, Models.GENERATED);
         itemModelGenerator.register(ModItems.VIAL_OF_DORMANT_SCULK, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_BONE_AND_TENDRIL_BROTH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SCULK_LAMINGTON, Models.GENERATED);
         itemModelGenerator.register(ModItems.A_WARDENS_LULLABY_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_RING_TOKEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_RING_NUKE, Models.GENERATED);
     }
+
+
 }

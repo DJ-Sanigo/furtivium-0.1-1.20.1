@@ -13,11 +13,14 @@
     },
     "S": {
       "item": "minecraft:sculk"
+    },
+    "W": {
+      "item": "furtivium-sculk:warden_heart"
     }
   },
   "pattern": [
     " B ",
-    "SSC",
+    "SWC",
     "FS "
   ],
   "result": {

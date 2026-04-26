@@ -1,24 +1,36 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_furtivium_ingot": {
+    "has_experience_bottle": {
       "conditions": {
         "items": [
           {
             "items": [
-              "furtivium-sculk:furtivium_ingot"
+              "minecraft:experience_bottle"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_sculk_bone": {
+    "has_glass_bottle": {
       "conditions": {
         "items": [
           {
             "items": [
-              "furtivium-sculk:sculk_bone"
+              "minecraft:glass_bottle"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sculk": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:sculk"
             ]
           }
         ]
@@ -27,21 +39,22 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:furtivium_spadone"
+        "recipe": "minecraft:experience_bottle"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_furtivium_ingot",
-      "has_sculk_bone",
+      "has_experience_bottle",
+      "has_glass_bottle",
+      "has_sculk",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:furtivium_spadone"
+      "minecraft:experience_bottle"
     ]
   },
   "sends_telemetry_event": false

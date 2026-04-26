@@ -13,15 +13,19 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item VIAL_OF_DORMANT_SCULK = registerItem("vial_of_dormant_sculk",
-    new Item(new FabricItemSettings().maxCount(16)));
+                new Item(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_DORMANT_SCULK).maxCount(16)));
     public static final Item VIAL_OF_ACTIVE_SCULK = registerItem("vial_of_active_sculk",
                 new Item(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_ACTIVE_SCULK).maxCount(16)));
 
     public static final Item SCULK_BONE_AND_TENDRIL_BROTH = registerItem("sculk_bone_and_tendril_broth",
             new StewItem(new FabricItemSettings().food(ModFoodComponents.SCULK_BONE_AND_TENDRIL_BROTH).maxCount(1)));
+    public static final Item SCULK_LAMINGTON = registerItem("sculk_lamington",
+            new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_LAMINGTON)));
 
     public static final Item FURTIVIUM_INGOT = registerItem("furtivium_ingot", new Item(new FabricItemSettings()));
     public static final Item SCULK_BONE = registerItem("sculk_bone", new Item(new FabricItemSettings()));
+    public static final Item WARDEN_HEART = registerItem("warden_heart", new Item(new FabricItemSettings()));
+    public static final Item SCULK_TENDRIL = registerItem("sculk_tendril", new Item(new FabricItemSettings()));
 
     public static final Item SCULK_RING_TOKEN = registerItem("sculk_ring_token", new Item(new FabricItemSettings()));
     public static final Item COPPER_RING_NUKE = registerItem("copper_ring_nuke", new Item(new FabricItemSettings()));
@@ -41,7 +45,6 @@ public class ModItems {
     //everyone say that noelle is the best ever
     public static final Item HOMO_BLASTER = registerItem("homo_blaster",
             new TheHomoBlasterItem(ModToolMaterial.FURTIVIUM, 4, 0.05f, new FabricItemSettings()));
-
 
 
 

@@ -2,10 +2,14 @@
   "item.furtivium-sculk.vial_of_dormant_sculk": "Vial Of Dormant Sculk",
   "item.furtivium-sculk.vial_of_active_sculk": "Vial Of Active Sculk",
 
-  "item.furtivium-sculk.sculk_bone_and_tendril_broth": "Sculk Bone & Tendril Broth",
+  "item.furtivium-sculk.sculk_bone_and_tendril_broth": "Sculk, Bone & Tendril Minestrone",
+  "item.furtivium-sculk.sculk_lamington": "Sculk Lamington",
 
   "item.furtivium-sculk.furtivium_ingot": "Furtivium Ingot",
   "item.furtivium-sculk.sculk_bone": "Sculk Bone",
+  "item.furtivium-sculk.warden_heart": "A Warden's Still Beating Heart",
+  "item.furtivium-sculk.sculk_tendril": "Sculk Tendril",
+
 
   "block.furtivium-sculk.furtivium_block": "Furtivium Block",
   "block.furtivium-sculk.sculk_bone_block": "Sculk Bone Block",

@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bowl": {
+    "has_furtivium_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:bowl"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_sculk": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:sculk"
+              "furtivium-sculk:furtivium_ingot"
             ]
           }
         ]
@@ -37,37 +25,36 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_sculk_roots": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "furtivium-sculk:furtivium_glave_recipe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_trident": {
       "conditions": {
         "items": [
           {
             "items": [
-              "furtivium-sculk:sculk_roots"
+              "minecraft:trident"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
-    },
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "minecraft:sculk_bone_and_tendril_broth"
-      },
-      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
       "has_sculk_bone",
-      "has_sculk",
-      "has_bowl",
-      "has_sculk_roots",
+      "has_furtivium_ingot",
+      "has_trident",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sculk_bone_and_tendril_broth"
+      "furtivium-sculk:furtivium_glave_recipe"
     ]
   },
   "sends_telemetry_event": false

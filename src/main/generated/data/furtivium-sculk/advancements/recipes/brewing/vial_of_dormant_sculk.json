@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_furtivium_ingot": {
+    "has_glass_bottle": {
       "conditions": {
         "items": [
           {
             "items": [
-              "furtivium-sculk:furtivium_ingot"
+              "minecraft:glass_bottle"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_sculk_bone": {
+    "has_sculk": {
       "conditions": {
         "items": [
           {
             "items": [
-              "furtivium-sculk:sculk_bone"
+              "minecraft:sculk"
             ]
           }
         ]
@@ -27,21 +27,21 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:furtivium_gladius"
+        "recipe": "minecraft:vial_of_dormant_sculk"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_furtivium_ingot",
-      "has_sculk_bone",
+      "has_glass_bottle",
+      "has_sculk",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:furtivium_gladius"
+      "minecraft:vial_of_dormant_sculk"
     ]
   },
   "sends_telemetry_event": false

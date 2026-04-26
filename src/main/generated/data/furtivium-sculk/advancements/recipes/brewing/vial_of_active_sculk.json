@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bowl": {
+    "has_experience_bottle": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:bowl"
+              "minecraft:experience_bottle"
             ]
           }
         ]
@@ -25,49 +25,36 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_sculk_bone": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "furtivium-sculk:sculk_bone"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_sculk_roots": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "furtivium-sculk:sculk_roots"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:sculk_bone_and_tendril_broth"
+        "recipe": "minecraft:vial_of_active_sculk"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_vial_of_dormant_sculk": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "furtivium-sculk:vial_of_dormant_sculk"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
-      "has_sculk_bone",
       "has_sculk",
-      "has_bowl",
-      "has_sculk_roots",
+      "has_experience_bottle",
+      "has_vial_of_dormant_sculk",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sculk_bone_and_tendril_broth"
+      "minecraft:vial_of_active_sculk"
     ]
   },
   "sends_telemetry_event": false

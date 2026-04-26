@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:experience_bottle"
+    },
+    "G": {
+      "item": "minecraft:glass_bottle"
+    },
+    "S": {
+      "item": "minecraft:sculk"
+    },
+    "V": {
+      "item": "furtivium-sculk:vial_of_active_sculk"
+    }
+  },
+  "pattern": [
+    " V ",
+    "SES",
+    " G "
+  ],
+  "result": {
+    "count": 3,
+    "item": "minecraft:experience_bottle"
+  },
+  "show_notification": true
+}

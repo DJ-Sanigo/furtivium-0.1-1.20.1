@@ -5,21 +5,28 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 
 public class ModFoodComponents {
-//    public static final FoodComponent VIAL_OF_DORMANT_SCULK =
-//            new FoodComponent.Builder().alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200, 4), 1f)
-//                    .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 200, 0), 1f).build();
+    public static final FoodComponent VIAL_OF_DORMANT_SCULK =
+            new FoodComponent.Builder().alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200, 4), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 200, 0), 1f).build();
 
     public static final FoodComponent VIAL_OF_ACTIVE_SCULK =
             new FoodComponent.Builder().alwaysEdible()
-                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 1000, 4), 1f)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 1000, 4), 1f)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 1000, 4), 1f)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.WITHER, 1000, 4), 1f ).build();
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 1200, 4), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 1200, 4), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 1200, 4), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.WITHER, 1200, 4), 1f ).build();
 
     public static final FoodComponent SCULK_BONE_AND_TENDRIL_BROTH =
             new FoodComponent.Builder().hunger(14).saturationModifier(1.25F)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 120, 1), 1f)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 120, 4), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 100, 1), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 100, 4), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 1200, 4), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 600, 4), 1f ).build();
+
+    public static final FoodComponent SCULK_LAMINGTON =
+            new FoodComponent.Builder().hunger(8).saturationModifier(2F)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 2400, 0), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 1200, 0), 1f )
+                    .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 100, 4), 1f )
+                    .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 4), 1f ).build();
 }

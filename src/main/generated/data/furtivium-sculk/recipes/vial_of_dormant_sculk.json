@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:glass_bottle"
+    },
+    "S": {
+      "item": "minecraft:sculk"
+    }
+  },
+  "pattern": [
+    "   ",
+    "SSS",
+    " G "
+  ],
+  "result": {
+    "item": "furtivium-sculk:vial_of_dormant_sculk"
+  },
+  "show_notification": true
+}

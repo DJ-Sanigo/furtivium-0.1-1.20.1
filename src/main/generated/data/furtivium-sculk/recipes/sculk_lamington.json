@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "furtivium-sculk:sculk_orchid"
+    },
+    "S": {
+      "item": "minecraft:sculk"
+    }
+  },
+  "pattern": [
+    "SS",
+    "SO"
+  ],
+  "result": {
+    "count": 4,
+    "item": "furtivium-sculk:sculk_lamington"
+  },
+  "show_notification": true
+}

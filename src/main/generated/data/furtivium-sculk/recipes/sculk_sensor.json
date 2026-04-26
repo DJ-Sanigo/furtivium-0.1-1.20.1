@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:sculk"
+    },
+    "T": {
+      "item": "furtivium-sculk:sculk_tendril"
+    }
+  },
+  "pattern": [
+    "   ",
+    "T T",
+    "SSS"
+  ],
+  "result": {
+    "item": "minecraft:sculk_sensor"
+  },
+  "show_notification": true
+}

@@ -2,11 +2,9 @@ package furtivium.Sculk.Minecraft.Mod;
 
 import furtivium.Sculk.Minecraft.Mod.Item.ModItemGroups;
 import furtivium.Sculk.Minecraft.Mod.Item.ModItems;
-import furtivium.Sculk.Minecraft.Mod.Potion.ModPotions;
 import furtivium.Sculk.Minecraft.Mod.block.ModBlocks;
 import furtivium.Sculk.Minecraft.Mod.sound.ModSounds;
 import furtivium.Sculk.Minecraft.Mod.util.ModLootTableModifiers;
-import furtivium.Sculk.Minecraft.Mod.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,10 +17,6 @@ public class Furtivium implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-
-		ModRegistries.registerModStuffs();
-
-		ModPotions.registerPotions();
 
 		ModItemGroups.registerItemGroups();
 

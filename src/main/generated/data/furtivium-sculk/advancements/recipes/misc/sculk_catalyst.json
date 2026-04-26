@@ -1,18 +1,6 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bowl": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:bowl"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_sculk": {
       "conditions": {
         "items": [
@@ -37,37 +25,36 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_sculk_roots": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:sculk_catalyst"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_warden_heart": {
       "conditions": {
         "items": [
           {
             "items": [
-              "furtivium-sculk:sculk_roots"
+              "furtivium-sculk:warden_heart"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
-    },
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "minecraft:sculk_bone_and_tendril_broth"
-      },
-      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
       "has_sculk_bone",
+      "has_warden_heart",
       "has_sculk",
-      "has_bowl",
-      "has_sculk_roots",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sculk_bone_and_tendril_broth"
+      "minecraft:sculk_catalyst"
     ]
   },
   "sends_telemetry_event": false

@@ -90,7 +90,29 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(1f))
                         .with(ItemEntry.builder(ModItems.SCULK_BONE))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(3.0f, 5.0f)).build());
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(3.0f, 10.0f)).build());
+
+                builder.pool(poolBuilder.build());
+
+            }
+
+            if(WARDEN_ID.equals(identifier)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .with(ItemEntry.builder(ModItems.WARDEN_HEART))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                builder.pool(poolBuilder.build());
+
+            }
+
+            if(WARDEN_ID.equals(identifier)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .with(ItemEntry.builder(ModItems.SCULK_TENDRIL))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
 
                 builder.pool(poolBuilder.build());
 

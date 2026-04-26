@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:trident"
+  },
+  "base": {
+    "item": "furtivium-sculk:sculk_bone"
+  },
+  "result": {
+    "item": "furtivium-sculk:furtivium_glave"
+  },
+  "template": {
+    "item": "furtivium-sculk:furtivium_ingot"
+  }
+}

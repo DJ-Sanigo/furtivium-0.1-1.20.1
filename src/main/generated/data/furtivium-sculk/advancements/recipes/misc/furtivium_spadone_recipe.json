@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bowl": {
+    "has_diamond_axe": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:bowl"
+              "minecraft:diamond_axe"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_sculk": {
+    "has_furtivium_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:sculk"
+              "furtivium-sculk:furtivium_ingot"
             ]
           }
         ]
@@ -37,21 +37,9 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_sculk_roots": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "furtivium-sculk:sculk_roots"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:sculk_bone_and_tendril_broth"
+        "recipe": "furtivium-sculk:furtivium_spadone_recipe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -59,15 +47,14 @@
   "requirements": [
     [
       "has_sculk_bone",
-      "has_sculk",
-      "has_bowl",
-      "has_sculk_roots",
+      "has_furtivium_ingot",
+      "has_diamond_axe",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sculk_bone_and_tendril_broth"
+      "furtivium-sculk:furtivium_spadone_recipe"
     ]
   },
   "sends_telemetry_event": false

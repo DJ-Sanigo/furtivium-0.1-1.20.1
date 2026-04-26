@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:diamond_sword"
+  },
+  "base": {
+    "item": "furtivium-sculk:sculk_bone"
+  },
+  "result": {
+    "item": "furtivium-sculk:furtivium_gladius"
+  },
+  "template": {
+    "item": "furtivium-sculk:furtivium_ingot"
+  }
+}

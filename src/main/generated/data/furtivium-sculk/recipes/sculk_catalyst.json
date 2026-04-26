@@ -5,22 +5,20 @@
     "B": {
       "item": "furtivium-sculk:sculk_bone"
     },
-    "P": {
-      "item": "minecraft:bowl"
-    },
-    "R": {
-      "item": "furtivium-sculk:sculk_roots"
-    },
     "S": {
       "item": "minecraft:sculk"
+    },
+    "W": {
+      "item": "furtivium-sculk:warden_heart"
     }
   },
   "pattern": [
-    "RB",
-    "SP"
+    "SSS",
+    "BWB",
+    "BSB"
   ],
   "result": {
-    "item": "furtivium-sculk:sculk_bone_and_tendril_broth"
+    "item": "minecraft:sculk_catalyst"
   },
   "show_notification": true
 }

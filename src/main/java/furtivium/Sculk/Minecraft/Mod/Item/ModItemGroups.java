@@ -22,11 +22,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FURTIVIUM_BLOCK);
                         entries.add(ModItems.SCULK_BONE);
                         entries.add(ModBlocks.SCULK_BONE_BLOCK);
+                        entries.add(ModItems.WARDEN_HEART);
+                        entries.add(ModItems.SCULK_TENDRIL);
 
                         entries.add(ModItems.COPPER_RING_NUKE);
                         entries.add(ModItems.SCULK_RING_TOKEN);
 
                         entries.add(ModItems.SCULK_BONE_AND_TENDRIL_BROTH);
+                        entries.add(ModItems.SCULK_LAMINGTON);
 
                         entries.add(ModItems.A_WARDENS_LULLABY_MUSIC_DISC);
                         entries.add(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC);
