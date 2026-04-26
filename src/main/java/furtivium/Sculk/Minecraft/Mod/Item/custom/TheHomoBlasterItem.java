@@ -104,9 +104,20 @@ public class TheHomoBlasterItem extends ToolItem {
         target.velocityModified = true;
 
 
-        //new StatusEffects(new StatusEffectInstance(SLOW_FALLING, 20, 1));// Under Constuction
 
-        return true;
+
+
+        //if(attacker.tryAttack(target)){
+        //    if(target.isLiving()){
+        //            target.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION,100, 1)); //Under Constuction
+
+        //    }
+        //    return true;
+        //} else {
+        //    return false;
+        //}
+
+        return false;
     }
 
 }
