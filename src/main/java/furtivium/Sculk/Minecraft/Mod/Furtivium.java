@@ -2,6 +2,7 @@ package furtivium.Sculk.Minecraft.Mod;
 
 import furtivium.Sculk.Minecraft.Mod.Item.ModItemGroups;
 import furtivium.Sculk.Minecraft.Mod.Item.ModItems;
+import furtivium.Sculk.Minecraft.Mod.Potion.ModPotions;
 import furtivium.Sculk.Minecraft.Mod.block.ModBlocks;
 import furtivium.Sculk.Minecraft.Mod.sound.ModSounds;
 import furtivium.Sculk.Minecraft.Mod.util.ModLootTableModifiers;
@@ -17,6 +18,8 @@ public class Furtivium implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModPotions.registerPotions();
 
 		ModItemGroups.registerItemGroups();
 

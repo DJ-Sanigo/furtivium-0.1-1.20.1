@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item VIAL_OF_DORMANT_SCULK = registerItem("vial_of_dormant_sculk",
-    new Item(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_DORMANT_SCULK).maxCount(16)));
+    new Item(new FabricItemSettings().maxCount(16)));
     public static final Item VIAL_OF_ACTIVE_SCULK = registerItem("vial_of_active_sculk",
                 new Item(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_ACTIVE_SCULK).maxCount(16)));
 
