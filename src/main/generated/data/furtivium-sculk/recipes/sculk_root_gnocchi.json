@@ -2,25 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
-      "item": "furtivium-sculk:sculk_bone"
-    },
     "P": {
       "item": "minecraft:bowl"
     },
+    "R": {
+      "item": "furtivium-sculk:sculk_roots"
+    },
     "S": {
       "item": "minecraft:sculk"
-    },
-    "T": {
-      "item": "furtivium-sculk:sculk_tendril"
     }
   },
   "pattern": [
-    "TB",
-    "SP"
+    "SR",
+    " P"
   ],
   "result": {
-    "item": "furtivium-sculk:sculk_bone_and_tendril_broth"
+    "item": "furtivium-sculk:sculk_root_gnocchi"
   },
   "show_notification": true
 }

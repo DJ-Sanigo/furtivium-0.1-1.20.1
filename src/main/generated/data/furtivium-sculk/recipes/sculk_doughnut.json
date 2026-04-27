@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "furtivium-sculk:sculk_carnation"
+    },
+    "S": {
+      "item": "minecraft:sculk"
+    },
+    "V": {
+      "item": "minecraft:sculk_vein"
+    }
+  },
+  "pattern": [
+    "VSV",
+    "SCS",
+    "VSV"
+  ],
+  "result": {
+    "count": 8,
+    "item": "furtivium-sculk:sculk_doughnut"
+  },
+  "show_notification": true
+}

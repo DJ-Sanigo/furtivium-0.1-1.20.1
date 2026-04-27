@@ -28,8 +28,12 @@ public class ModItemGroups {
                         entries.add(ModItems.COPPER_RING_NUKE);
                         entries.add(ModItems.SCULK_RING_TOKEN);
 
-                        entries.add(ModItems.SCULK_BONE_AND_TENDRIL_BROTH);
                         entries.add(ModItems.SCULK_LAMINGTON);
+                        entries.add(ModItems.SCULK_DOUGHNUT);
+                        entries.add(ModItems.SCULKZZARELLA);
+                        entries.add(ModItems.SCULK_BONE_AND_TENDRIL_BROTH);
+                        entries.add(ModItems.SCULK_ROOT_GNOCCHI);
+                        entries.add(ModItems.SCULK_TENDRIL_SPAGHETTI);
 
                         entries.add(ModItems.A_WARDENS_LULLABY_MUSIC_DISC);
                         entries.add(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC);

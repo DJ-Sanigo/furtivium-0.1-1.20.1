@@ -25,24 +25,12 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_sculk_bone": {
+    "has_sculk_roots": {
       "conditions": {
         "items": [
           {
             "items": [
-              "furtivium-sculk:sculk_bone"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_sculk_tendril": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "furtivium-sculk:sculk_tendril"
+              "furtivium-sculk:sculk_roots"
             ]
           }
         ]
@@ -51,23 +39,22 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:sculk_bone_and_tendril_broth"
+        "recipe": "minecraft:sculk_root_gnocchi"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_sculk_bone",
       "has_sculk",
       "has_bowl",
-      "has_sculk_tendril",
+      "has_sculk_roots",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sculk_bone_and_tendril_broth"
+      "minecraft:sculk_root_gnocchi"
     ]
   },
   "sends_telemetry_event": false

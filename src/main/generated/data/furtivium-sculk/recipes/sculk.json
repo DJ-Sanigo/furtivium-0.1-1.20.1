@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "V": {
+      "item": "minecraft:sculk_vein"
+    }
+  },
+  "pattern": [
+    "VV",
+    "VV"
+  ],
+  "result": {
+    "item": "minecraft:sculk"
+  },
+  "show_notification": true
+}

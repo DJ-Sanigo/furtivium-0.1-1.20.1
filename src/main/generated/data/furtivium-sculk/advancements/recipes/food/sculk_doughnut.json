@@ -1,18 +1,6 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bowl": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:bowl"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_sculk": {
       "conditions": {
         "items": [
@@ -25,24 +13,24 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_sculk_bone": {
+    "has_sculk_carnation": {
       "conditions": {
         "items": [
           {
             "items": [
-              "furtivium-sculk:sculk_bone"
+              "furtivium-sculk:sculk_carnation"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_sculk_tendril": {
+    "has_sculk_vein": {
       "conditions": {
         "items": [
           {
             "items": [
-              "furtivium-sculk:sculk_tendril"
+              "minecraft:sculk_vein"
             ]
           }
         ]
@@ -51,23 +39,22 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:sculk_bone_and_tendril_broth"
+        "recipe": "minecraft:sculk_doughnut"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_sculk_bone",
       "has_sculk",
-      "has_bowl",
-      "has_sculk_tendril",
+      "has_sculk_vein",
+      "has_sculk_carnation",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sculk_bone_and_tendril_broth"
+      "minecraft:sculk_doughnut"
     ]
   },
   "sends_telemetry_event": false

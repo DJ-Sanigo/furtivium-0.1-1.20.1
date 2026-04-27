@@ -25,18 +25,6 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_sculk_bone": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "furtivium-sculk:sculk_bone"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_sculk_tendril": {
       "conditions": {
         "items": [
@@ -51,14 +39,13 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:sculk_bone_and_tendril_broth"
+        "recipe": "minecraft:sculk_tendril_spaghetti"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_sculk_bone",
       "has_sculk",
       "has_bowl",
       "has_sculk_tendril",
@@ -67,7 +54,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sculk_bone_and_tendril_broth"
+      "minecraft:sculk_tendril_spaghetti"
     ]
   },
   "sends_telemetry_event": false

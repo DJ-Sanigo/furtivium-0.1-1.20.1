@@ -21,6 +21,14 @@ public class ModItems {
             new StewItem(new FabricItemSettings().food(ModFoodComponents.SCULK_BONE_AND_TENDRIL_BROTH).maxCount(1)));
     public static final Item SCULK_LAMINGTON = registerItem("sculk_lamington",
             new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_LAMINGTON)));
+    public static final Item SCULK_ROOT_GNOCCHI = registerItem("sculk_root_gnocchi",
+            new StewItem(new FabricItemSettings().food(ModFoodComponents.SCULK_ROOT_GNOCCHI).maxCount(1)));
+    public static final Item SCULK_DOUGHNUT = registerItem("sculk_doughnut",
+            new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_DOUGHNUT)));
+    public static final Item SCULK_TENDRIL_SPAGHETTI = registerItem("sculk_tendril_spaghetti",
+            new StewItem(new FabricItemSettings().food(ModFoodComponents.SCULK_TENDRIL_SPAGHETTI).maxCount(1)));
+    public static final Item SCULKZZARELLA = registerItem("sculkzzarella",
+            new Item(new FabricItemSettings().food(ModFoodComponents.SCULKZZARELLA)));
 
     public static final Item FURTIVIUM_INGOT = registerItem("furtivium_ingot", new Item(new FabricItemSettings()));
     public static final Item SCULK_BONE = registerItem("sculk_bone", new Item(new FabricItemSettings()));

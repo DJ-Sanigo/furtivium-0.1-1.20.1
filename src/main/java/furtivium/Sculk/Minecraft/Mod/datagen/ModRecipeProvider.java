@@ -140,18 +140,43 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.SCULK_SENSOR)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SCULK, 1)
+                .pattern("VV")
+                .pattern("VV")
+                .input('V', Items.SCULK_VEIN)
+                .criterion(hasItem(Items.SCULK_VEIN), conditionsFromItem(Items.SCULK_VEIN))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.SCULK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SCULK_VEIN, 8)
+                .pattern("S ")
+                .pattern("S ")
+                .input('S', Items.SCULK)
+                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.SCULK_VEIN)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_BONE_AND_TENDRIL_BROTH, 1)
-                .pattern("RB")
+                .pattern("TB")
                 .pattern("SP")
                 .input('P', Items.BOWL)
                 .input('S', Items.SCULK)
                 .input('B', ModItems.SCULK_BONE)
-                .input('R', ModBlocks.SCULK_ROOTS)
+                .input('T', ModItems.SCULK_TENDRIL)
                 .criterion(hasItem(ModItems.SCULK_BONE), conditionsFromItem(ModItems.SCULK_BONE))
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(Items.BOWL), conditionsFromItem(Items.BOWL))
-                .criterion(hasItem(ModBlocks.SCULK_ROOTS), conditionsFromItem(ModBlocks.SCULK_ROOTS))
+                .criterion(hasItem(ModItems.SCULK_TENDRIL), conditionsFromItem(ModItems.SCULK_TENDRIL))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_BONE_AND_TENDRIL_BROTH)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_ROOT_GNOCCHI, 1)
+                .pattern("SR")
+                .pattern(" P")
+                .input('P', Items.BOWL)
+                .input('S', Items.SCULK)
+                .input('R', ModBlocks.SCULK_ROOTS)
+                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
+                .criterion(hasItem(Items.BOWL), conditionsFromItem(Items.BOWL))
+                .criterion(hasItem(ModBlocks.SCULK_ROOTS), conditionsFromItem(ModBlocks.SCULK_ROOTS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_ROOT_GNOCCHI)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_LAMINGTON, 4)
                 .pattern("SS")
@@ -161,6 +186,46 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(ModBlocks.SCULK_ORCHID), conditionsFromItem(ModBlocks.SCULK_ORCHID))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_LAMINGTON)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_DOUGHNUT, 8)
+                .pattern("VSV")
+                .pattern("SCS")
+                .pattern("VSV")
+                .input('S', Items.SCULK)
+                .input('V', Items.SCULK_VEIN)
+                .input('C', ModBlocks.SCULK_CARNATION)
+                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
+                .criterion(hasItem(Items.SCULK_VEIN), conditionsFromItem(Items.SCULK_VEIN))
+                .criterion(hasItem(ModBlocks.SCULK_CARNATION), conditionsFromItem(ModBlocks.SCULK_CARNATION))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_DOUGHNUT)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_TENDRIL_SPAGHETTI, 1)
+                .pattern("BC ")
+                .pattern("TST")
+                .pattern(" P ")
+                .input('P', Items.BOWL)
+                .input('S', Items.SCULK)
+                .input('T', ModItems.SCULK_TENDRIL)
+                .input('B', ModItems.SCULK_BONE)
+                .input('C', ModItems.SCULKZZARELLA)
+                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
+                .criterion(hasItem(Items.BOWL), conditionsFromItem(Items.BOWL))
+                .criterion(hasItem(ModItems.SCULK_TENDRIL), conditionsFromItem(ModItems.SCULK_TENDRIL))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_TENDRIL_SPAGHETTI)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULKZZARELLA, 16)
+                .pattern("MMM")
+                .pattern("VSV")
+                .pattern(" B ")
+                .input('S', Items.SCULK)
+                .input('V', Items.SCULK_VEIN)
+                .input('B', Items.MILK_BUCKET)
+                .input('M', ModBlocks.SCULK_MUSHROOM)
+                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(Items.MILK_BUCKET))
+                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
+                .criterion(hasItem(Items.SCULK_VEIN), conditionsFromItem(Items.SCULK_VEIN))
+                .criterion(hasItem(ModBlocks.SCULK_MUSHROOM), conditionsFromItem(ModBlocks.SCULK_MUSHROOM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULKZZARELLA)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SCULK_RING_TOKEN, 1)
                 .pattern(" S ")

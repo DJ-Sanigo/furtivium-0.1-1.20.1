@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:milk_bucket"
+    },
+    "M": {
+      "item": "furtivium-sculk:sculk_mushroom"
+    },
+    "S": {
+      "item": "minecraft:sculk"
+    },
+    "V": {
+      "item": "minecraft:sculk_vein"
+    }
+  },
+  "pattern": [
+    "MMM",
+    "VSV",
+    " B "
+  ],
+  "result": {
+    "count": 16,
+    "item": "furtivium-sculk:sculkzzarella"
+  },
+  "show_notification": true
+}
