@@ -90,35 +90,38 @@ public class TheHomoBlasterItem extends ToolItem {
             );
 
 
-            user.getItemCooldownManager().set(this, 200); // Cooldown - 1 = 1 Tick/ 20 = 1 Second
+            user.getItemCooldownManager().set(this, 200);
         }
 
         return TypedActionResult.success(stack, world.isClient());
     }
+
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        super.postHit(stack, target, attacker);
-
-        Vec3d velocity = target.getVelocity();
-        target.setVelocity(velocity.x, 1, velocity.z); // Airblast Punch - 0.5 = 1 Block
-        target.velocityModified = true;
+        if (attacker instanceof PlayerEntity player && !player.getWorld().isClient) {
 
 
+            target.addStatusEffect(new StatusEffectInstance(
+                    SLOW_FALLING,
+                    20,
+                    0
+            ));
+
+            target.addStatusEffect(new StatusEffectInstance(
+                    StatusEffects.BLINDNESS,
+                    60,
+                    0
+            ));
 
 
+            Vec3d velocity = target.getVelocity();
+            target.setVelocity(velocity.x, 1.0D, velocity.z);
+            target.velocityModified = true;
 
-        //if(attacker.tryAttack(target)){
-        //    if(target.isLiving()){
-        //            target.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION,100, 1)); //Under Constuction
+            player.getItemCooldownManager().remove(this);
+        }
 
-        //    }
-        //    return true;
-        //} else {
-        //    return false;
-        //}
-
-        return false;
+        return super.postHit(stack, target, attacker);
     }
-
 }
 
