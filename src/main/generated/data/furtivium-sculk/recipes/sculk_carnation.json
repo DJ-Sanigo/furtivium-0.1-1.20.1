@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:azure_bluet"
+    },
+    "S": {
+      "item": "minecraft:sculk"
+    }
+  },
+  "pattern": [
+    "  ",
+    "SO"
+  ],
+  "result": {
+    "item": "furtivium-sculk:sculk_carnation"
+  },
+  "show_notification": true
+}

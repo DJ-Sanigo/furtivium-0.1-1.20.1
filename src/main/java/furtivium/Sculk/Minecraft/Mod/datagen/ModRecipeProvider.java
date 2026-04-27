@@ -106,7 +106,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.EXPERIENCE_BOTTLE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SCULK_CATALYST, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.SCULK_CATALYST, 1)
                 .pattern("SSS")
                 .pattern("BWB")
                 .pattern("BSB")
@@ -118,7 +118,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.SCULK_CATALYST)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SCULK_SHRIEKER, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.SCULK_SHRIEKER, 1)
                 .pattern("B B")
                 .pattern("BWB")
                 .pattern("SSS")
@@ -130,7 +130,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.SCULK_SHRIEKER)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SCULK_SENSOR, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.SCULK_SENSOR, 1)
                 .pattern("   ")
                 .pattern("T T")
                 .pattern("SSS")
@@ -140,19 +140,55 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.SCULK_SENSOR)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SCULK, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.SCULK, 1)
                 .pattern("VV")
                 .pattern("VV")
                 .input('V', Items.SCULK_VEIN)
                 .criterion(hasItem(Items.SCULK_VEIN), conditionsFromItem(Items.SCULK_VEIN))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.SCULK)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SCULK_VEIN, 8)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.SCULK_VEIN, 8)
                 .pattern("S ")
                 .pattern("S ")
                 .input('S', Items.SCULK)
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.SCULK_VEIN)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SCULK_MUSHROOM, 1)
+                .pattern("  ")
+                .pattern("SM")
+                .input('S', Items.SCULK)
+                .input('M', Items.RED_MUSHROOM)
+                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
+                .criterion(hasItem(Items.RED_MUSHROOM), conditionsFromItem(Items.RED_MUSHROOM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SCULK_MUSHROOM)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SCULK_ORCHID, 1)
+                .pattern("  ")
+                .pattern("SO")
+                .input('S', Items.SCULK)
+                .input('O', Items.BLUE_ORCHID)
+                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
+                .criterion(hasItem(Items.BLUE_ORCHID), conditionsFromItem(Items.BLUE_ORCHID))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SCULK_ORCHID)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SCULK_CARNATION, 1)
+                .pattern("  ")
+                .pattern("SO")
+                .input('S', Items.SCULK)
+                .input('O', Items.AZURE_BLUET)
+                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
+                .criterion(hasItem(Items.AZURE_BLUET), conditionsFromItem(Items.AZURE_BLUET))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SCULK_CARNATION)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SCULK_ROOTS, 1)
+                .pattern("  ")
+                .pattern("SC")
+                .input('S', Items.SCULK)
+                .input('C', Items.CRIMSON_ROOTS)
+                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
+                .criterion(hasItem(Items.CRIMSON_ROOTS), conditionsFromItem(Items.CRIMSON_ROOTS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SCULK_ROOTS)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_BONE_AND_TENDRIL_BROTH, 1)
                 .pattern("TB")

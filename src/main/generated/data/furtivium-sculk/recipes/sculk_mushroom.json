@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "minecraft:red_mushroom"
+    },
+    "S": {
+      "item": "minecraft:sculk"
+    }
+  },
+  "pattern": [
+    "  ",
+    "SM"
+  ],
+  "result": {
+    "item": "furtivium-sculk:sculk_mushroom"
+  },
+  "show_notification": true
+}
