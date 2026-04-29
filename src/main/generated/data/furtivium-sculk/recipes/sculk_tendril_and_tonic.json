@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:glass_bottle"
+    },
+    "S": {
+      "item": "minecraft:sculk"
+    },
+    "T": {
+      "item": "furtivium-sculk:sculk_tendril"
+    },
+    "V": {
+      "item": "furtivium-sculk:vial_of_active_sculk"
+    }
+  },
+  "pattern": [
+    " S ",
+    "TSV",
+    " G "
+  ],
+  "result": {
+    "item": "furtivium-sculk:sculk_tendril_and_tonic"
+  },
+  "show_notification": true
+}

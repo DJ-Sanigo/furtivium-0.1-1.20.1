@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "furtivium-sculk:sculk_bone"
+    },
+    "G": {
+      "item": "minecraft:glass_bottle"
+    },
+    "S": {
+      "item": "minecraft:sculk"
+    },
+    "V": {
+      "item": "furtivium-sculk:vial_of_active_sculk"
+    }
+  },
+  "pattern": [
+    "   ",
+    "BSV",
+    " G "
+  ],
+  "result": {
+    "item": "furtivium-sculk:sculk_margarita"
+  },
+  "show_notification": true
+}
