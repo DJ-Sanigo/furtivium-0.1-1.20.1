@@ -10,6 +10,7 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
 import net.minecraft.item.Items;
+import net.minecraft.potion.Potions;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.tag.ItemTags;
@@ -189,6 +190,34 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(Items.CRIMSON_ROOTS), conditionsFromItem(Items.CRIMSON_ROOTS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SCULK_ROOTS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_TENDRIL_AND_TONIC, 1)
+                .pattern(" S ")
+                .pattern("TSV")
+                .pattern(" G ")
+                .input('G', Items.GLASS_BOTTLE)
+                .input('S', Items.SCULK)
+                .input('V', ModItems.VIAL_OF_ACTIVE_SCULK)
+                .input('T', ModItems.SCULK_TENDRIL)
+                .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(Items.GLASS_BOTTLE))
+                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
+                .criterion(hasItem(ModItems.VIAL_OF_ACTIVE_SCULK), conditionsFromItem(ModItems.VIAL_OF_ACTIVE_SCULK))
+                .criterion(hasItem(ModItems.SCULK_TENDRIL), conditionsFromItem(ModItems.SCULK_TENDRIL))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_TENDRIL_AND_TONIC)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_MARGARITA, 1)
+                .pattern("   ")
+                .pattern("BSV")
+                .pattern(" G ")
+                .input('G', Items.GLASS_BOTTLE)
+                .input('S', Items.SCULK)
+                .input('V', ModItems.VIAL_OF_ACTIVE_SCULK)
+                .input('B', ModItems.SCULK_BONE)
+                .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(Items.GLASS_BOTTLE))
+                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
+                .criterion(hasItem(ModItems.VIAL_OF_ACTIVE_SCULK), conditionsFromItem(ModItems.VIAL_OF_ACTIVE_SCULK))
+                .criterion(hasItem(ModItems.SCULK_TENDRIL), conditionsFromItem(ModItems.SCULK_TENDRIL))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_MARGARITA)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_BONE_AND_TENDRIL_BROTH, 1)
                 .pattern("TB")

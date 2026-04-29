@@ -2,6 +2,7 @@ package furtivium.Sculk.Minecraft.Mod.Item;
 
 import furtivium.Sculk.Minecraft.Mod.Furtivium;
 import furtivium.Sculk.Minecraft.Mod.Item.custom.TheHomoBlasterItem;
+import furtivium.Sculk.Minecraft.Mod.Item.custom.VialOfSculkItem;
 import furtivium.Sculk.Minecraft.Mod.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -13,10 +14,14 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item VIAL_OF_DORMANT_SCULK = registerItem("vial_of_dormant_sculk",
-                new Item(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_DORMANT_SCULK).maxCount(16)));
+                new VialOfSculkItem(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_DORMANT_SCULK).maxCount(16)));
     public static final Item VIAL_OF_ACTIVE_SCULK = registerItem("vial_of_active_sculk",
-                new Item(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_ACTIVE_SCULK).maxCount(16)));
+                new VialOfSculkItem(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_ACTIVE_SCULK).maxCount(16)));
 
+    public static final Item SCULK_MARGARITA = registerItem("sculk_margarita",
+            new VialOfSculkItem(new FabricItemSettings().food(ModFoodComponents.SCULK_MARGARITA).maxCount(16)));
+    public static final Item SCULK_TENDRIL_AND_TONIC = registerItem("sculk_tendril_and_tonic",
+            new VialOfSculkItem(new FabricItemSettings().food(ModFoodComponents.SCULK_TENDRIL_AND_TONIC).maxCount(16)));
     public static final Item SCULK_BONE_AND_TENDRIL_BROTH = registerItem("sculk_bone_and_tendril_broth",
             new StewItem(new FabricItemSettings().food(ModFoodComponents.SCULK_BONE_AND_TENDRIL_BROTH).maxCount(16)));
     public static final Item SCULK_LAMINGTON = registerItem("sculk_lamington",

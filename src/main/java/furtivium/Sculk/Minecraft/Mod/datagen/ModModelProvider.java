@@ -40,6 +40,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SCULK_ROOT_GNOCCHI, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULKZZARELLA, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_TENDRIL_SPAGHETTI, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SCULK_MARGARITA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SCULK_TENDRIL_AND_TONIC, Models.GENERATED);
         itemModelGenerator.register(ModItems.A_WARDENS_LULLABY_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_RING_TOKEN, Models.GENERATED);

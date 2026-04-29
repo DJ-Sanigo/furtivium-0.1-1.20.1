@@ -1,4 +1,4 @@
-// 1.20.1	2026-04-28T15:48:50.2769964	Furtivium/Model Definitions
+// 1.20.1	2026-04-28T23:03:40.3104367	Furtivium/Model Definitions
 c206e37b2a1599e7539769212081675c9ed39d6a assets\furtivium-sculk\blockstates\potted_sculk_mushroom.json
 3f446c829081c6506cf2a32f1299607b549494a2 assets\furtivium-sculk\models\block\potted_sculk_mushroom.json
 8b507f89c143a872cd40ff879d645e4edaa6f410 assets\furtivium-sculk\models\item\sculk_lamington.json
@@ -22,6 +22,7 @@ c9f263ca0c50d4a5258e8e4f055f7bac3fd3c189 assets\furtivium-sculk\models\block\scu
 80849973cb00ea96267d875a8b2493a0e9e35b8b assets\furtivium-sculk\models\item\sculk_doughnut.json
 3dee2e244f12ad658685b64ec96ec3dee3203bad assets\furtivium-sculk\models\item\vial_of_dormant_sculk.json
 3d172a97ead85449a79052e40fe034470aef701b assets\furtivium-sculk\blockstates\sculk_carnation.json
+1fbbc339e88f58e8a7b77f590b705b6734bdd612 assets\furtivium-sculk\models\item\sculk_margarita.json
 8e9409384eaa5cbaef0d53893413ddc1195b0e9b assets\furtivium-sculk\blockstates\furtivium_block.json
 06afc3295593f9a34dbf84cdf5f6f4ec5a06b034 assets\furtivium-sculk\models\block\potted_sculk_roots.json
 41f3077befa5bc90e906b7567fdaabe46e0b728b assets\furtivium-sculk\models\item\sculk_ring_token.json
@@ -30,6 +31,7 @@ c9f263ca0c50d4a5258e8e4f055f7bac3fd3c189 assets\furtivium-sculk\models\block\scu
 89da68e451af7d287ce9efeaeb14955699cd1cb1 assets\furtivium-sculk\models\block\sculk_bone_block.json
 19b682dc2b6e36a8fefbc2f39eb4074f475fa375 assets\furtivium-sculk\models\item\copper_ring_nuke.json
 3978aaa6b00dae9279f0b08435b2c322d01e7473 assets\furtivium-sculk\models\item\warden_heart.json
+3b8350849bbcb01aa9df843032ce9a3985cedbd5 assets\furtivium-sculk\models\item\sculk_tendril_and_tonic.json
 bce08364263bca97c5bc01c05b6f27562ba82a56 assets\furtivium-sculk\models\item\furtivium_block.json
 a4f5c6fd83a6653582f2c5db5bf98c6eab9fb946 assets\furtivium-sculk\models\block\potted_sculk_orchid.json
 c15fbc8282e397e5ed8b6b611b820e01726c5d0d assets\furtivium-sculk\models\item\sculk_mushroom.json

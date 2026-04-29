@@ -6,7 +6,8 @@ import net.minecraft.item.FoodComponent;
 
 public class ModFoodComponents {
     public static final FoodComponent VIAL_OF_DORMANT_SCULK =
-            new FoodComponent.Builder().alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200, 4), 1f)
+            new FoodComponent.Builder().alwaysEdible()
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200, 4), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 200, 0), 1f).build();
 
     public static final FoodComponent VIAL_OF_ACTIVE_SCULK =
@@ -16,8 +17,30 @@ public class ModFoodComponents {
                     .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 1200, 4), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.WITHER, 1200, 4), 1f ).build();
 
+    public static final FoodComponent SCULK_MARGARITA =
+            new FoodComponent.Builder().alwaysEdible()
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200, 9), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 200, 9), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 100, 14), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 100, 9), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 300, 4), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 9), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 500, 1), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 3600, 4), 1f ).build();
+
+    public static final FoodComponent SCULK_TENDRIL_AND_TONIC =
+            new FoodComponent.Builder().alwaysEdible()
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200, 9), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 200, 9), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.WITHER, 50, 19), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 100, 4), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 100, 4), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 300, 14), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 500, 1), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 3600, 4), 1f ).build();
+
     public static final FoodComponent SCULK_BONE_AND_TENDRIL_BROTH =
-            new FoodComponent.Builder().hunger(14).saturationModifier(1.5F)
+            new FoodComponent.Builder().hunger(10).saturationModifier(1.5F).alwaysEdible()
                     .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 100, 1), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 100, 4), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 600, 4), 1f)
@@ -32,7 +55,7 @@ public class ModFoodComponents {
                     .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 100, 4), 1f ).build();
 
     public static final FoodComponent SCULK_ROOT_GNOCCHI =
-            new FoodComponent.Builder().hunger(10).saturationModifier(1.5F)
+            new FoodComponent.Builder().hunger(14).saturationModifier(1.5F).alwaysEdible()
                     .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 100, 1), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 100, 4), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 100, 4), 1f)
@@ -45,7 +68,7 @@ public class ModFoodComponents {
                     .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 100, 4), 1f ).build();
 
     public static final FoodComponent SCULK_TENDRIL_SPAGHETTI =
-            new FoodComponent.Builder().hunger(15).saturationModifier(1.75F)
+            new FoodComponent.Builder().hunger(15).saturationModifier(1.75F).alwaysEdible()
                     .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 100, 0), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 3600, 0), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 1200, 9), 1f)

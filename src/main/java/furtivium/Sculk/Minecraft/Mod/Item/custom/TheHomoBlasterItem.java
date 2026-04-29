@@ -45,7 +45,7 @@ public class TheHomoBlasterItem extends ToolItem {
                 serverWorld.spawnParticles(
                         ParticleTypes.SONIC_BOOM,
                         pos.x, pos.y, pos.z,
-                        2, 0, 0, 0, 0
+                        1, 0, 0, 0, 0
                 );
             }
 
@@ -86,11 +86,11 @@ public class TheHomoBlasterItem extends ToolItem {
                     SoundEvents.ENTITY_WARDEN_SONIC_BOOM,
                     SoundCategory.PLAYERS,
                     2.0F,
-                    1.0F
+                    5.0F
             );
 
 
-            user.getItemCooldownManager().set(this, 200);
+            user.getItemCooldownManager().set(this, 300);
         }
 
         return TypedActionResult.success(stack, world.isClient());
@@ -100,19 +100,17 @@ public class TheHomoBlasterItem extends ToolItem {
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (attacker instanceof PlayerEntity player && !player.getWorld().isClient) {
 
-
             target.addStatusEffect(new StatusEffectInstance(
                     SLOW_FALLING,
-                    20,
+                    30,
                     0
             ));
 
             target.addStatusEffect(new StatusEffectInstance(
-                    StatusEffects.BLINDNESS,
-                    60,
+                    StatusEffects.DARKNESS,
+                    100,
                     0
             ));
-
 
             Vec3d velocity = target.getVelocity();
             target.setVelocity(velocity.x, 1.0D, velocity.z);

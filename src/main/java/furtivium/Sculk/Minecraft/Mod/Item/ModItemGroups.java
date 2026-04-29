@@ -34,6 +34,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SCULK_BONE_AND_TENDRIL_BROTH);
                         entries.add(ModItems.SCULK_ROOT_GNOCCHI);
                         entries.add(ModItems.SCULK_TENDRIL_SPAGHETTI);
+                        entries.add(ModItems.SCULK_TENDRIL_AND_TONIC);
+                        entries.add(ModItems.SCULK_MARGARITA);
 
                         entries.add(ModItems.A_WARDENS_LULLABY_MUSIC_DISC);
                         entries.add(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC);
