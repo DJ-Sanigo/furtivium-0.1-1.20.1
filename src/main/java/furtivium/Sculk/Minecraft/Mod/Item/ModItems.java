@@ -2,6 +2,7 @@ package furtivium.Sculk.Minecraft.Mod.Item;
 
 import furtivium.Sculk.Minecraft.Mod.Furtivium;
 import furtivium.Sculk.Minecraft.Mod.Item.custom.TheHomoBlasterItem;
+import furtivium.Sculk.Minecraft.Mod.Item.custom.TrannySwordItem;
 import furtivium.Sculk.Minecraft.Mod.Item.custom.VialOfSculkItem;
 import furtivium.Sculk.Minecraft.Mod.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -55,9 +56,13 @@ public class ModItems {
     public static final Item FURTIVIUM_GLAVE = registerItem("furtivium_glave",
             new SwordItem(ModToolMaterial.FURTIVIUM, 4, -3.2f, new FabricItemSettings()));
 
-    //everyone say that noelle is the best ever
+    //everyone say that Noelle you are the best ever
     public static final Item HOMO_BLASTER = registerItem("homo_blaster",
             new TheHomoBlasterItem(ModToolMaterial.FURTIVIUM, 4, 0.05f, new FabricItemSettings()));
+
+    public static final Item TRANNY_SWORD = registerItem("tranny_sword",
+            new TrannySwordItem(ModToolMaterial.FURTIVIUM, 4, -3.2f, new FabricItemSettings()));
+
 
 
 
