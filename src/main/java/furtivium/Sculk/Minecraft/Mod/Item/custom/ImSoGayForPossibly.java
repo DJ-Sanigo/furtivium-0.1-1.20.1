@@ -9,8 +9,8 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
-public class ImSoGayForHer extends SwordItem {
-    public ImSoGayForHer(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+public class ImSoGayForPossibly extends SwordItem {
+    public ImSoGayForPossibly(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 
