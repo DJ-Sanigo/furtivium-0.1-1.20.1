@@ -102,13 +102,13 @@ public class TheHomoBlasterItem extends ToolItem {
 
             target.addStatusEffect(new StatusEffectInstance(
                     SLOW_FALLING,
-                    30,
+                    20,
                     0
             ));
 
             target.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.DARKNESS,
-                    100,
+                    60,
                     0
             ));
 

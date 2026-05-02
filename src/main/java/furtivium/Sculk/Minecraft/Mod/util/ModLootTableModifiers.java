@@ -44,6 +44,17 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.75f))
+                        .with(ItemEntry.builder(ModItems.SCULK_TENDRIL))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 5.0f)).build());
+
+                builder.pool(poolBuilder.build());
+
+            }
+
+            if(ANCIENT_CITY_ID.equals(identifier)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.2f))
                         .with(ItemEntry.builder(ModItems.VIAL_OF_DORMANT_SCULK))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
@@ -88,7 +99,7 @@ public class ModLootTableModifiers {
             if(WARDEN_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .conditionally(RandomChanceLootCondition.builder(0.75f))
                         .with(ItemEntry.builder(ModItems.SCULK_BONE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(3.0f, 10.0f)).build());
 
@@ -99,7 +110,7 @@ public class ModLootTableModifiers {
             if(WARDEN_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
                         .with(ItemEntry.builder(ModItems.WARDEN_HEART))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -110,7 +121,7 @@ public class ModLootTableModifiers {
             if(WARDEN_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .conditionally(RandomChanceLootCondition.builder(0.75f))
                         .with(ItemEntry.builder(ModItems.SCULK_TENDRIL))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
 

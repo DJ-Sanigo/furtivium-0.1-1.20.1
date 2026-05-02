@@ -1,9 +1,17 @@
 package furtivium.Sculk.Minecraft.Mod.Item.custom;
 
+import com.mojang.authlib.yggdrasil.response.User;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.particle.ParticleTypes;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.Vec3d;
@@ -29,8 +37,8 @@ public class ImSoGayForPossibly extends SwordItem {
 
         Vec3d horizontalLook = new Vec3d(look.x, 0, look.z).normalize();
 
-        double dashStrength = 1.6;
-        double upwardBoost = 0.12;
+        double dashStrength = 3;
+        double upwardBoost = 0.5;
 
         Vec3d currentVel = user.getVelocity();
 
@@ -42,10 +50,44 @@ public class ImSoGayForPossibly extends SwordItem {
         user.setVelocity(newVel);
         user.velocityModified = true;
 
+        world.playSound(
+                null,
+                user.getX(), user.getY(), user.getZ(),
+                SoundEvents.ENTITY_WARDEN_SONIC_BOOM,
+                SoundCategory.PLAYERS,
+                3.0F,
+                10.0F
+        );
+
+        //ServerWorld serverWorld = (ServerWorld) world;//Under Construction
+        //for (int i = 0; i < 40; i++) {
+            //Vec3d pos =
+        //}
+
+        user.getItemCooldownManager().set(this, 60);
+
         return TypedActionResult.success(stack);
 
         }
+
+    @Override
+    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        if (attacker instanceof PlayerEntity player && !player.getWorld().isClient) {
+
+
+            player.addStatusEffect(new StatusEffectInstance(
+                    StatusEffects.SPEED,
+                    100,
+                    3
+            ));
+
+        }
+
+        return super.postHit(stack, target, attacker);
+
     }
+
+}
 
     //we all say thank you counter strike i mean noelle
 

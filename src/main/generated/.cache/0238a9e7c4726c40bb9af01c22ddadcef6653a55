@@ -1,4 +1,4 @@
-// 1.20.1	2026-04-28T23:03:40.3104367	Furtivium/Model Definitions
+// 1.20.1	2026-04-30T15:20:03.4470072	Furtivium/Model Definitions
 c206e37b2a1599e7539769212081675c9ed39d6a assets\furtivium-sculk\blockstates\potted_sculk_mushroom.json
 3f446c829081c6506cf2a32f1299607b549494a2 assets\furtivium-sculk\models\block\potted_sculk_mushroom.json
 8b507f89c143a872cd40ff879d645e4edaa6f410 assets\furtivium-sculk\models\item\sculk_lamington.json
@@ -36,7 +36,7 @@ bce08364263bca97c5bc01c05b6f27562ba82a56 assets\furtivium-sculk\models\item\furt
 a4f5c6fd83a6653582f2c5db5bf98c6eab9fb946 assets\furtivium-sculk\models\block\potted_sculk_orchid.json
 c15fbc8282e397e5ed8b6b611b820e01726c5d0d assets\furtivium-sculk\models\item\sculk_mushroom.json
 9cf6283f0e93f976fa1b010de7b4645881c7f821 assets\furtivium-sculk\models\item\vial_of_active_sculk.json
-54576373368d777c4ca5b6514a63c33d81902d06 assets\furtivium-sculk\blockstates\sculk_bone_block.json
+05e7ce331195b5bc13cd0b8a78eee5054c176c97 assets\furtivium-sculk\blockstates\sculk_bone_block.json
 bf44568b84ecab97124737544749129fcc509063 assets\furtivium-sculk\blockstates\sculk_mushroom.json
 3a5f9e1ae5e3e4474c7b018548ddd4caa9d1a6c6 assets\furtivium-sculk\models\item\sculk_root_gnocchi.json
 34b8fab879587ad45566ac672bbf5e02c3dcf2e9 assets\furtivium-sculk\models\item\sculk_bone_and_tendril_broth.json
