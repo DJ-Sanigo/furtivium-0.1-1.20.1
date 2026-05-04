@@ -21,22 +21,21 @@ public class TrannySwordItem extends SwordItem {
 
             player.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.ABSORPTION,
-                    30,
+                    100,
+                    1
+            ));
+
+            player.addStatusEffect(new StatusEffectInstance(
+                    StatusEffects.RESISTANCE,
+                    100,
                     0
             ));
 
             player.addStatusEffect(new StatusEffectInstance(
-                    StatusEffects.SPEED,
-                    30,
-                    0
+                    StatusEffects.SLOWNESS,
+                    50,
+                    1
             ));
-
-            player.addStatusEffect(new StatusEffectInstance(
-                    StatusEffects.STRENGTH,
-                    30,
-                    0
-            ));
-
 
         }
 

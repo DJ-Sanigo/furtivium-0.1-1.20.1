@@ -121,13 +121,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.SCULK_SHRIEKER, 1)
                 .pattern("B B")
-                .pattern("BWB")
+                .pattern("BSB")
                 .pattern("SSS")
                 .input('B', ModItems.SCULK_BONE)
-                .input('W', ModItems.WARDEN_HEART)
                 .input('S', Items.SCULK)
                 .criterion(hasItem(ModItems.SCULK_BONE), conditionsFromItem(ModItems.SCULK_BONE))
-                .criterion(hasItem(ModItems.WARDEN_HEART), conditionsFromItem(ModItems.WARDEN_HEART))
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.SCULK_SHRIEKER)));
 

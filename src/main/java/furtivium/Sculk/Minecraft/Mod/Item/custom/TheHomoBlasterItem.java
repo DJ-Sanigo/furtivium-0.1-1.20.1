@@ -66,13 +66,13 @@ public class TheHomoBlasterItem extends ToolItem {
                     if (target.getBoundingBox().expand(0.5).contains(closestPoint)) { // Range - 0.5 = 1 Block
                         target.damage(
                                 world.getDamageSources().sonicBoom(user),
-                                10.0F // Damage - 2 = 1 Heart/ 1 = Half A Heart
+                                5.0F // Damage - 2 = 1 Heart/ 1 = Half A Heart
                         );
 
                         target.addVelocity(
-                                look.x * 3,
+                                look.x * 2.0,
                                 0.5,
-                                look.z * 2.5 //Knockback - 0.5 = 1 Block
+                                look.z * 2.0 //Knockback - 0.5 = 1 Block
                         );
 
                         target.velocityModified = true;
