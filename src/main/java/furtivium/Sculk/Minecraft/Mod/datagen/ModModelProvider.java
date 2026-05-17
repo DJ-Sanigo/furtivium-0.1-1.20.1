@@ -16,7 +16,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FURTIVIUM_BLOCK);
+        blockStateModelGenerator.registerSingleton(ModBlocks.FURTIVIUM_BLOCK, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PURIFIED_FURTIVIUM_BLOCK);
 
         blockStateModelGenerator.registerAxisRotated(ModBlocks.SCULK_BONE_BLOCK, TexturedModel.CUBE_COLUMN);
 
@@ -29,7 +30,14 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+
+        itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_GLADIUS, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_GLAVE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_SPADONE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PURIFIED_HOMO_BLASTER, Models.HANDHELD);
+
         itemModelGenerator.register(ModItems.FURTIVIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_BONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.WARDEN_HEART, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_TENDRIL, Models.GENERATED);

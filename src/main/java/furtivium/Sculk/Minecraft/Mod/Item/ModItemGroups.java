@@ -18,6 +18,8 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.FURTIVIUM_INGOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.VIAL_OF_DORMANT_SCULK);
                         entries.add(ModItems.VIAL_OF_ACTIVE_SCULK);
+                        entries.add(ModItems.PURIFIED_FURTIVIUM_INGOT);
+                        entries.add(ModBlocks.PURIFIED_FURTIVIUM_BLOCK);
                         entries.add(ModItems.FURTIVIUM_INGOT);
                         entries.add(ModBlocks.FURTIVIUM_BLOCK);
                         entries.add(ModItems.SCULK_BONE);

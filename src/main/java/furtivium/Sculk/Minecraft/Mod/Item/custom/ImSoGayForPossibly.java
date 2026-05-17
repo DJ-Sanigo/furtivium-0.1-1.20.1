@@ -26,6 +26,7 @@ public class ImSoGayForPossibly extends SwordItem {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack stack = user.getStackInHand(hand);
 
+
         if (world.isClient) {
          return TypedActionResult.pass(stack);
         }
@@ -37,7 +38,7 @@ public class ImSoGayForPossibly extends SwordItem {
 
         Vec3d horizontalLook = new Vec3d(look.x, 0, look.z).normalize();
 
-        double dashStrength = 2;
+        double dashStrength = 3;
         double upwardBoost = 0.5;
 
         Vec3d currentVel = user.getVelocity();
@@ -59,14 +60,23 @@ public class ImSoGayForPossibly extends SwordItem {
                 10.0F
         );
 
+        user.addStatusEffect(new StatusEffectInstance(
+                StatusEffects.SLOWNESS,
+                50,
+                9
+        ));
+
+
         //ServerWorld serverWorld = (ServerWorld) world;//Under Construction
         //for (int i = 0; i < 40; i++) {
             //Vec3d pos =
         //}
 
-        user.getItemCooldownManager().set(this, 100);
+        user.getItemCooldownManager().set(this, 200);
 
         return TypedActionResult.success(stack);
+
+
 
         }
 
@@ -86,8 +96,6 @@ public class ImSoGayForPossibly extends SwordItem {
                     50,
                     0
             ));
-
-            player.getItemCooldownManager().remove(this);
 
         }
 

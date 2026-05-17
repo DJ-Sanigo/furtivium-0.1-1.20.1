@@ -16,6 +16,8 @@ public class FurtiviumGlaiveItem extends SwordItem {
         super(modToolMaterial, i, v, fabricItemSettings);
     }
 
+
+
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (attacker instanceof PlayerEntity player && !player.getWorld().isClient) {

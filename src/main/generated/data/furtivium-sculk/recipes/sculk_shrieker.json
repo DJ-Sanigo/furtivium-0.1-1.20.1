@@ -7,14 +7,11 @@
     },
     "S": {
       "item": "minecraft:sculk"
-    },
-    "W": {
-      "item": "furtivium-sculk:warden_heart"
     }
   },
   "pattern": [
     "B B",
-    "BWB",
+    "BSB",
     "SSS"
   ],
   "result": {

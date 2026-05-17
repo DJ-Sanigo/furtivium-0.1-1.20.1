@@ -20,11 +20,11 @@ public class ModFoodComponents {
     public static final FoodComponent SCULK_MARGARITA =
             new FoodComponent.Builder().alwaysEdible()
                     .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200, 9), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 200, 9), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 20, 1), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 200, 9), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 100, 14), 1f)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 100, 9), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 300, 4), 1f)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 9), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 500, 1), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 3600, 4), 1f ).build();
 

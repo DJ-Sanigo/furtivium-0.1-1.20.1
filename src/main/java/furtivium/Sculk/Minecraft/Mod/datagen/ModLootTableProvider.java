@@ -12,6 +12,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.FURTIVIUM_BLOCK);
+        addDrop(ModBlocks.PURIFIED_FURTIVIUM_BLOCK);
         addDrop(ModBlocks.SCULK_BONE_BLOCK);
 
         addDrop(ModBlocks.SCULK_ROOTS);

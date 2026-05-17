@@ -1,5 +1,8 @@
 package furtivium.Sculk.Minecraft.Mod.Item.custom;
 
-public class Ring {
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+
+public class Ring extends Items {
 
 }

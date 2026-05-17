@@ -22,6 +22,8 @@ public class ModBlocks {
 
     public static final Block FURTIVIUM_BLOCK = registerBlock("furtivium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(ModSounds.FURTIVIUM_BLOCK_SOUNDS)));
+    public static final Block PURIFIED_FURTIVIUM_BLOCK = registerBlock("purified_furtivium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(ModSounds.FURTIVIUM_BLOCK_SOUNDS)));
     public static final Block SCULK_BONE_BLOCK = registerBlock("sculk_bone_block",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK)));
 

@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "furtivium-sculk:block/furtivium_block"
+    "end": "furtivium-sculk:block/furtivium_block_top",
+    "side": "furtivium-sculk:block/furtivium_block_side"
   }
 }

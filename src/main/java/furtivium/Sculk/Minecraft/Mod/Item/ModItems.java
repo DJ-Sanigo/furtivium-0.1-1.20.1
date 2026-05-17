@@ -35,6 +35,7 @@ public class ModItems {
             new Item(new FabricItemSettings().food(ModFoodComponents.SCULKZZARELLA)));
 
     public static final Item FURTIVIUM_INGOT = registerItem("furtivium_ingot", new Item(new FabricItemSettings()));
+    public static final Item PURIFIED_FURTIVIUM_INGOT = registerItem("purified_furtivium_ingot", new Item(new FabricItemSettings()));
     public static final Item SCULK_BONE = registerItem("sculk_bone", new Item(new FabricItemSettings()));
     public static final Item WARDEN_HEART = registerItem("warden_heart", new Item(new FabricItemSettings()));
     public static final Item SCULK_TENDRIL = registerItem("sculk_tendril", new Item(new FabricItemSettings()));
@@ -51,12 +52,24 @@ public class ModItems {
             new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
 
 
+    public static final Item PURIFIED_FURTIVIUM_GLAVE = registerItem("purified_furtivium_glave",
+            new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
+
+
     //everyone say that Noelle you are the best ever
     public static final Item HOMO_BLASTER = registerItem("homo_blaster",
             new TheHomoBlasterItem(ModToolMaterial.FURTIVIUM, 4, 0.05f, new FabricItemSettings()));
     public static final Item FURTIVIUM_GLADIUS = registerItem("furtivium_gladius",
             new ImSoGayForPossibly(ModToolMaterial.FURTIVIUM, 1, -2f, new FabricItemSettings()));
     public static final Item FURTIVIUM_SPADONE = registerItem("furtivium_spadone",
+            new TrannySwordItem(ModToolMaterial.FURTIVIUM, 3, -2.8f, new FabricItemSettings()));
+
+    //everyone say that Noelle you are the best ever
+    public static final Item PURIFIED_HOMO_BLASTER = registerItem("purified_homo_blaster",
+            new TheHomoBlasterItem(ModToolMaterial.FURTIVIUM, 4, 0.05f, new FabricItemSettings()));
+    public static final Item PURIFIED_FURTIVIUM_GLADIUS = registerItem("purified_furtivium_gladius",
+            new ImSoGayForPossibly(ModToolMaterial.FURTIVIUM, 1, -2f, new FabricItemSettings()));
+    public static final Item PURIFIED_FURTIVIUM_SPADONE = registerItem("purified_furtivium_spadone",
             new TrannySwordItem(ModToolMaterial.FURTIVIUM, 3, -2.8f, new FabricItemSettings()));
 
 
