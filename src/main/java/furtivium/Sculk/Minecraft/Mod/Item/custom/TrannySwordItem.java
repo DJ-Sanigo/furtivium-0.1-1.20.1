@@ -34,7 +34,7 @@ public class TrannySwordItem extends SwordItem {
             player.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.SLOWNESS,
                     50,
-                    1
+                    3
             ));
 
         }

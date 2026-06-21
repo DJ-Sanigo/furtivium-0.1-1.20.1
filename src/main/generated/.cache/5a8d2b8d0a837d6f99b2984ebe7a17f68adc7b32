@@ -1,4 +1,4 @@
-// 1.20.1	2026-05-17T18:02:35.3499427	Furtivium/Recipes
+// 1.20.1	2026-06-21T16:27:55.6007029	Furtivium/Recipes
 8a1667fbb0bcc13f32eab333b0455fa6c30a4bde data\furtivium-sculk\advancements\recipes\decorations\sculk_shrieker.json
 a2eda2cdcd0381a5bffb21991f1398132e8037d7 data\furtivium-sculk\recipes\homo_blaster.json
 1c1e828929fbb7ea05e8a4690445f6d47d17a2d0 data\furtivium-sculk\advancements\recipes\misc\sculk_carnation.json
@@ -21,8 +21,8 @@ ccf7c5a13bfadfa87966155e586cdef69ea73a93 data\furtivium-sculk\recipes\sculk_cata
 ebf692a5fa701cddc429c54dfbe6d515fad2c796 data\furtivium-sculk\advancements\recipes\combat\homo_blaster.json
 45fd150b9ad6656eeec7a9fe5be900a99f1b4ecb data\furtivium-sculk\recipes\furtivium_glave_recipe.json
 d087a0b39bd11886b1a5017df6308f191486fe71 data\furtivium-sculk\advancements\recipes\decorations\furtivium_block.json
-34a95195d784a4dca9e8beb0c0a98a56fe2fe53d data\furtivium-sculk\recipes\sculk_shrieker.json
 34618213927ba904c48a837cc29607f62964ddc5 data\furtivium-sculk\advancements\recipes\decorations\sculk.json
+34a95195d784a4dca9e8beb0c0a98a56fe2fe53d data\furtivium-sculk\recipes\sculk_shrieker.json
 ed162ea30b989c156500b85b7e9c2e5d7ea05d56 data\furtivium-sculk\advancements\recipes\decorations\sculk_sensor.json
 49eace2eb214d11db307f4e9e75a1226d08fe9d8 data\furtivium-sculk\advancements\recipes\misc\furtivium_glave_recipe.json
 4d47b097c92a6f36af01807f1f89a1b2a22090aa data\furtivium-sculk\advancements\recipes\brewing\vial_of_active_sculk.json

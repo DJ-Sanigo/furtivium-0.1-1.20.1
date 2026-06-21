@@ -87,13 +87,13 @@ public class ImSoGayForPossibly extends SwordItem {
 
             player.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.SPEED,
-                    100,
-                    1
+                    50,
+                    3
             ));
 
             player.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.WEAKNESS,
-                    50,
+                    100,
                     0
             ));
 
