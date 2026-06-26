@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "V": {
+      "item": "furtivium-sculk:vial_of_active_sculk"
+    }
+  },
+  "pattern": [
+    "   ",
+    " E ",
+    " V "
+  ],
+  "result": {
+    "item": "furtivium-sculk:vial_of_liquid_furtivium"
+  },
+  "show_notification": true
+}

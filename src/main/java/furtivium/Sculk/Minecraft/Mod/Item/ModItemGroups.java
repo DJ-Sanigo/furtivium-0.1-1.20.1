@@ -18,10 +18,15 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.FURTIVIUM_INGOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.VIAL_OF_DORMANT_SCULK);
                         entries.add(ModItems.VIAL_OF_ACTIVE_SCULK);
-                        entries.add(ModItems.PURIFIED_FURTIVIUM_INGOT);
-                        entries.add(ModBlocks.PURIFIED_FURTIVIUM_BLOCK);
+                        entries.add(ModItems.VIAL_OF_LIQUID_FURTIVIUM);
+                        entries.add(ModItems.INCOMPLETE_FURTIVIUM_INGOT);
                         entries.add(ModItems.FURTIVIUM_INGOT);
                         entries.add(ModBlocks.FURTIVIUM_BLOCK);
+                        entries.add(ModItems.PURIFIED_FURTIVIUM_INGOT);
+                        entries.add(ModBlocks.PURIFIED_FURTIVIUM_BLOCK);
+                        entries.add(ModItems.RAW_FURTIVIUM);
+                        entries.add(ModBlocks.FURTIVIUM_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_FURTIVIUM_ORE);
                         entries.add(ModItems.SCULK_BONE);
                         entries.add(ModBlocks.SCULK_BONE_BLOCK);
                         entries.add(ModItems.WARDEN_HEART);
@@ -41,6 +46,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.A_WARDENS_LULLABY_MUSIC_DISC);
                         entries.add(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC);
+                        entries.add(ModItems.IMMOVABLE_OBJECT_MUSIC_DISC);
+                        entries.add(ModItems.THE_ALARM_MUSIC_DISC);
 
                         entries.add(ModItems.FURTIVIUM_SPADONE);
                         entries.add(ModItems.FURTIVIUM_GLADIUS);

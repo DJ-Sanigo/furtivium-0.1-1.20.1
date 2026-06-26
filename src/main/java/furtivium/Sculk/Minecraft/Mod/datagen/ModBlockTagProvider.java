@@ -16,11 +16,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.FURTIVIUM_ORE)
                 .add(ModBlocks.FURTIVIUM_BLOCK)
+                .add(ModBlocks.DEEPSLATE_FURTIVIUM_ORE)
+                .add(ModBlocks.PURIFIED_FURTIVIUM_BLOCK)
                 .add(ModBlocks.SCULK_BONE_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.FURTIVIUM_BLOCK);
+                .add(ModBlocks.FURTIVIUM_ORE)
+                .add(ModBlocks.FURTIVIUM_BLOCK)
+                .add(ModBlocks.DEEPSLATE_FURTIVIUM_ORE)
+                .add(ModBlocks.PURIFIED_FURTIVIUM_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.SCULK_BONE_BLOCK);

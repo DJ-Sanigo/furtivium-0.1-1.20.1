@@ -15,9 +15,12 @@ public class ModSounds {
     public static final SoundEvent FURTIVIUM_BLOCK_HIT = registerSoundEvent("furtivium_block_hit");
     public static final SoundEvent FURTIVIUM_BLOCK_FALL = registerSoundEvent("furtivium_block_fall");
 
+    public static final SoundEvent FURTIVIUM_BOTTLE_USE = registerSoundEvent("furtivium_bottle_use");
 
     public static final SoundEvent A_WARDENS_LULLABY = registerSoundEvent("a_wardens_lullaby");
     public static final SoundEvent A_WARDENS_LULLABY_MUSIC_BOX_VERSION = registerSoundEvent("a_wardens_lullaby_music_box_version");
+    public static final SoundEvent IMMOVABLE_OBJECT = registerSoundEvent("immovable_object");
+    public static final SoundEvent THE_ALARM_FT_KASANE_TETO = registerSoundEvent("the_alarm_ft_kasane_teto");
 
 
     public static final BlockSoundGroup FURTIVIUM_BLOCK_SOUNDS = new BlockSoundGroup(1f, 1f,

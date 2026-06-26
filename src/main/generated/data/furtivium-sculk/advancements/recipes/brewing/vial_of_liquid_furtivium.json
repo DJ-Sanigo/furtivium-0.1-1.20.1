@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_emerald": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:emerald"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:vial_of_liquid_furtivium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_vial_of_active_sculk": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "furtivium-sculk:vial_of_active_sculk"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_emerald",
+      "has_vial_of_active_sculk",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:vial_of_liquid_furtivium"
+    ]
+  },
+  "sends_telemetry_event": false
+}

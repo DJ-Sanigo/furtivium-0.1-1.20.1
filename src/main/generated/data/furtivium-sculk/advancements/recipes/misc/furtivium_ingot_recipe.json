@@ -13,18 +13,30 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_incomplete_furtivium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "furtivium-sculk:incomplete_furtivium_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "furtivium-sculk:furtivium_ingot_recipe"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_vial_of_active_sculk": {
+    "has_vial_of_liquid_furtivium": {
       "conditions": {
         "items": [
           {
             "items": [
-              "furtivium-sculk:vial_of_active_sculk"
+              "furtivium-sculk:vial_of_liquid_furtivium"
             ]
           }
         ]
@@ -34,7 +46,8 @@
   },
   "requirements": [
     [
-      "has_vial_of_active_sculk",
+      "has_vial_of_liquid_furtivium",
+      "has_incomplete_furtivium_ingot",
       "has_emerald",
       "has_the_recipe"
     ]

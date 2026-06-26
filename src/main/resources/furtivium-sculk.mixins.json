@@ -9,8 +9,7 @@
     "ItemRendererAccessor",
     "ItemRendererMixin",
     "ModelLoaderMixin",
-    "ArmPoseMixin",
-   "VibrationListenerMixin"
+    "ArmPoseMixin"
   ],
   "injectors": {
     "defaultRequire": 1

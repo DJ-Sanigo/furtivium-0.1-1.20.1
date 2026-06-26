@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
 import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.client.sound.Sound;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -20,6 +21,10 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
+    public static final Block FURTIVIUM_ORE = registerBlock("furtivium_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_ORE).sounds(BlockSoundGroup.STONE)));
+    public static final Block DEEPSLATE_FURTIVIUM_ORE = registerBlock("deepslate_furtivium_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_ORE).sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block FURTIVIUM_BLOCK = registerBlock("furtivium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(ModSounds.FURTIVIUM_BLOCK_SOUNDS)));
     public static final Block PURIFIED_FURTIVIUM_BLOCK = registerBlock("purified_furtivium_block",

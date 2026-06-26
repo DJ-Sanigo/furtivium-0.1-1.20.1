@@ -16,6 +16,8 @@ public class ModItems {
                 new VialOfSculkItem(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_DORMANT_SCULK).maxCount(16)));
     public static final Item VIAL_OF_ACTIVE_SCULK = registerItem("vial_of_active_sculk",
                 new VialOfSculkItem(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_ACTIVE_SCULK).maxCount(16)));
+    public static final Item VIAL_OF_LIQUID_FURTIVIUM = registerItem("vial_of_liquid_furtivium",
+            new LiquidFurtiviumVialItem(new FabricItemSettings().food(ModFoodComponents.VIAL_OF_LIQUID_FURTIVIUM).maxCount(16)));
 
     public static final Item SCULK_MARGARITA = registerItem("sculk_margarita",
             new VialOfSculkItem(new FabricItemSettings().food(ModFoodComponents.SCULK_MARGARITA).maxCount(16)));
@@ -34,6 +36,8 @@ public class ModItems {
     public static final Item SCULKZZARELLA = registerItem("sculkzzarella",
             new Item(new FabricItemSettings().food(ModFoodComponents.SCULKZZARELLA)));
 
+    public static final Item RAW_FURTIVIUM = registerItem("raw_furtivium", new Item(new FabricItemSettings()));
+    public static final Item INCOMPLETE_FURTIVIUM_INGOT = registerItem("incomplete_furtivium_ingot", new Item(new FabricItemSettings()));
     public static final Item FURTIVIUM_INGOT = registerItem("furtivium_ingot", new Item(new FabricItemSettings()));
     public static final Item PURIFIED_FURTIVIUM_INGOT = registerItem("purified_furtivium_ingot", new Item(new FabricItemSettings()));
     public static final Item SCULK_BONE = registerItem("sculk_bone", new Item(new FabricItemSettings()));
@@ -47,6 +51,11 @@ public class ModItems {
             new MusicDiscItem(7, ModSounds.A_WARDENS_LULLABY, new FabricItemSettings().maxCount(1), 220));
     public static final Item A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC = registerItem("a_wardens_lullaby_music_box_version_music_disc",
             new MusicDiscItem(7, ModSounds.A_WARDENS_LULLABY_MUSIC_BOX_VERSION, new FabricItemSettings().maxCount(1), 64));
+    public static final Item IMMOVABLE_OBJECT_MUSIC_DISC = registerItem("immovable_object_music_disc",
+            new MusicDiscItem(7, ModSounds.IMMOVABLE_OBJECT, new FabricItemSettings().maxCount(1), 303));
+    public static final Item THE_ALARM_MUSIC_DISC = registerItem("the_alarm_music_disc",
+            new MusicDiscItem(7, ModSounds.THE_ALARM_FT_KASANE_TETO, new FabricItemSettings().maxCount(1), 411));
+
 
     public static final Item FURTIVIUM_GLAVE = registerItem("furtivium_glave",
             new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));

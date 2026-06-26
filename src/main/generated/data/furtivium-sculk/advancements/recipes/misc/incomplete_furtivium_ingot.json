@@ -1,0 +1,61 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_furtivium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "furtivium-sculk:deepslate_furtivium_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_furtivium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "furtivium-sculk:furtivium_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_raw_furtivium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "furtivium-sculk:raw_furtivium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "furtivium-sculk:incomplete_furtivium_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_furtivium",
+      "has_deepslate_furtivium_ore",
+      "has_furtivium_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "furtivium-sculk:incomplete_furtivium_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}

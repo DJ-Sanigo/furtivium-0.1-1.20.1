@@ -16,6 +16,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FURTIVIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_FURTIVIUM_ORE);
         blockStateModelGenerator.registerSingleton(ModBlocks.FURTIVIUM_BLOCK, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PURIFIED_FURTIVIUM_BLOCK);
 
@@ -36,6 +38,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_SPADONE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PURIFIED_HOMO_BLASTER, Models.HANDHELD);
 
+        itemModelGenerator.register(ModItems.RAW_FURTIVIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.INCOMPLETE_FURTIVIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.FURTIVIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_BONE, Models.GENERATED);
@@ -43,6 +47,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SCULK_TENDRIL, Models.GENERATED);
         itemModelGenerator.register(ModItems.VIAL_OF_ACTIVE_SCULK, Models.GENERATED);
         itemModelGenerator.register(ModItems.VIAL_OF_DORMANT_SCULK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VIAL_OF_LIQUID_FURTIVIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_BONE_AND_TENDRIL_BROTH, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_LAMINGTON, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_DOUGHNUT, Models.GENERATED);
@@ -53,6 +58,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SCULK_TENDRIL_AND_TONIC, Models.GENERATED);
         itemModelGenerator.register(ModItems.A_WARDENS_LULLABY_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IMMOVABLE_OBJECT_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THE_ALARM_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_RING_TOKEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_RING_NUKE, Models.GENERATED);
     }

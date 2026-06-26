@@ -17,6 +17,12 @@ public class ModFoodComponents {
                     .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 1200, 4), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.WITHER, 1200, 4), 1f ).build();
 
+    public static final FoodComponent VIAL_OF_LIQUID_FURTIVIUM =
+            new FoodComponent.Builder().alwaysEdible()
+                    .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 1200, 4), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 1200, 9), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.WITHER, 3600, 1), 1f ).build();
+
     public static final FoodComponent SCULK_MARGARITA =
             new FoodComponent.Builder().alwaysEdible()
                     .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200, 9), 1f)

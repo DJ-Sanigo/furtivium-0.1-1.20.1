@@ -1,6 +1,7 @@
 {
   "item.furtivium-sculk.vial_of_dormant_sculk": "Vial Of Dormant Sculk",
   "item.furtivium-sculk.vial_of_active_sculk": "Vial Of Active Sculk",
+  "item.furtivium-sculk.vial_of_liquid_furtivium": "Vial Of Liquid Furtivium",
 
   "item.furtivium-sculk.sculk_bone_and_tendril_broth": "Sculk, Bone & Tendril Minestrone",
   "item.furtivium-sculk.sculk_lamington": "Sculk Lamington",
@@ -11,13 +12,18 @@
   "item.furtivium-sculk.sculk_tendril_and_tonic": "Sculk Tendril & Tonic",
   "item.furtivium-sculk.sculk_margarita": "Sculk Margarita",
 
+  "item.furtivium-sculk.raw_furtivium": "Raw Furtivium",
+  "item.furtivium-sculk.incomplete_furtivium_ingot": "Incomplete Furtivium Ingot",
   "item.furtivium-sculk.furtivium_ingot": "Furtivium Ingot",
+  "item.furtivium-sculk.purified_furtivium_ingot": "Purified Furtivium Ingot",
   "item.furtivium-sculk.sculk_bone": "Sculk Bone",
   "item.furtivium-sculk.warden_heart": "A Warden's Heart",
   "item.furtivium-sculk.sculk_tendril": "Sculk Tendril",
 
-
+  "block.furtivium-sculk.furtivium_ore": "Furtivium Ore",
+  "block.furtivium-sculk.deepslate_furtivium_ore": "Deepslate Furtivium Ore",
   "block.furtivium-sculk.furtivium_block": "Furtivium Block",
+  "block.furtivium-sculk.purified_furtivium_block": "Purified Furtivium Block",
   "block.furtivium-sculk.sculk_bone_block": "Sculk Bone Block",
 
   "item.furtivium-sculk.sculk_ring_token": "Sculk Ring",
@@ -30,9 +36,12 @@
 
   "item.furtivium-sculk.a_wardens_lullaby_music_disc": "Music Disc",
   "item.furtivium-sculk.a_wardens_lullaby_music_disc.desc": "A Warden's Lullaby - DJ Sanigo",
-
   "item.furtivium-sculk.a_wardens_lullaby_music_box_version_music_disc": "Music Disc",
   "item.furtivium-sculk.a_wardens_lullaby_music_box_version_music_disc.desc": "A Warden's Lullaby (Music Box) - DJ Sanigo",
+  "item.furtivium-sculk.immovable_object_music_disc": "Music Disc",
+  "item.furtivium-sculk.immovable_object_music_disc.desc": "[Song For 1nk] Immovable Object - DJ Sanigo",
+  "item.furtivium-sculk.the_alarm_music_disc": "Music Disc",
+  "item.furtivium-sculk.the_alarm_music_disc.desc": "THE ALARM (Ft. Kasane Teto) - DJ Sanigo",
 
   "item.furtivium-sculk.furtivium_spadone": "Furtivium Spadone",
   "item.furtivium-sculk.furtivium_gladius": "Furtivium Gladius",

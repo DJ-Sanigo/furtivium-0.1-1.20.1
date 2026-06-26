@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
+    "furtivium-sculk:furtivium_ore",
     "furtivium-sculk:furtivium_block",
+    "furtivium-sculk:deepslate_furtivium_ore",
+    "furtivium-sculk:purified_furtivium_block",
     "furtivium-sculk:sculk_bone_block"
   ]
 }

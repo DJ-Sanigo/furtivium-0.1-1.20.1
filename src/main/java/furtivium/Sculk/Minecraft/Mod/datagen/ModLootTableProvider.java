@@ -1,8 +1,12 @@
 package furtivium.Sculk.Minecraft.Mod.datagen;
 
+import furtivium.Sculk.Minecraft.Mod.Item.ModItems;
 import furtivium.Sculk.Minecraft.Mod.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+import net.minecraft.loot.LootTable;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public ModLootTableProvider(FabricDataOutput dataOutput) {
@@ -15,6 +19,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PURIFIED_FURTIVIUM_BLOCK);
         addDrop(ModBlocks.SCULK_BONE_BLOCK);
 
+        addDrop(ModBlocks.FURTIVIUM_ORE, oreDrops(ModBlocks.FURTIVIUM_ORE, ModItems.RAW_FURTIVIUM));
+        addDrop(ModBlocks.DEEPSLATE_FURTIVIUM_ORE, oreDrops(ModBlocks.DEEPSLATE_FURTIVIUM_ORE, ModItems.RAW_FURTIVIUM));
+
         addDrop(ModBlocks.SCULK_ROOTS);
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_ROOTS);
         addDrop(ModBlocks.SCULK_MUSHROOM);
@@ -23,7 +30,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_ORCHID);
         addDrop(ModBlocks.SCULK_CARNATION);
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_CARNATION);
-
-
     }
+
 }

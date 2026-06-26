@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "C": {
+      "item": "minecraft:sculk_catalyst"
+    },
     "E": {
       "item": "minecraft:experience_bottle"
-    },
-    "S": {
-      "item": "minecraft:sculk"
     },
     "V": {
       "item": "furtivium-sculk:vial_of_dormant_sculk"
@@ -14,7 +14,7 @@
   },
   "pattern": [
     " E ",
-    " S ",
+    " C ",
     " V "
   ],
   "result": {

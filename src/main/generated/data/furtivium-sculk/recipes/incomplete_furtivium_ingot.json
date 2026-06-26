@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 1200,
+  "experience": 0.2,
+  "ingredient": [
+    {
+      "item": "furtivium-sculk:raw_furtivium"
+    },
+    {
+      "item": "furtivium-sculk:deepslate_furtivium_ore"
+    },
+    {
+      "item": "furtivium-sculk:furtivium_ore"
+    }
+  ],
+  "result": "furtivium-sculk:incomplete_furtivium_ingot"
+}

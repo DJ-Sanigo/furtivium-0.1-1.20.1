@@ -1,7 +1,7 @@
 {
   "furtivium_block_break": {
     "subtitle": "furtivium-sculk.furtivium_block_break",
-    "sounds": [
+      "sounds": [
       "furtivium-sculk:furtivium_block_break_1",
       "furtivium-sculk:furtivium_block_break_2",
       "furtivium-sculk:furtivium_block_break_3",
@@ -29,50 +29,56 @@
       "furtivium-sculk:furtivium_block_break_26",
       "furtivium-sculk:furtivium_block_break_27",
       "furtivium-sculk:furtivium_block_break_28"
-    ]
+      ]
   },
   "furtivium_block_step": {
     "subtitle": "furtivium-sculk.furtivium_block_step",
-    "sounds": [
+      "sounds": [
       "furtivium-sculk:furtivium_block_fall_step_1",
       "furtivium-sculk:furtivium_block_fall_step_2",
       "furtivium-sculk:furtivium_block_fall_step_3",
       "furtivium-sculk:furtivium_block_fall_step_4",
       "furtivium-sculk:furtivium_block_fall_step_5",
       "furtivium-sculk:furtivium_block_fall_step_6"
-    ]
+      ]
   },
   "furtivium_block_place": {
     "subtitle": "furtivium-sculk.furtivium_block_place",
-    "sounds": [
+      "sounds": [
       "furtivium-sculk:furtivium_block_place_1",
       "furtivium-sculk:furtivium_block_place_2",
       "furtivium-sculk:furtivium_block_place_3",
       "furtivium-sculk:furtivium_block_place_4",
       "furtivium-sculk:furtivium_block_place_5"
-    ]
+      ]
   },
   "furtivium_block_hit": {
     "subtitle": "furtivium-sculk.furtivium_block_hit",
-    "sounds": [
+      "sounds": [
       "furtivium-sculk:furtivium_block_hit_1",
       "furtivium-sculk:furtivium_block_hit_2",
       "furtivium-sculk:furtivium_block_hit_3",
       "furtivium-sculk:furtivium_block_hit_4",
       "furtivium-sculk:furtivium_block_hit_5",
       "furtivium-sculk:furtivium_block_hit_6"
-    ]
+      ]
   },
   "furtivium_block_fall": {
     "subtitle": "furtivium-sculk.furtivium_block_fall",
-    "sounds": [
+      "sounds": [
       "furtivium-sculk:furtivium_block_fall_step_1",
       "furtivium-sculk:furtivium_block_fall_step_2",
       "furtivium-sculk:furtivium_block_fall_step_3",
       "furtivium-sculk:furtivium_block_fall_step_4",
       "furtivium-sculk:furtivium_block_fall_step_5",
       "furtivium-sculk:furtivium_block_fall_step_6"
-    ]
+      ]
+  },
+  "furtivium_bottle_use": {
+    "subtitle": "furtivium-sculk.furtivium_bottle_use",
+      "sounds": [
+        "furtivium-sculk:furtivium_bottle_use"
+      ]
   },
   "a_wardens_lullaby": {
     "sounds": [
@@ -86,6 +92,22 @@
     "sounds": [
       {
         "name": "furtivium-sculk:a_wardens_lullaby_music_box_ver",
+        "stream": true
+      }
+    ]
+  },
+  "immovable_object": {
+    "sounds": [
+      {
+        "name": "furtivium-sculk:immovable_object",
+        "stream": true
+      }
+    ]
+  },
+  "the_alarm_ft_kasane_teto": {
+    "sounds": [
+      {
+        "name": "furtivium-sculk:the_alarm_ft_kasane_teto",
         "stream": true
       }
     ]

@@ -5,17 +5,19 @@ import furtivium.Sculk.Minecraft.Mod.Item.ModItems;
 import furtivium.Sculk.Minecraft.Mod.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
-import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.*;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.book.CookingRecipeCategory;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
+import org.spongepowered.asm.util.IConsumer;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -27,6 +29,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.FURTIVIUM_INGOT, RecipeCategory.DECORATIONS,
                 ModBlocks.FURTIVIUM_BLOCK);
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PURIFIED_FURTIVIUM_INGOT, RecipeCategory.DECORATIONS,
+                ModBlocks.PURIFIED_FURTIVIUM_BLOCK);
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.SCULK_BONE, RecipeCategory.DECORATIONS,
                 ModBlocks.SCULK_BONE_BLOCK);
@@ -84,15 +89,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModItems.VIAL_OF_ACTIVE_SCULK, 2)
                 .pattern(" E ")
-                .pattern(" S ")
+                .pattern(" C ")
                 .pattern(" V ")
-                .input('S', Items.SCULK)
+                .input('C', Items.SCULK_CATALYST)
                 .input('V', ModItems.VIAL_OF_DORMANT_SCULK)
                 .input('E', Items.EXPERIENCE_BOTTLE)
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(Items.EXPERIENCE_BOTTLE), conditionsFromItem(Items.EXPERIENCE_BOTTLE))
                 .criterion(hasItem(ModItems.VIAL_OF_DORMANT_SCULK), conditionsFromItem(ModItems.VIAL_OF_DORMANT_SCULK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.VIAL_OF_ACTIVE_SCULK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModItems.VIAL_OF_LIQUID_FURTIVIUM, 1)
+                .pattern("   ")
+                .pattern(" E ")
+                .pattern(" V ")
+                .input('V', ModItems.VIAL_OF_ACTIVE_SCULK)
+                .input('E', Items.EMERALD)
+                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
+                .criterion(hasItem(ModItems.VIAL_OF_ACTIVE_SCULK), conditionsFromItem(ModItems.VIAL_OF_ACTIVE_SCULK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.VIAL_OF_LIQUID_FURTIVIUM)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.EXPERIENCE_BOTTLE, 3)
                 .pattern(" V ")
@@ -312,9 +327,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.COPPER_RING_NUKE)));
 
-        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.VIAL_OF_ACTIVE_SCULK), Ingredient.ofItems(Items.EMERALD), Ingredient.EMPTY,
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(ModItems.RAW_FURTIVIUM, ModBlocks.DEEPSLATE_FURTIVIUM_ORE, ModBlocks.FURTIVIUM_ORE),
+                        RecipeCategory.MISC, ModItems.INCOMPLETE_FURTIVIUM_INGOT, 0.2f, 1200)
+                .criterion(hasItem(ModItems.RAW_FURTIVIUM), conditionsFromItem(ModItems.RAW_FURTIVIUM))
+                .criterion(hasItem(ModBlocks.DEEPSLATE_FURTIVIUM_ORE), conditionsFromItem(ModBlocks.DEEPSLATE_FURTIVIUM_ORE))
+                .criterion(hasItem(ModBlocks.FURTIVIUM_ORE), conditionsFromItem(ModBlocks.FURTIVIUM_ORE))
+                .offerTo(exporter);
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.VIAL_OF_LIQUID_FURTIVIUM), Ingredient.ofItems(ModItems.INCOMPLETE_FURTIVIUM_INGOT), Ingredient.ofItems(Items.EMERALD),
                         RecipeCategory.MISC, ModItems.FURTIVIUM_INGOT)
-                .criterion(hasItem(ModItems.VIAL_OF_ACTIVE_SCULK), conditionsFromItem(ModItems.VIAL_OF_ACTIVE_SCULK))
+                .criterion(hasItem(ModItems.VIAL_OF_LIQUID_FURTIVIUM), conditionsFromItem(ModItems.VIAL_OF_LIQUID_FURTIVIUM))
+                .criterion(hasItem(ModItems.INCOMPLETE_FURTIVIUM_INGOT), conditionsFromItem(ModItems.INCOMPLETE_FURTIVIUM_INGOT))
                 .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
                 .offerTo(exporter, new Identifier(Furtivium.MOD_ID, "furtivium_ingot_recipe"));
 
@@ -338,6 +361,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.FURTIVIUM_INGOT), conditionsFromItem(ModItems.FURTIVIUM_INGOT))
                 .criterion(hasItem(Items.TRIDENT), conditionsFromItem(Items.TRIDENT))
                 .offerTo(exporter, new Identifier(Furtivium.MOD_ID, "furtivium_glave_recipe"));
+
     }
 }
-

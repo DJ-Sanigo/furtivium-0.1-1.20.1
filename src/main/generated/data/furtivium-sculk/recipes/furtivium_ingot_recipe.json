@@ -1,13 +1,15 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": [],
-  "base": {
+  "addition": {
     "item": "minecraft:emerald"
+  },
+  "base": {
+    "item": "furtivium-sculk:incomplete_furtivium_ingot"
   },
   "result": {
     "item": "furtivium-sculk:furtivium_ingot"
   },
   "template": {
-    "item": "furtivium-sculk:vial_of_active_sculk"
+    "item": "furtivium-sculk:vial_of_liquid_furtivium"
   }
 }

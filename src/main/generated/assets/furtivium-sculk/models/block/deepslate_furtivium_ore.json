@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "furtivium-sculk:block/deepslate_furtivium_ore"
+  }
+}
