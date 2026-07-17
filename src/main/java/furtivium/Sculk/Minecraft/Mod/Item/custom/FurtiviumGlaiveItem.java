@@ -68,7 +68,7 @@ public class FurtiviumGlaiveItem extends SwordItem {
 
             target.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.REGENERATION,
-                    50,
+                    100,
                     0
             ));
 

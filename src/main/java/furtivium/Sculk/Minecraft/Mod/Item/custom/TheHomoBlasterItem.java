@@ -106,12 +106,6 @@ public class TheHomoBlasterItem extends ToolItem {
                     0
             ));
 
-            target.addStatusEffect(new StatusEffectInstance(
-                    StatusEffects.DARKNESS,
-                    60,
-                    0
-            ));
-
             Vec3d velocity = target.getVelocity();
             target.setVelocity(velocity.x, 1.0D, velocity.z);
             target.velocityModified = true;

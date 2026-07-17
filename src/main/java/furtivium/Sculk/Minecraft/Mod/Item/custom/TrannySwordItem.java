@@ -18,23 +18,16 @@ public class TrannySwordItem extends SwordItem {
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (attacker instanceof PlayerEntity player && !player.getWorld().isClient) {
 
-
-            player.addStatusEffect(new StatusEffectInstance(
-                    StatusEffects.ABSORPTION,
-                    100,
-                    1
-            ));
-
             player.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.RESISTANCE,
-                    100,
+                    50,
                     0
             ));
 
             player.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.SLOWNESS,
-                    50,
-                    3
+                    100,
+                    1
             ));
 
         }

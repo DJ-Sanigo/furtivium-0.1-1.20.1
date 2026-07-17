@@ -24,6 +24,8 @@ public class Furtivium implements ModInitializer {
 
 		ModSounds.registerSounds();
 
+
+
 		LOGGER.info("Hello Fabric world!");
 	}
 

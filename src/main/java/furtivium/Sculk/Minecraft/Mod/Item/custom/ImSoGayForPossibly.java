@@ -38,8 +38,8 @@ public class ImSoGayForPossibly extends SwordItem {
 
         Vec3d horizontalLook = new Vec3d(look.x, 0, look.z).normalize();
 
-        double dashStrength = 3;
-        double upwardBoost = 0.5;
+        double dashStrength = 0;
+        double upwardBoost = 1.5;
 
         Vec3d currentVel = user.getVelocity();
 
@@ -60,19 +60,12 @@ public class ImSoGayForPossibly extends SwordItem {
                 10.0F
         );
 
-        user.addStatusEffect(new StatusEffectInstance(
-                StatusEffects.SLOWNESS,
-                50,
-                9
-        ));
-
-
         //ServerWorld serverWorld = (ServerWorld) world;//Under Construction
         //for (int i = 0; i < 40; i++) {
             //Vec3d pos =
         //}
 
-        user.getItemCooldownManager().set(this, 200);
+        user.getItemCooldownManager().set(this, 150);
 
         return TypedActionResult.success(stack);
 

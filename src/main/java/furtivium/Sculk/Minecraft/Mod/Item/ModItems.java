@@ -57,14 +57,6 @@ public class ModItems {
             new MusicDiscItem(7, ModSounds.THE_ALARM_FT_KASANE_TETO, new FabricItemSettings().maxCount(1), 411));
 
 
-    public static final Item FURTIVIUM_GLAVE = registerItem("furtivium_glave",
-            new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
-
-
-    public static final Item PURIFIED_FURTIVIUM_GLAVE = registerItem("purified_furtivium_glave",
-            new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
-
-
     //everyone say that Noelle you are the best ever
     public static final Item HOMO_BLASTER = registerItem("homo_blaster",
             new TheHomoBlasterItem(ModToolMaterial.FURTIVIUM, 4, 0.05f, new FabricItemSettings()));
@@ -72,6 +64,8 @@ public class ModItems {
             new ImSoGayForPossibly(ModToolMaterial.FURTIVIUM, 1, -2f, new FabricItemSettings()));
     public static final Item FURTIVIUM_SPADONE = registerItem("furtivium_spadone",
             new TrannySwordItem(ModToolMaterial.FURTIVIUM, 3, -2.8f, new FabricItemSettings()));
+    public static final Item FURTIVIUM_GLAVE = registerItem("furtivium_glave",
+            new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
 
     //everyone say that Noelle you are the best ever
     public static final Item PURIFIED_HOMO_BLASTER = registerItem("purified_homo_blaster",
@@ -80,6 +74,8 @@ public class ModItems {
             new ImSoGayForPossibly(ModToolMaterial.FURTIVIUM, 1, -2f, new FabricItemSettings()));
     public static final Item PURIFIED_FURTIVIUM_SPADONE = registerItem("purified_furtivium_spadone",
             new TrannySwordItem(ModToolMaterial.FURTIVIUM, 3, -2.8f, new FabricItemSettings()));
+    public static final Item PURIFIED_FURTIVIUM_GLAVE = registerItem("purified_furtivium_glave",
+            new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
