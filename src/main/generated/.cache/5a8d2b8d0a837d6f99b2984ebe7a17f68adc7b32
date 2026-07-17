@@ -1,11 +1,11 @@
-// 1.20.1	2026-06-25T23:29:17.2982837	Furtivium/Recipes
+// 1.20.1	2026-07-17T14:33:51.9034184	Furtivium/Recipes
 8a1667fbb0bcc13f32eab333b0455fa6c30a4bde data\furtivium-sculk\advancements\recipes\decorations\sculk_shrieker.json
 a2eda2cdcd0381a5bffb21991f1398132e8037d7 data\furtivium-sculk\recipes\homo_blaster.json
 1c1e828929fbb7ea05e8a4690445f6d47d17a2d0 data\furtivium-sculk\advancements\recipes\misc\sculk_carnation.json
 40f4d8adde65acc708eb85f3caae7eb8b1ce1653 data\furtivium-sculk\advancements\recipes\building_blocks\sculk_bone.json
 8664bb484a4c4ea3ef3d74ad4606d84727466236 data\furtivium-sculk\recipes\sculk_orchid.json
-314f18c4f8304230f0e08270fefec8cd03c05acf data\furtivium-sculk\recipes\purified_furtivium_block.json
 dd22c94924588d373cb376ae5243cdc59dc7bf24 data\furtivium-sculk\advancements\recipes\building_blocks\bone_meal.json
+314f18c4f8304230f0e08270fefec8cd03c05acf data\furtivium-sculk\recipes\purified_furtivium_block.json
 a2e91c1e45c9cf6fb7ab62e0be74b70269db57f4 data\furtivium-sculk\advancements\recipes\misc\a_wardens_lullaby_music_disc.json
 3fb8570f1db4a118c02c8bf375e6b7af217abf5c data\furtivium-sculk\recipes\vial_of_dormant_sculk.json
 7844a12a8d5b00d817747c2f1aaafdf0d3b80281 data\furtivium-sculk\advancements\recipes\misc\sculk_orchid.json
@@ -24,8 +24,8 @@ ebf692a5fa701cddc429c54dfbe6d515fad2c796 data\furtivium-sculk\advancements\recip
 45fd150b9ad6656eeec7a9fe5be900a99f1b4ecb data\furtivium-sculk\recipes\furtivium_glave_recipe.json
 bcca18892cf76f1dd658bb027a1f9d68c6801f8c data\furtivium-sculk\recipes\purified_furtivium_ingot.json
 d087a0b39bd11886b1a5017df6308f191486fe71 data\furtivium-sculk\advancements\recipes\decorations\furtivium_block.json
-34a95195d784a4dca9e8beb0c0a98a56fe2fe53d data\furtivium-sculk\recipes\sculk_shrieker.json
 34618213927ba904c48a837cc29607f62964ddc5 data\furtivium-sculk\advancements\recipes\decorations\sculk.json
+34a95195d784a4dca9e8beb0c0a98a56fe2fe53d data\furtivium-sculk\recipes\sculk_shrieker.json
 ed162ea30b989c156500b85b7e9c2e5d7ea05d56 data\furtivium-sculk\advancements\recipes\decorations\sculk_sensor.json
 49eace2eb214d11db307f4e9e75a1226d08fe9d8 data\furtivium-sculk\advancements\recipes\misc\furtivium_glave_recipe.json
 4d47b097c92a6f36af01807f1f89a1b2a22090aa data\furtivium-sculk\advancements\recipes\brewing\vial_of_active_sculk.json
@@ -49,8 +49,8 @@ ec793558f4cb118f39a1d161fd548606a00706e9 data\furtivium-sculk\recipes\furtivium_
 3cbf3bd1a1a45ff0dfeb0888139722e24ec0b059 data\furtivium-sculk\recipes\copper_ring_nuke.json
 20fd3fa50aca4ce50bd817b473b3535d22f20f88 data\furtivium-sculk\recipes\bone_meal.json
 b8a59559b0a8b091f30a7fb21d7f78d451349f38 data\furtivium-sculk\recipes\furtivium_ingot.json
-5d035aedea2e506e3e4a13fa227ed04940bc821c data\furtivium-sculk\recipes\sculk_root_gnocchi.json
 9c4332cc3c634daefacdc793d787f99c52721805 data\furtivium-sculk\recipes\sculk_lamington.json
+5d035aedea2e506e3e4a13fa227ed04940bc821c data\furtivium-sculk\recipes\sculk_root_gnocchi.json
 2656b9292b56d6969fa2c794a0ee1d0edbb1a44d data\furtivium-sculk\advancements\recipes\food\sculk_doughnut.json
 49937b6c3c8940da00260cac95eb03c757bfd25a data\furtivium-sculk\recipes\sculk_tendril_spaghetti.json
 0900894816abffe847c92f09c88092f8a2bf6f13 data\furtivium-sculk\advancements\recipes\building_blocks\furtivium_ingot.json

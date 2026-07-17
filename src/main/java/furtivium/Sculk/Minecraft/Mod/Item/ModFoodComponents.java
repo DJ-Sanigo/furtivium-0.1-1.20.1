@@ -75,10 +75,10 @@ public class ModFoodComponents {
     public static final FoodComponent SCULK_TENDRIL_SPAGHETTI =
             new FoodComponent.Builder().hunger(15).saturationModifier(1.75F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 600, 0), 1f)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 600, 0), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 1200, 1), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 1200, 4), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 2400, 4), 1f)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 1200, 0), 1f).build();
+                    .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 600, 0), 1f).build();
 
     public static final FoodComponent SCULKZZARELLA =
             new FoodComponent.Builder().hunger(2).saturationModifier(1F)

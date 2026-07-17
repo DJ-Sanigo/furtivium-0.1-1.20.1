@@ -1,4 +1,4 @@
-// 1.20.1	2026-06-25T23:29:17.2912826	Furtivium/Model Definitions
+// 1.20.1	2026-07-17T14:33:51.8693218	Furtivium/Model Definitions
 a4f5c6fd83a6653582f2c5db5bf98c6eab9fb946 assets\furtivium-sculk\models\block\potted_sculk_orchid.json
 049ca668a28d682f0bc49de141d640134fba2855 assets\furtivium-sculk\models\item\sculk_roots.json
 9fde451657591b79611f6da00155ec4cd20cb530 assets\furtivium-sculk\models\item\purified_furtivium_glave.json
@@ -46,7 +46,7 @@ fd0608b6bcac1c66239d1e3b800a3566302182a0 assets\furtivium-sculk\models\item\scul
 cdb3d906a105d796037d483d2ded1d31959f5ba0 assets\furtivium-sculk\models\block\potted_sculk_carnation.json
 85291cad50bbe3f984b6e02508918c1791450a48 assets\furtivium-sculk\blockstates\sculk_roots.json
 3f446c829081c6506cf2a32f1299607b549494a2 assets\furtivium-sculk\models\block\potted_sculk_mushroom.json
-668c0b5c622a5e09d98da14673d2dffb7792255a assets\furtivium-sculk\models\block\furtivium_block.json
+68bfcb7c98196ffa5570000f5db8ab3e6cff1844 assets\furtivium-sculk\models\block\furtivium_block.json
 243b9466721e33d60f7f0e5273fe57b588236a2b assets\furtivium-sculk\models\block\furtivium_ore.json
 80849973cb00ea96267d875a8b2493a0e9e35b8b assets\furtivium-sculk\models\item\sculk_doughnut.json
 4b75c9ea5fcf912e028d98b7218e79cd0892d856 assets\furtivium-sculk\blockstates\potted_sculk_roots.json

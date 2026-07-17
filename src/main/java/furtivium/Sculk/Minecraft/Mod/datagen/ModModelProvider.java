@@ -18,7 +18,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FURTIVIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_FURTIVIUM_ORE);
-        blockStateModelGenerator.registerSingleton(ModBlocks.FURTIVIUM_BLOCK, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FURTIVIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PURIFIED_FURTIVIUM_BLOCK);
 
         blockStateModelGenerator.registerAxisRotated(ModBlocks.SCULK_BONE_BLOCK, TexturedModel.CUBE_COLUMN);

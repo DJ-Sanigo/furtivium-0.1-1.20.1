@@ -23,57 +23,6 @@ public class ImSoGayForPossibly extends SwordItem {
     }
 
     @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        ItemStack stack = user.getStackInHand(hand);
-
-
-        if (world.isClient) {
-         return TypedActionResult.pass(stack);
-        }
-
-        if (user.getItemCooldownManager().isCoolingDown(this)) {
-            return TypedActionResult.fail(stack);
-        }
-        Vec3d look = user.getRotationVec(1.0f);
-
-        Vec3d horizontalLook = new Vec3d(look.x, 0, look.z).normalize();
-
-        double dashStrength = 0;
-        double upwardBoost = 1.5;
-
-        Vec3d currentVel = user.getVelocity();
-
-        Vec3d newVel = currentVel.add(
-                horizontalLook.x * dashStrength,
-                upwardBoost,
-                horizontalLook.z * dashStrength
-        );
-        user.setVelocity(newVel);
-        user.velocityModified = true;
-
-        world.playSound(
-                null,
-                user.getX(), user.getY(), user.getZ(),
-                SoundEvents.ENTITY_WARDEN_SONIC_BOOM,
-                SoundCategory.PLAYERS,
-                3.0F,
-                10.0F
-        );
-
-        //ServerWorld serverWorld = (ServerWorld) world;//Under Construction
-        //for (int i = 0; i < 40; i++) {
-            //Vec3d pos =
-        //}
-
-        user.getItemCooldownManager().set(this, 150);
-
-        return TypedActionResult.success(stack);
-
-
-
-        }
-
-    @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (attacker instanceof PlayerEntity player && !player.getWorld().isClient) {
 

@@ -66,13 +66,13 @@ public class TheHomoBlasterItem extends ToolItem {
                     if (target.getBoundingBox().expand(0.5).contains(closestPoint)) { // Range - 0.5 = 1 Block
                         target.damage(
                                 world.getDamageSources().sonicBoom(user),
-                                5.0F // Damage - 2 = 1 Heart/ 1 = Half A Heart
+                                7F // Damage - 2 = 1 Heart/ 1 = Half A Heart
                         );
 
                         target.addVelocity(
                                 look.x * 2.0,
                                 0.5,
-                                look.z * 2.0 //Knockback - 0.5 = 1 Block
+                                look.z * 1.0 //Knockback - 0.5 = 1 Block
                         );
 
                         target.velocityModified = true;
@@ -90,7 +90,7 @@ public class TheHomoBlasterItem extends ToolItem {
             );
 
 
-            user.getItemCooldownManager().set(this, 300);
+            user.getItemCooldownManager().set(this, 500);
         }
 
         return TypedActionResult.success(stack, world.isClient());
@@ -102,7 +102,7 @@ public class TheHomoBlasterItem extends ToolItem {
 
             target.addStatusEffect(new StatusEffectInstance(
                     SLOW_FALLING,
-                    20,
+                    10,
                     0
             ));
 
