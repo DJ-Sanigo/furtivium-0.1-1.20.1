@@ -6,6 +6,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.CrossbowItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
 import net.minecraft.particle.ParticleTypes;
@@ -23,10 +24,10 @@ import java.util.List;
 
 import static net.minecraft.entity.effect.StatusEffects.SLOW_FALLING;
 
-public class TheHomoBlasterItem extends ToolItem {
+public class TheHomoBlasterItem extends CrossbowItem {
 
-    public TheHomoBlasterItem(ModToolMaterial modToolMaterial, int i, float v, FabricItemSettings fabricItemSettings) {
-        super(modToolMaterial, fabricItemSettings);
+    public TheHomoBlasterItem(int i, float v, FabricItemSettings fabricItemSettings) {
+        super(fabricItemSettings);
     }
 
     @Override
@@ -66,13 +67,13 @@ public class TheHomoBlasterItem extends ToolItem {
                     if (target.getBoundingBox().expand(0.5).contains(closestPoint)) { // Range - 0.5 = 1 Block
                         target.damage(
                                 world.getDamageSources().sonicBoom(user),
-                                7F // Damage - 2 = 1 Heart/ 1 = Half A Heart
+                                10F // Damage - 2 = 1 Heart/ 1 = Half A Heart
                         );
 
                         target.addVelocity(
                                 look.x * 2.0,
                                 0.5,
-                                look.z * 1.0 //Knockback - 0.5 = 1 Block
+                                look.z * 1.5 //Knockback - 0.5 = 1 Block
                         );
 
                         target.velocityModified = true;
@@ -89,8 +90,6 @@ public class TheHomoBlasterItem extends ToolItem {
                     5.0F
             );
 
-
-            user.getItemCooldownManager().set(this, 500);
         }
 
         return TypedActionResult.success(stack, world.isClient());
@@ -110,7 +109,6 @@ public class TheHomoBlasterItem extends ToolItem {
             target.setVelocity(velocity.x, 1.0D, velocity.z);
             target.velocityModified = true;
 
-            player.getItemCooldownManager().remove(this);
         }
 
         return super.postHit(stack, target, attacker);

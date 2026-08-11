@@ -59,7 +59,7 @@ public class ModItems {
 
     //everyone say that Noelle you are the best ever
     public static final Item HOMO_BLASTER = registerItem("homo_blaster",
-            new TheHomoBlasterItem(ModToolMaterial.FURTIVIUM, 4, 0.05f, new FabricItemSettings()));
+            new TheHomoBlasterItem(4, 0.05f, new FabricItemSettings()));
     public static final Item FURTIVIUM_GLADIUS = registerItem("furtivium_gladius",
             new ImSoGayForPossibly(ModToolMaterial.FURTIVIUM, 1, -2f, new FabricItemSettings()));
     public static final Item FURTIVIUM_SPADONE = registerItem("furtivium_spadone",
@@ -69,7 +69,7 @@ public class ModItems {
 
     //everyone say that Noelle you are the best ever
     public static final Item PURIFIED_HOMO_BLASTER = registerItem("purified_homo_blaster",
-            new TheHomoBlasterItem(ModToolMaterial.FURTIVIUM, 4, 0.05f, new FabricItemSettings()));
+            new TheHomoBlasterItem(4, 0.05f, new FabricItemSettings()));
     public static final Item PURIFIED_FURTIVIUM_GLADIUS = registerItem("purified_furtivium_gladius",
             new ImSoGayForPossibly(ModToolMaterial.FURTIVIUM, 1, -2f, new FabricItemSettings()));
     public static final Item PURIFIED_FURTIVIUM_SPADONE = registerItem("purified_furtivium_spadone",
