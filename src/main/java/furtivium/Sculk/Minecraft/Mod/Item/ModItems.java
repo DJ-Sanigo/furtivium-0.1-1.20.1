@@ -77,7 +77,7 @@ public class ModItems {
             new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
 
     public static final Item VOID_TOUCHED_FURTIVIUM_GLAVE = registerItem("void_touched_furtivium_glave",
-            new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
+            new VoidTouchedFurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
