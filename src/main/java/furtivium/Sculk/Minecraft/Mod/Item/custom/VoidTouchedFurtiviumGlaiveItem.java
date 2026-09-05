@@ -14,9 +14,9 @@ import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
 
-public class FurtiviumGlaiveItem extends SwordItem {
+public class VoidTouchedFurtiviumGlaiveItem extends SwordItem {
 
-    public FurtiviumGlaiveItem(ModToolMaterial modToolMaterial, int i, float v, FabricItemSettings fabricItemSettings) {
+    public VoidTouchedFurtiviumGlaiveItem(ModToolMaterial modToolMaterial, int i, float v, FabricItemSettings fabricItemSettings) {
         super(modToolMaterial, i, v, fabricItemSettings);
     }
     @Override
@@ -35,7 +35,7 @@ public class FurtiviumGlaiveItem extends SwordItem {
 
     @Override
     public int getMaxUseTime(ItemStack stack) {
-        return 200;
+        return 72000;
     }
 
     @Override
@@ -43,19 +43,7 @@ public class FurtiviumGlaiveItem extends SwordItem {
         if (attacker instanceof PlayerEntity player && !player.getWorld().isClient) {
 
             target.addStatusEffect(new StatusEffectInstance(
-                    StatusEffects.WEAKNESS,
-                    50,
-                    0
-            ));
-
-            target.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.DARKNESS,
-                    50,
-                    0
-            ));
-
-            target.addStatusEffect(new StatusEffectInstance(
-                    StatusEffects.SLOWNESS,
                     50,
                     0
             ));
@@ -66,10 +54,10 @@ public class FurtiviumGlaiveItem extends SwordItem {
                     0
             ));
 
-            target.addStatusEffect(new StatusEffectInstance(
+            player.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.REGENERATION,
                     100,
-                    1
+                    0
             ));
 
         }

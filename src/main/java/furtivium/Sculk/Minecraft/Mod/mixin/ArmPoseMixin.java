@@ -31,6 +31,14 @@ public class ArmPoseMixin {
             }
         }
 
+        if (player.getStackInHand(hand).isOf(ModItems.VOID_TOUCHED_FURTIVIUM_GLAVE)) {
+            if (!player.isUsingItem() && !player.handSwinging) {
+                cir.setReturnValue(BipedEntityModel.ArmPose.CROSSBOW_CHARGE);
+            } else if (player.handSwinging) {
+                cir.setReturnValue(BipedEntityModel.ArmPose.CROSSBOW_HOLD);
+            }
+        }
+
     }
 
 }

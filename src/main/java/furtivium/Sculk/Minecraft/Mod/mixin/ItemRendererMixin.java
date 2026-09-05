@@ -29,6 +29,9 @@ public abstract class ItemRendererMixin {
         if (stack.isOf(ModItems.HOMO_BLASTER) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Furtivium.MOD_ID, "homo_blaster_3d", "inventory"));
         }
+        if (stack.isOf(ModItems.VOID_TOUCHED_FURTIVIUM_GLAVE) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Furtivium.MOD_ID, "void_touched_furtivium_glave_3d", "inventory"));
+        }
 
         return value;
 

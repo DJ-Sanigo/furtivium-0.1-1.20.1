@@ -67,7 +67,6 @@ public class ModItems {
     public static final Item FURTIVIUM_GLAVE = registerItem("furtivium_glave",
             new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
 
-    //everyone say that Noelle you are the best ever
     public static final Item PURIFIED_HOMO_BLASTER = registerItem("purified_homo_blaster",
             new TheHomoBlasterItem(4, 0.05f, new FabricItemSettings()));
     public static final Item PURIFIED_FURTIVIUM_GLADIUS = registerItem("purified_furtivium_gladius",
@@ -76,6 +75,9 @@ public class ModItems {
             new TrannySwordItem(ModToolMaterial.FURTIVIUM, 3, -2.8f, new FabricItemSettings()));
     public static final Item PURIFIED_FURTIVIUM_GLAVE = registerItem("purified_furtivium_glave",
             new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
+
+    public static final Item VOID_TOUCHED_FURTIVIUM_GLAVE = registerItem("void_touched_furtivium_glave",
+            new VoidTouchedFurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
@@ -94,6 +96,11 @@ public class ModItems {
         entries.add(FURTIVIUM_GLADIUS);
         entries.add(FURTIVIUM_GLAVE);
         entries.add(HOMO_BLASTER);
+        entries.add(PURIFIED_FURTIVIUM_SPADONE);
+        entries.add(PURIFIED_FURTIVIUM_GLADIUS);
+        entries.add(PURIFIED_FURTIVIUM_GLAVE);
+        entries.add(PURIFIED_HOMO_BLASTER);
+        entries.add(VOID_TOUCHED_FURTIVIUM_GLAVE);
     }
 
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries) {
