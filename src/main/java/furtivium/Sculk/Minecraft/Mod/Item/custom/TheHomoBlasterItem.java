@@ -2,11 +2,15 @@ package furtivium.Sculk.Minecraft.Mod.Item.custom;
 
 import furtivium.Sculk.Minecraft.Mod.Item.ModToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.CrossbowItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolItem;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
@@ -23,15 +27,28 @@ import java.util.List;
 
 import static net.minecraft.entity.effect.StatusEffects.SLOW_FALLING;
 
-public class TheHomoBlasterItem extends ToolItem {
+public class TheHomoBlasterItem extends CrossbowItem {
+    private boolean charged = false;
+    private boolean loaded = false;
 
-    public TheHomoBlasterItem(ModToolMaterial modToolMaterial, int i, float v, FabricItemSettings fabricItemSettings) {
-        super(modToolMaterial, fabricItemSettings);
+    public TheHomoBlasterItem(int i, float v, FabricItemSettings fabricItemSettings) {
+        super(fabricItemSettings);
     }
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack stack = user.getStackInHand(hand);
+
+        if (isCharged(stack)) {
+            shootAll(world, user, hand, stack, getSpeed(stack), 1.0F);
+            setCharged(stack, false);
+            return TypedActionResult.consume(stack);
+        } else if (!user.getProjectileType(stack).isEmpty()) {
+            if (!isCharged(stack)) {
+                this.charged = false;
+                this.loaded = false;
+                user.setCurrentHand(hand);
+            }
 
         if (!world.isClient) {
             Vec3d start = user.getEyePos();
@@ -89,11 +106,60 @@ public class TheHomoBlasterItem extends ToolItem {
                     5.0F
             );
 
+        }
+            return TypedActionResult.success(stack, world.isClient());
+        } else {
+            return TypedActionResult.fail(stack);
+        }
+    }
 
-            user.getItemCooldownManager().set(this, 300);
+    private static float getSpeed(ItemStack stack) {
+        return hasProjectile(stack, Items.FIREWORK_ROCKET) ? 1.6F : 3.15F;
+    }
+
+    @Override
+    public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
+        int i = this.getMaxUseTime(stack) - remainingUseTicks;
+        float f = getPullTime(i, stack);
+        if (f >= 1.0F && !isCharged(stack) && loadProjectiles(user, stack)) {
+            setCharged(stack, true);
+            SoundCategory soundCategory = user instanceof PlayerEntity ? SoundCategory.PLAYERS : SoundCategory.HOSTILE;
+            world.playSound((PlayerEntity)null, user.getX(), user.getY(), user.getZ(), SoundEvents.ITEM_CROSSBOW_LOADING_END, soundCategory, 1.0F, 1.0F / (world.getRandom().nextFloat() * 0.5F + 1.0F) + 0.2F);
         }
 
-        return TypedActionResult.success(stack, world.isClient());
+    }
+
+    private float getPullTime(int i, ItemStack stack) {
+        return 1;
+    }
+    
+    private static boolean loadProjectiles(LivingEntity shooter, ItemStack crossbow) {
+        int i = EnchantmentHelper.getLevel(Enchantments.MULTISHOT, crossbow);
+        int j = i == 0 ? 1 : 3;
+        boolean bl = shooter instanceof PlayerEntity && ((PlayerEntity)shooter).getAbilities().creativeMode;
+        ItemStack itemStack = shooter.getProjectileType(crossbow);
+        ItemStack itemStack2 = itemStack.copy();
+
+        for(int k = 0; k < j; ++k) {
+            if (k > 0) {
+                itemStack = itemStack2.copy();
+            }
+
+            if (itemStack.isEmpty() && bl) {
+                itemStack = new ItemStack(Items.ECHO_SHARD);
+                itemStack2 = itemStack.copy();
+            }
+
+            if (!loadProjectiles(shooter, crossbow, itemStack, k > 0, bl)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    private static boolean loadProjectiles(LivingEntity shooter, ItemStack crossbow, ItemStack itemStack, boolean b, boolean bl) {
+        return false;
     }
 
     @Override
@@ -110,7 +176,6 @@ public class TheHomoBlasterItem extends ToolItem {
             target.setVelocity(velocity.x, 1.0D, velocity.z);
             target.velocityModified = true;
 
-            player.getItemCooldownManager().remove(this);
         }
 
         return super.postHit(stack, target, attacker);
