@@ -62,6 +62,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.THE_ALARM_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_RING_TOKEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_RING_NUKE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VOID_MATTER, Models.GENERATED);
     }
 
 

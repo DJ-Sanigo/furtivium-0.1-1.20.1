@@ -1,5 +1,6 @@
 package furtivium.Sculk.Minecraft.Mod.util;
 
+import furtivium.Sculk.Minecraft.Mod.block.ModBlocks;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import furtivium.Sculk.Minecraft.Mod.Item.ModItems;
 import net.minecraft.item.Items;
@@ -122,6 +123,17 @@ public class ModLootTableModifiers {
             if(WARDEN_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.25f))
+                        .with(ItemEntry.builder(ModBlocks.SCULK_BONE_BLOCK))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
+
+                builder.pool(poolBuilder.build());
+
+            }
+
+            if(WARDEN_ID.equals(identifier)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(1f))
                         .with(ItemEntry.builder(ModItems.WARDEN_HEART))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
@@ -135,7 +147,7 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.75f))
                         .with(ItemEntry.builder(ModItems.SCULK_TENDRIL))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0f, 2.0f)).build());
 
                 builder.pool(poolBuilder.build());
 

@@ -49,6 +49,10 @@
 
   "item.furtivium-sculk.homo_blaster": "Furtivium Cazzo Fucile",
 
+  "item.furtivium-sculk.void_matter": "[1T3M.V01D_M@TT3R]",
+
+  "item.furtivium-sculk.void_touched_furtivium_glave": "[V01D_T0UCH3D_FURT1V1UM_GL@1V3]",
+
 
   "itemgroup.furtivium": "Furtivium"
 }

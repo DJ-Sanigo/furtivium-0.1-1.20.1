@@ -59,6 +59,8 @@ public class ModItemGroups {
                         entries.add(ModItems.PURIFIED_FURTIVIUM_GLAVE);
                         entries.add(ModItems.PURIFIED_HOMO_BLASTER);
 
+                        entries.add(ModItems.VOID_MATTER);
+
                         entries.add(ModItems.VOID_TOUCHED_FURTIVIUM_GLAVE);
 
                         entries.add(ModBlocks.SCULK_ROOTS);

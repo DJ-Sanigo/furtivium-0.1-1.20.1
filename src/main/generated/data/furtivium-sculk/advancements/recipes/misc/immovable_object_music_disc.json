@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_emerald": {
+    "has_lapis_lazuli": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:emerald"
+              "minecraft:lapis_lazuli"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_stone": {
+    "has_redstone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:stone"
+              "minecraft:redstone"
             ]
           }
         ]
@@ -27,21 +27,21 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:emerald_ore"
+        "recipe": "minecraft:immovable_object_music_disc"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_stone",
-      "has_emerald",
+      "has_lapis_lazuli",
+      "has_redstone",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:emerald_ore"
+      "minecraft:immovable_object_music_disc"
     ]
   },
   "sends_telemetry_event": false

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "furtivium-sculk:furtivium_glave"
+  },
+  "base": {
+    "item": "furtivium-sculk:void_matter"
+  },
+  "result": {
+    "item": "furtivium-sculk:void_touched_furtivium_glave"
+  },
+  "template": {
+    "item": "furtivium-sculk:furtivium_ingot"
+  }
+}

@@ -76,8 +76,10 @@ public class ModItems {
     public static final Item PURIFIED_FURTIVIUM_GLAVE = registerItem("purified_furtivium_glave",
             new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
 
+    public static final Item VOID_MATTER = registerItem("void_matter", new Item(new FabricItemSettings()));
+
     public static final Item VOID_TOUCHED_FURTIVIUM_GLAVE = registerItem("void_touched_furtivium_glave",
-            new VoidTouchedFurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
+            new VoidTouchedFurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 3, -2f, new FabricItemSettings()));
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
@@ -87,8 +89,7 @@ public class ModItems {
         entries.add(SCULK_BONE);
         entries.add(WARDEN_HEART);
         entries.add(SCULK_TENDRIL);
-        entries.add(A_WARDENS_LULLABY_MUSIC_DISC);
-        entries.add(A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC);
+        entries.add(VOID_MATTER);
     }
 
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries) {

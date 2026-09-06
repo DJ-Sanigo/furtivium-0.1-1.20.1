@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "tag": "minecraft:music_discs"
+    },
+    "L": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "QQQ",
+    "LDR",
+    "QQQ"
+  ],
+  "result": {
+    "item": "furtivium-sculk:the_alarm_music_disc"
+  },
+  "show_notification": true
+}

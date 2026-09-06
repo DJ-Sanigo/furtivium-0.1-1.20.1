@@ -1,36 +1,36 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_experience_bottle": {
+    "has_lapis_lazuli": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:experience_bottle"
+              "minecraft:lapis_lazuli"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_sculk": {
+    "has_quartz": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:sculk"
+              "minecraft:quartz"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_sculk_catalyst": {
+    "has_redstone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:sculk_catalyst"
+              "minecraft:redstone"
             ]
           }
         ]
@@ -39,35 +39,22 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:vial_of_active_sculk"
+        "recipe": "minecraft:the_alarm_music_disc"
       },
       "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_vial_of_dormant_sculk": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "furtivium-sculk:vial_of_dormant_sculk"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
-      "has_sculk",
-      "has_sculk_catalyst",
-      "has_experience_bottle",
-      "has_vial_of_dormant_sculk",
+      "has_quartz",
+      "has_lapis_lazuli",
+      "has_redstone",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:vial_of_active_sculk"
+      "minecraft:the_alarm_music_disc"
     ]
   },
   "sends_telemetry_event": false

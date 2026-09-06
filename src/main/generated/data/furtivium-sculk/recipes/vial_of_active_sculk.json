@@ -8,13 +8,16 @@
     "E": {
       "item": "minecraft:experience_bottle"
     },
+    "S": {
+      "item": "minecraft:sculk"
+    },
     "V": {
       "item": "furtivium-sculk:vial_of_dormant_sculk"
     }
   },
   "pattern": [
     " E ",
-    " C ",
+    "SCS",
     " V "
   ],
   "result": {
