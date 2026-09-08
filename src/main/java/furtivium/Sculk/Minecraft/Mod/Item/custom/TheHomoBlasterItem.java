@@ -1,14 +1,11 @@
 package furtivium.Sculk.Minecraft.Mod.Item.custom;
 
-import furtivium.Sculk.Minecraft.Mod.Item.ModToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.CrossbowItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ToolItem;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
@@ -18,7 +15,6 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
 
 import java.util.List;
 
@@ -90,6 +86,9 @@ public class TheHomoBlasterItem extends CrossbowItem {
                     5.0F
             );
 
+
+            user.getItemCooldownManager().set(this, 300);
+
         }
 
         return TypedActionResult.success(stack, world.isClient());
@@ -109,6 +108,7 @@ public class TheHomoBlasterItem extends CrossbowItem {
             target.setVelocity(velocity.x, 1.0D, velocity.z);
             target.velocityModified = true;
 
+            player.getItemCooldownManager().remove(this);
         }
 
         return super.postHit(stack, target, attacker);
