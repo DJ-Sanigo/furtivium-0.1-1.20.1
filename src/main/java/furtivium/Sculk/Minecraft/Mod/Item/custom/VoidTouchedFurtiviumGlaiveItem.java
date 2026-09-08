@@ -35,7 +35,7 @@ public class VoidTouchedFurtiviumGlaiveItem extends SwordItem {
 
     @Override
     public int getMaxUseTime(ItemStack stack) {
-        return 72000;
+        return 70000;
     }
 
     @Override
