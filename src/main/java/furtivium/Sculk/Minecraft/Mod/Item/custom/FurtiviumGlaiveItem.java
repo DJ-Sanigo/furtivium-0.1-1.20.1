@@ -72,6 +72,7 @@ public class FurtiviumGlaiveItem extends SwordItem {
                     1
             ));
 
+            player.getItemCooldownManager().set(this, 70);
         }
 
         return super.postHit(stack, target, attacker);
