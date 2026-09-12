@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "furtivium-sculk:furtivium_ore",
-    "furtivium-sculk:furtivium_block",
-    "furtivium-sculk:deepslate_furtivium_ore",
-    "furtivium-sculk:purified_furtivium_block"
+    "furtivium:furtivium_ore",
+    "furtivium:furtivium_block",
+    "furtivium:deepslate_furtivium_ore",
+    "furtivium:purified_furtivium_block"
   ]
 }

@@ -6,7 +6,7 @@
       "item": "minecraft:milk_bucket"
     },
     "M": {
-      "item": "furtivium-sculk:sculk_mushroom"
+      "item": "furtivium:sculk_mushroom"
     },
     "S": {
       "item": "minecraft:sculk"
@@ -22,7 +22,7 @@
   ],
   "result": {
     "count": 16,
-    "item": "furtivium-sculk:sculkzzarella"
+    "item": "furtivium:sculkzzarella"
   },
   "show_notification": true
 }

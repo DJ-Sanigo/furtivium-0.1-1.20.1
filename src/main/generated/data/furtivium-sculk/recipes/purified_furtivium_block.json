@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "furtivium-sculk:purified_furtivium_ingot"
+      "item": "furtivium:purified_furtivium_ingot"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
     "###"
   ],
   "result": {
-    "item": "furtivium-sculk:purified_furtivium_block"
+    "item": "furtivium:purified_furtivium_block"
   },
   "show_notification": true
 }

@@ -1,0 +1,51 @@
+package furtivium.block;
+
+import furtivium.Furtivium;
+import furtivium.item.ModItems;
+import furtivium.sound.ModSounds;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.*;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.Identifier;
+
+public class ModBlocks {
+
+    public static final Block FURTIVIUM_ORE = registerBlock("furtivium_ore", new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_ORE).sounds(BlockSoundGroup.STONE)));
+    public static final Block DEEPSLATE_FURTIVIUM_ORE = registerBlock("deepslate_furtivium_ore", new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_ORE).sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block FURTIVIUM_BLOCK = registerBlock("furtivium_block", new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(ModSounds.FURTIVIUM_BLOCK_SOUNDS)));
+    public static final Block PURIFIED_FURTIVIUM_BLOCK = registerBlock("purified_furtivium_block", new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(ModSounds.FURTIVIUM_BLOCK_SOUNDS)));
+    public static final Block SCULK_BONE_BLOCK = registerBlock("sculk_bone_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK)));
+
+    public static final Block SCULK_ROOTS = registerBlock("sculk_roots", new SculkBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).nonOpaque().noCollision()));
+    public static final Block POTTED_SCULK_ROOTS = registerBlockWithoutItem(("potted_sculk_roots"), new FlowerPotBlock(SCULK_ROOTS, FabricBlockSettings.copyOf(Blocks.POTTED_CRIMSON_ROOTS).nonOpaque()));
+    public static final Block SCULK_MUSHROOM = registerBlock("sculk_mushroom", new SculkBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).nonOpaque().noCollision()));
+    public static final Block POTTED_SCULK_MUSHROOM = registerBlockWithoutItem(("potted_sculk_mushroom"), new FlowerPotBlock(SCULK_MUSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_CRIMSON_ROOTS).nonOpaque()));
+    public static final Block SCULK_ORCHID = registerBlock("sculk_orchid", new SculkBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).nonOpaque().noCollision()));
+    public static final Block POTTED_SCULK_ORCHID = registerBlockWithoutItem(("potted_sculk_orchid"), new FlowerPotBlock(SCULK_ORCHID, FabricBlockSettings.copyOf(Blocks.POTTED_CRIMSON_ROOTS).nonOpaque()));
+    public static final Block SCULK_CARNATION = registerBlock("sculk_carnation", new SculkBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).nonOpaque().noCollision()));
+    public static final Block POTTED_SCULK_CARNATION = registerBlockWithoutItem(("potted_sculk_carnation"), new FlowerPotBlock(SCULK_CARNATION, FabricBlockSettings.copyOf(Blocks.POTTED_CRIMSON_ROOTS).nonOpaque()));
+
+
+    private static Block registerBlockWithoutItem(String name, Block block) {
+        registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Furtivium.id(name), block);
+    }
+
+    private static Block registerBlock(String name, Block block) {
+        registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Furtivium.id(name), block);
+    }
+
+    private static Item registerBlockItem(String name, Block block) {
+        return ModItems.registerItem(name, new BlockItem(block, new FabricItemSettings()));
+    }
+
+    public static void registerModBlocks() {
+        Furtivium.LOGGER.info("Registering ModBlocks for " + Furtivium.MOD_ID);
+    }
+}

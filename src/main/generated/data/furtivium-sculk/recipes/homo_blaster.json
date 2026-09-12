@@ -3,19 +3,19 @@
   "category": "equipment",
   "key": {
     "B": {
-      "item": "furtivium-sculk:sculk_bone"
+      "item": "furtivium:sculk_bone"
     },
     "C": {
       "item": "minecraft:sculk_shrieker"
     },
     "F": {
-      "item": "furtivium-sculk:furtivium_ingot"
+      "item": "furtivium:furtivium_ingot"
     },
     "S": {
       "item": "minecraft:sculk"
     },
     "W": {
-      "item": "furtivium-sculk:warden_heart"
+      "item": "furtivium:warden_heart"
     }
   },
   "pattern": [
@@ -24,7 +24,7 @@
     "FS "
   ],
   "result": {
-    "item": "furtivium-sculk:homo_blaster"
+    "item": "furtivium:homo_blaster"
   },
   "show_notification": true
 }

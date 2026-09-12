@@ -5,14 +5,14 @@
   "experience": 0.2,
   "ingredient": [
     {
-      "item": "furtivium-sculk:raw_furtivium"
+      "item": "furtivium:raw_furtivium"
     },
     {
-      "item": "furtivium-sculk:deepslate_furtivium_ore"
+      "item": "furtivium:deepslate_furtivium_ore"
     },
     {
-      "item": "furtivium-sculk:furtivium_ore"
+      "item": "furtivium:furtivium_ore"
     }
   ],
-  "result": "furtivium-sculk:incomplete_furtivium_ingot"
+  "result": "furtivium:incomplete_furtivium_ingot"
 }

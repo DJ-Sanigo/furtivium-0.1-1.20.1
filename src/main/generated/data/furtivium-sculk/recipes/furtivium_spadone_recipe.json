@@ -4,12 +4,12 @@
     "item": "minecraft:diamond_axe"
   },
   "base": {
-    "item": "furtivium-sculk:sculk_bone"
+    "item": "furtivium:sculk_bone"
   },
   "result": {
-    "item": "furtivium-sculk:furtivium_spadone"
+    "item": "furtivium:furtivium_spadone"
   },
   "template": {
-    "item": "furtivium-sculk:furtivium_ingot"
+    "item": "furtivium:furtivium_ingot"
   }
 }

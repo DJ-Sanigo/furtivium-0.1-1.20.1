@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "D": {
-      "item": "furtivium-sculk:a_wardens_lullaby_music_box_version_music_disc"
+      "item": "furtivium:a_wardens_lullaby_music_box_version_music_disc"
     },
     "F": {
-      "item": "furtivium-sculk:furtivium_ingot"
+      "item": "furtivium:furtivium_ingot"
     },
     "S": {
       "item": "minecraft:sculk"
@@ -18,7 +18,7 @@
     "SFS"
   ],
   "result": {
-    "item": "furtivium-sculk:a_wardens_lullaby_music_disc"
+    "item": "furtivium:a_wardens_lullaby_music_disc"
   },
   "show_notification": true
 }

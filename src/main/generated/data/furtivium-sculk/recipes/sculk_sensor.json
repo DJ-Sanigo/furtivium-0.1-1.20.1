@@ -6,7 +6,7 @@
       "item": "minecraft:sculk"
     },
     "T": {
-      "item": "furtivium-sculk:sculk_tendril"
+      "item": "furtivium:sculk_tendril"
     }
   },
   "pattern": [

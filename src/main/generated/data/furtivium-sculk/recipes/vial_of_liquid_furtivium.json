@@ -6,7 +6,7 @@
       "item": "minecraft:emerald"
     },
     "V": {
-      "item": "furtivium-sculk:vial_of_active_sculk"
+      "item": "furtivium:vial_of_active_sculk"
     }
   },
   "pattern": [
@@ -15,7 +15,7 @@
     " V "
   ],
   "result": {
-    "item": "furtivium-sculk:vial_of_liquid_furtivium"
+    "item": "furtivium:vial_of_liquid_furtivium"
   },
   "show_notification": true
 }

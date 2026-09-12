@@ -30,7 +30,7 @@
         "items": [
           {
             "items": [
-              "furtivium-sculk:sculk_tendril"
+              "furtivium:sculk_tendril"
             ]
           }
         ]
@@ -48,7 +48,7 @@
         "items": [
           {
             "items": [
-              "furtivium-sculk:vial_of_active_sculk"
+              "furtivium:vial_of_active_sculk"
             ]
           }
         ]

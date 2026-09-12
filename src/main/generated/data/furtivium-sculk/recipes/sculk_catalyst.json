@@ -3,13 +3,13 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "furtivium-sculk:sculk_bone"
+      "item": "furtivium:sculk_bone"
     },
     "S": {
       "item": "minecraft:sculk"
     },
     "W": {
-      "item": "furtivium-sculk:warden_heart"
+      "item": "furtivium:warden_heart"
     }
   },
   "pattern": [

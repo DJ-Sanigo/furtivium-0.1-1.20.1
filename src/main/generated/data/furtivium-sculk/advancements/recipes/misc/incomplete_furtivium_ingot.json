@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "furtivium-sculk:deepslate_furtivium_ore"
+              "furtivium:deepslate_furtivium_ore"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "furtivium-sculk:furtivium_ore"
+              "furtivium:furtivium_ore"
             ]
           }
         ]
@@ -30,7 +30,7 @@
         "items": [
           {
             "items": [
-              "furtivium-sculk:raw_furtivium"
+              "furtivium:raw_furtivium"
             ]
           }
         ]
@@ -39,7 +39,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "furtivium-sculk:incomplete_furtivium_ingot"
+        "recipe": "furtivium:incomplete_furtivium_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -54,7 +54,7 @@
   ],
   "rewards": {
     "recipes": [
-      "furtivium-sculk:incomplete_furtivium_ingot"
+      "furtivium:incomplete_furtivium_ingot"
     ]
   },
   "sends_telemetry_event": false

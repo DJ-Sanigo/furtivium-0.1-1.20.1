@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "furtivium-sculk:sculk_carnation"
+      "item": "furtivium:sculk_carnation"
     },
     "S": {
       "item": "minecraft:sculk"
@@ -19,7 +19,7 @@
   ],
   "result": {
     "count": 8,
-    "item": "furtivium-sculk:sculk_doughnut"
+    "item": "furtivium:sculk_doughnut"
   },
   "show_notification": true
 }

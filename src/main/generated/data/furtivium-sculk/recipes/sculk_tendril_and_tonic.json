@@ -9,10 +9,10 @@
       "item": "minecraft:sculk"
     },
     "T": {
-      "item": "furtivium-sculk:sculk_tendril"
+      "item": "furtivium:sculk_tendril"
     },
     "V": {
-      "item": "furtivium-sculk:vial_of_active_sculk"
+      "item": "furtivium:vial_of_active_sculk"
     }
   },
   "pattern": [
@@ -21,7 +21,7 @@
     " G "
   ],
   "result": {
-    "item": "furtivium-sculk:sculk_tendril_and_tonic"
+    "item": "furtivium:sculk_tendril_and_tonic"
   },
   "show_notification": true
 }

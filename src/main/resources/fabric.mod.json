@@ -5,24 +5,25 @@
 	"name": "Furtivium",
 	"description": "A Mod The Shows The True Power Of The Sculk!",
 	"authors": [
-		"DJ Sanigo & Ivory moth"
+		"DJ Sanigo",
+		"Ivory Moth"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "",
+		"sources": ""
 	},
 	"license": "MIT",
-	"icon": "icon.png",
+	"icon": "assets/furtivium-sculk/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"furtivium.Sculk.Minecraft.Mod.Furtivium"
+			"furtivium.Furtivium"
 		],
 		"client": [
-			"furtivium.Sculk.Minecraft.Mod.FurtiviumClient"
+			"furtivium.client.FurtiviumClient"
 		],
 		"fabric-datagen": [
-			"furtivium.Sculk.Minecraft.Mod.FurtiviumDataGenerator"
+			"furtivium.datagen.FurtiviumDataGenerator"
 		]
 	},
 	"mixins": [

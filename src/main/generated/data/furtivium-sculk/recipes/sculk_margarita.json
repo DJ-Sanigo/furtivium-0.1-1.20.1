@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "furtivium-sculk:sculk_bone"
+      "item": "furtivium:sculk_bone"
     },
     "G": {
       "item": "minecraft:glass_bottle"
@@ -12,7 +12,7 @@
       "item": "minecraft:sculk"
     },
     "V": {
-      "item": "furtivium-sculk:vial_of_active_sculk"
+      "item": "furtivium:vial_of_active_sculk"
     }
   },
   "pattern": [
@@ -21,7 +21,7 @@
     " G "
   ],
   "result": {
-    "item": "furtivium-sculk:sculk_margarita"
+    "item": "furtivium:sculk_margarita"
   },
   "show_notification": true
 }

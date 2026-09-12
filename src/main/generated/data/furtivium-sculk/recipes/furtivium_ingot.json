@@ -3,11 +3,11 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "furtivium-sculk:furtivium_block"
+      "item": "furtivium:furtivium_block"
     }
   ],
   "result": {
     "count": 9,
-    "item": "furtivium-sculk:furtivium_ingot"
+    "item": "furtivium:furtivium_ingot"
   }
 }

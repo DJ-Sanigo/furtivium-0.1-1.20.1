@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "furtivium-sculk:sculk_bone"
+      "item": "furtivium:sculk_bone"
     },
     "P": {
       "item": "minecraft:bowl"
@@ -12,7 +12,7 @@
       "item": "minecraft:sculk"
     },
     "T": {
-      "item": "furtivium-sculk:sculk_tendril"
+      "item": "furtivium:sculk_tendril"
     }
   },
   "pattern": [
@@ -20,7 +20,7 @@
     "SP"
   ],
   "result": {
-    "item": "furtivium-sculk:sculk_bone_and_tendril_broth"
+    "item": "furtivium:sculk_bone_and_tendril_broth"
   },
   "show_notification": true
 }

@@ -12,7 +12,7 @@
       "item": "minecraft:sculk"
     },
     "V": {
-      "item": "furtivium-sculk:vial_of_active_sculk"
+      "item": "furtivium:vial_of_active_sculk"
     }
   },
   "pattern": [

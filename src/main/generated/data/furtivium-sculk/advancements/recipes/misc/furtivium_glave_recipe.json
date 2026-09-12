@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "furtivium-sculk:furtivium_ingot"
+              "furtivium:furtivium_ingot"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "furtivium-sculk:sculk_bone"
+              "furtivium:sculk_bone"
             ]
           }
         ]
@@ -27,7 +27,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "furtivium-sculk:furtivium_glave_recipe"
+        "recipe": "furtivium:furtivium_glave_recipe"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -54,7 +54,7 @@
   ],
   "rewards": {
     "recipes": [
-      "furtivium-sculk:furtivium_glave_recipe"
+      "furtivium:furtivium_glave_recipe"
     ]
   },
   "sends_telemetry_event": false

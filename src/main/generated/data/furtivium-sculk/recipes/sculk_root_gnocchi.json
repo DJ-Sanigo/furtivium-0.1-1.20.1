@@ -6,7 +6,7 @@
       "item": "minecraft:bowl"
     },
     "R": {
-      "item": "furtivium-sculk:sculk_roots"
+      "item": "furtivium:sculk_roots"
     },
     "S": {
       "item": "minecraft:sculk"
@@ -17,7 +17,7 @@
     " P"
   ],
   "result": {
-    "item": "furtivium-sculk:sculk_root_gnocchi"
+    "item": "furtivium:sculk_root_gnocchi"
   },
   "show_notification": true
 }

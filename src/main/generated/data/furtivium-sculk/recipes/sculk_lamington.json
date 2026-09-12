@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "O": {
-      "item": "furtivium-sculk:sculk_orchid"
+      "item": "furtivium:sculk_orchid"
     },
     "S": {
       "item": "minecraft:sculk"
@@ -15,7 +15,7 @@
   ],
   "result": {
     "count": 4,
-    "item": "furtivium-sculk:sculk_lamington"
+    "item": "furtivium:sculk_lamington"
   },
   "show_notification": true
 }
