@@ -1,4 +1,4 @@
-// 1.20.1	2026-09-12T23:14:13.0253503	Furtivium/Tags for minecraft:block
-f8b5335d86557bed5e6f8c752b6e331570c549ec data\minecraft\tags\blocks\mineable\pickaxe.json
-a00f38eed23daac2e061f22676e82f5f8ffd17d5 data\minecraft\tags\blocks\needs_diamond_tool.json
-00bd59c0c474c1129323ac118aeedceedebe09d5 data\minecraft\tags\blocks\needs_stone_tool.json
+// 1.20.1	2026-07-17T14:33:51.859291	Furtivium/Tags for minecraft:block
+3bc428cc7d8b62b960a21a506d604b015e63a5c9 data\minecraft\tags\blocks\mineable\pickaxe.json
+fac1d5121b14945849e5a81c3e28d15cd26ab65d data\minecraft\tags\blocks\needs_diamond_tool.json
+dea3c442ce5adfa20f8804ccc43163e17dd1f628 data\minecraft\tags\blocks\needs_stone_tool.json

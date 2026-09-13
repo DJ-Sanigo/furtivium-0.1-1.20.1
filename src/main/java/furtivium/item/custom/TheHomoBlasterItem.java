@@ -26,7 +26,6 @@ public class TheHomoBlasterItem extends CrossbowItem {
 
     private static final int RANGE = 20;
     private static final float DAMAGE = 10.0F;
-    private static final int COOLDOWN = 300;
 
     public TheHomoBlasterItem(FabricItemSettings fabricItemSettings) {
         super(fabricItemSettings);
@@ -54,7 +53,6 @@ public class TheHomoBlasterItem extends CrossbowItem {
             if (!world.isClient) {
                 fireBlaster(world, user);
                 setCharged(stack, false);
-                user.getItemCooldownManager().set(this, COOLDOWN);
             }
 
             return TypedActionResult.success(stack, world.isClient());
@@ -164,8 +162,6 @@ public class TheHomoBlasterItem extends CrossbowItem {
             target.setVelocity(velocity.x, 1.0D, velocity.z);
 
             target.velocityModified = true;
-
-            player.getItemCooldownManager().remove(this);
         }
 
         return super.postHit(stack, target, attacker);

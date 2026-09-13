@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "furtivium:sculk_bone"
+              "furtivium-sculk:sculk_bone"
             ]
           }
         ]
@@ -30,25 +30,12 @@
         "recipe": "minecraft:sculk_shrieker"
       },
       "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_warden_heart": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "furtivium:warden_heart"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_sculk_bone",
       "has_sculk",
-      "has_warden_heart",
       "has_the_recipe"
     ]
   ],
