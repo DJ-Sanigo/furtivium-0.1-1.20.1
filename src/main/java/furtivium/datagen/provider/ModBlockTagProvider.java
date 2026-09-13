@@ -1,4 +1,4 @@
-package furtivium.datagen;
+package furtivium.datagen.provider;
 
 import furtivium.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;

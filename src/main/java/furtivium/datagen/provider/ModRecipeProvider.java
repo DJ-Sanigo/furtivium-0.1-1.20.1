@@ -1,4 +1,4 @@
-package furtivium.datagen;
+package furtivium.datagen.provider;
 
 import furtivium.Furtivium;
 import furtivium.item.ModItems;
@@ -34,7 +34,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 FabricRecipeProvider.conditionsFromItem(Items.BONE_MEAL)).criterion(FabricRecipeProvider.hasItem(ModItems.SCULK_BONE),
                 FabricRecipeProvider.conditionsFromItem(ModItems.SCULK_BONE)).offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.HOMO_BLASTER, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.FURTIVIUM_CAZZO_FUCILE, 1)
                 .pattern(" B ")
                 .pattern("SWC")
                 .pattern("FS ")
@@ -48,7 +48,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.WARDEN_HEART), conditionsFromItem(ModItems.WARDEN_HEART))
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(Items.SCULK_SHRIEKER), conditionsFromItem(Items.SCULK_SHRIEKER))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HOMO_BLASTER)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC, 1)
                 .pattern(" E ")
@@ -57,7 +57,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('D', ItemTags.MUSIC_DISCS)
                 .input('E', Items.EMERALD)
                 .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.A_WARDENS_LULLABY_MUSIC_DISC, 1)
                 .pattern("SFS")
@@ -69,7 +69,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC), conditionsFromItem(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC))
                 .criterion(hasItem(ModItems.FURTIVIUM_INGOT), conditionsFromItem(ModItems.FURTIVIUM_INGOT))
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.A_WARDENS_LULLABY_MUSIC_DISC)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.IMMOVABLE_OBJECT_MUSIC_DISC, 1)
                 .pattern("RLR")
@@ -80,7 +80,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('R', Items.REDSTONE)
                 .criterion(hasItem(Items.LAPIS_LAZULI), conditionsFromItem(Items.LAPIS_LAZULI))
                 .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.IMMOVABLE_OBJECT_MUSIC_DISC)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.THE_ALARM_MUSIC_DISC, 1)
                 .pattern("QQQ")
@@ -207,7 +207,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('O', Items.BLUE_ORCHID)
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(Items.BLUE_ORCHID), conditionsFromItem(Items.BLUE_ORCHID))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SCULK_ORCHID)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SCULK_CARNATION, 1)
                 .pattern("  ")
@@ -379,17 +379,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(Furtivium.MOD_ID, "furtivium_spadone_recipe"));
 
         SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.FURTIVIUM_INGOT), Ingredient.ofItems(ModItems.SCULK_BONE), Ingredient.ofItems(Items.TRIDENT),
-                        RecipeCategory.MISC, ModItems.FURTIVIUM_GLAVE)
+                        RecipeCategory.MISC, ModItems.FURTIVIUM_GLAIVE)
                 .criterion(hasItem(ModItems.SCULK_BONE), conditionsFromItem(ModItems.SCULK_BONE))
                 .criterion(hasItem(ModItems.FURTIVIUM_INGOT), conditionsFromItem(ModItems.FURTIVIUM_INGOT))
                 .criterion(hasItem(Items.TRIDENT), conditionsFromItem(Items.TRIDENT))
                 .offerTo(exporter, new Identifier(Furtivium.MOD_ID, "furtivium_glave_recipe"));
 
-        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.FURTIVIUM_INGOT), Ingredient.ofItems(ModItems.VOID_MATTER), Ingredient.ofItems(ModItems.FURTIVIUM_GLAVE),
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.FURTIVIUM_INGOT), Ingredient.ofItems(ModItems.VOID_MATTER), Ingredient.ofItems(ModItems.FURTIVIUM_GLAIVE),
                         RecipeCategory.MISC, ModItems.VOID_TOUCHED_FURTIVIUM_GLAVE)
                 .criterion(hasItem(ModItems.VOID_MATTER), conditionsFromItem(ModItems.VOID_MATTER))
                 .criterion(hasItem(ModItems.FURTIVIUM_INGOT), conditionsFromItem(ModItems.FURTIVIUM_INGOT))
-                .criterion(hasItem(ModItems.FURTIVIUM_GLAVE), conditionsFromItem(ModItems.FURTIVIUM_GLAVE))
+                .criterion(hasItem(ModItems.FURTIVIUM_GLAIVE), conditionsFromItem(ModItems.FURTIVIUM_GLAIVE))
                 .offerTo(exporter, new Identifier(Furtivium.MOD_ID, "void_touched_furtivium_glave_recipe"));
 
     }

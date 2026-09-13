@@ -22,12 +22,12 @@ import java.util.function.Predicate;
 
 import static net.minecraft.entity.effect.StatusEffects.SLOW_FALLING;
 
-public class TheHomoBlasterItem extends CrossbowItem {
+public class FurtiviumCazzoFucileItem extends CrossbowItem {
 
     private static final int RANGE = 20;
     private static final float DAMAGE = 10.0F;
 
-    public TheHomoBlasterItem(FabricItemSettings fabricItemSettings) {
+    public FurtiviumCazzoFucileItem(FabricItemSettings fabricItemSettings) {
         super(fabricItemSettings);
     }
 
@@ -44,10 +44,6 @@ public class TheHomoBlasterItem extends CrossbowItem {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack stack = user.getStackInHand(hand);
-
-        if (user.getItemCooldownManager().isCoolingDown(this)) {
-            return TypedActionResult.fail(stack);
-        }
 
         if (isCharged(stack)) {
             if (!world.isClient) {

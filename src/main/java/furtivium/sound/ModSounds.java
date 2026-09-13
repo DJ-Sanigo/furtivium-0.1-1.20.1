@@ -28,7 +28,7 @@ public class ModSounds {
             ModSounds.FURTIVIUM_BLOCK_HIT, ModSounds.FURTIVIUM_BLOCK_FALL);
 
     private static SoundEvent registerSoundEvent(String name) {
-        Identifier id = new Identifier(Furtivium.MOD_ID, name);
+        Identifier id = Furtivium.id(name);
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));
     }
 

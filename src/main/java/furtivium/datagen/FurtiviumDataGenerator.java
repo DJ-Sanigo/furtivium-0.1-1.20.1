@@ -1,5 +1,6 @@
 package furtivium.datagen;
 
+import furtivium.datagen.provider.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 

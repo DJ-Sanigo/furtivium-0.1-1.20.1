@@ -1,6 +1,7 @@
 package furtivium.item.custom;
 
 import furtivium.item.ModToolMaterial;
+import furtivium.item.TwoHandedItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -14,7 +15,7 @@ import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
 
-public class VoidTouchedFurtiviumGlaiveItem extends SwordItem {
+public class VoidTouchedFurtiviumGlaiveItem extends SwordItem implements TwoHandedItem {
 
     public VoidTouchedFurtiviumGlaiveItem(ModToolMaterial modToolMaterial, int i, float v, FabricItemSettings fabricItemSettings) {
         super(modToolMaterial, i, v, fabricItemSettings);

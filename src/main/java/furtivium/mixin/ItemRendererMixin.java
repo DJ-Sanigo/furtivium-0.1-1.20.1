@@ -23,10 +23,10 @@ public abstract class ItemRendererMixin {
         if (stack.isOf(ModItems.FURTIVIUM_GLADIUS) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Furtivium.MOD_ID, "furtivium_gladius_3d", "inventory"));
         }
-        if (stack.isOf(ModItems.FURTIVIUM_GLAVE) && renderMode != ModelTransformationMode.GUI) {
+        if (stack.isOf(ModItems.FURTIVIUM_GLAIVE) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Furtivium.MOD_ID, "furtivium_glave_3d", "inventory"));
         }
-        if (stack.isOf(ModItems.HOMO_BLASTER) && renderMode != ModelTransformationMode.GUI) {
+        if (stack.isOf(ModItems.FURTIVIUM_CAZZO_FUCILE) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Furtivium.MOD_ID, "homo_blaster_3d", "inventory"));
         }
         if (stack.isOf(ModItems.VOID_TOUCHED_FURTIVIUM_GLAVE) && renderMode != ModelTransformationMode.GUI) {

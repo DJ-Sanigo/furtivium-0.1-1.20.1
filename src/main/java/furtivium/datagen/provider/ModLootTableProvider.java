@@ -1,4 +1,4 @@
-package furtivium.datagen;
+package furtivium.datagen.provider;
 
 import furtivium.item.ModItems;
 import furtivium.block.ModBlocks;

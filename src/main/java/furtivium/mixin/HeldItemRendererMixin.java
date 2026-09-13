@@ -21,19 +21,7 @@ public class HeldItemRendererMixin {
             method = "renderFirstPersonItem",
             at = @At("HEAD")
     )
-    private void blockPose(
-            AbstractClientPlayerEntity player,
-            float tickDelta,
-            float pitch,
-            Hand hand,
-            float swingProgress,
-            ItemStack item,
-            float equipProgress,
-            MatrixStack matrices,
-            VertexConsumerProvider vertexConsumers,
-            int light,
-            CallbackInfo ci
-    ) {
+    private void blockPose(AbstractClientPlayerEntity player, float tickDelta, float pitch, Hand hand, float swingProgress, ItemStack item, float equipProgress, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, CallbackInfo ci) {
 
         if (!player.isUsingItem()) {
             return;

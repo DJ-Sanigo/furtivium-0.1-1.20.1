@@ -51,13 +51,13 @@ public class ModItemGroups {
 
                         entries.add(ModItems.FURTIVIUM_SPADONE);
                         entries.add(ModItems.FURTIVIUM_GLADIUS);
-                        entries.add(ModItems.FURTIVIUM_GLAVE);
-                        entries.add(ModItems.HOMO_BLASTER);
+                        entries.add(ModItems.FURTIVIUM_GLAIVE);
+                        entries.add(ModItems.FURTIVIUM_CAZZO_FUCILE);
 
                         entries.add(ModItems.PURIFIED_FURTIVIUM_SPADONE);
                         entries.add(ModItems.PURIFIED_FURTIVIUM_GLADIUS);
                         entries.add(ModItems.PURIFIED_FURTIVIUM_GLAVE);
-                        entries.add(ModItems.PURIFIED_HOMO_BLASTER);
+                        entries.add(ModItems.PURIFIED_FURTIVIUM_CAZZO_FUCILE);
 
                         entries.add(ModItems.VOID_MATTER);
 

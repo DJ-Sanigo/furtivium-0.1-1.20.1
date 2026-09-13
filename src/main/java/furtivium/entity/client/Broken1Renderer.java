@@ -7,7 +7,7 @@ import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.util.Identifier;
 
 public class Broken1Renderer extends MobEntityRenderer<Broken1Entity, Broken1Model<Broken1Entity>> {
-    private static final Identifier TEXTURE = new Identifier(Furtivium.MOD_ID, "textures/entity/sculky-var1_texture");
+    private static final Identifier TEXTURE = Furtivium.id("textures/entity/sculky-var1_texture");
 
     public Broken1Renderer(EntityRendererFactory.Context context) {
         super(context, new Broken1Model<>(context.getPart(ModModelLayers.BROKEN1)), 0.6f);

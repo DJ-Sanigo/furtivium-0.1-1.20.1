@@ -8,8 +8,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 
-public class ImSoGayForPossibly extends SwordItem {
-    public ImSoGayForPossibly(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+public class FurtiviumGladiusItem extends SwordItem {
+    public FurtiviumGladiusItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 

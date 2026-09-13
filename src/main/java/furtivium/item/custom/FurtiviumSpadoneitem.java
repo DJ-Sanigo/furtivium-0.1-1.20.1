@@ -9,8 +9,8 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 
-public class TrannySwordItem extends SwordItem {
-    public TrannySwordItem(ModToolMaterial modToolMaterial, int i, float v, FabricItemSettings fabricItemSettings) {
+public class FurtiviumSpadoneitem extends SwordItem {
+    public FurtiviumSpadoneitem(ModToolMaterial modToolMaterial, int i, float v, FabricItemSettings fabricItemSettings) {
         super(modToolMaterial, i, v, fabricItemSettings);
     }
 

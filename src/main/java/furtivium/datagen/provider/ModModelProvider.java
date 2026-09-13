@@ -1,4 +1,4 @@
-package furtivium.datagen;
+package furtivium.datagen.provider;
 
 import furtivium.item.ModItems;
 import furtivium.block.ModBlocks;
@@ -36,7 +36,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_GLADIUS, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_GLAVE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_SPADONE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.PURIFIED_HOMO_BLASTER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_CAZZO_FUCILE, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.RAW_FURTIVIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.INCOMPLETE_FURTIVIUM_INGOT, Models.GENERATED);

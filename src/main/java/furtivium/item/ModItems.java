@@ -8,7 +8,6 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
 
 public class ModItems {
 
@@ -58,14 +57,14 @@ public class ModItems {
 
 
     //everyone say that Noelle you are the best ever
-    public static final Item HOMO_BLASTER = registerItem("homo_blaster", new TheHomoBlasterItem(new FabricItemSettings()));
-    public static final Item FURTIVIUM_GLADIUS = registerItem("furtivium_gladius", new ImSoGayForPossibly(ModToolMaterial.FURTIVIUM, 1, -2f, new FabricItemSettings()));
-    public static final Item FURTIVIUM_SPADONE = registerItem("furtivium_spadone", new TrannySwordItem(ModToolMaterial.FURTIVIUM, 3, -2.8f, new FabricItemSettings()));
-    public static final Item FURTIVIUM_GLAVE = registerItem("furtivium_glave", new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
+    public static final Item FURTIVIUM_CAZZO_FUCILE = registerItem("furtivium_cazzo_fucile", new FurtiviumCazzoFucileItem(new FabricItemSettings()));
+    public static final Item FURTIVIUM_GLADIUS = registerItem("furtivium_gladius", new FurtiviumGladiusItem(ModToolMaterial.FURTIVIUM, 1, -2f, new FabricItemSettings()));
+    public static final Item FURTIVIUM_SPADONE = registerItem("furtivium_spadone", new FurtiviumSpadoneitem(ModToolMaterial.FURTIVIUM, 3, -2.8f, new FabricItemSettings()));
+    public static final Item FURTIVIUM_GLAIVE = registerItem("furtivium_glaive", new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
 
-    public static final Item PURIFIED_HOMO_BLASTER = registerItem("purified_homo_blaster", new TheHomoBlasterItem(new FabricItemSettings().maxCount(1)));
-    public static final Item PURIFIED_FURTIVIUM_GLADIUS = registerItem("purified_furtivium_gladius", new ImSoGayForPossibly(ModToolMaterial.FURTIVIUM, 1, -2f, new FabricItemSettings().maxCount(1)));
-    public static final Item PURIFIED_FURTIVIUM_SPADONE = registerItem("purified_furtivium_spadone", new TrannySwordItem(ModToolMaterial.FURTIVIUM, 3, -2.8f, new FabricItemSettings()));
+    public static final Item PURIFIED_FURTIVIUM_CAZZO_FUCILE = registerItem("purified_furtivium_cazzo_fucile", new FurtiviumCazzoFucileItem(new FabricItemSettings().maxCount(1)));
+    public static final Item PURIFIED_FURTIVIUM_GLADIUS = registerItem("purified_furtivium_gladius", new FurtiviumGladiusItem(ModToolMaterial.FURTIVIUM, 1, -2f, new FabricItemSettings().maxCount(1)));
+    public static final Item PURIFIED_FURTIVIUM_SPADONE = registerItem("purified_furtivium_spadone", new FurtiviumSpadoneitem(ModToolMaterial.FURTIVIUM, 3, -2.8f, new FabricItemSettings()));
     public static final Item PURIFIED_FURTIVIUM_GLAVE = registerItem("purified_furtivium_glave", new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
 
     public static final Item VOID_MATTER = registerItem("void_matter", new Item(new FabricItemSettings()));
@@ -87,12 +86,12 @@ public class ModItems {
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries) {
         entries.add(FURTIVIUM_SPADONE);
         entries.add(FURTIVIUM_GLADIUS);
-        entries.add(FURTIVIUM_GLAVE);
-        entries.add(HOMO_BLASTER);
+        entries.add(FURTIVIUM_GLAIVE);
+        entries.add(FURTIVIUM_CAZZO_FUCILE);
         entries.add(PURIFIED_FURTIVIUM_SPADONE);
         entries.add(PURIFIED_FURTIVIUM_GLADIUS);
         entries.add(PURIFIED_FURTIVIUM_GLAVE);
-        entries.add(PURIFIED_HOMO_BLASTER);
+        entries.add(PURIFIED_FURTIVIUM_CAZZO_FUCILE);
         entries.add(VOID_TOUCHED_FURTIVIUM_GLAVE);
     }
 

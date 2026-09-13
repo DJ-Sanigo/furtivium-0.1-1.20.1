@@ -15,8 +15,8 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block FURTIVIUM_ORE = registerBlock("furtivium_ore", new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_ORE).sounds(BlockSoundGroup.STONE)));
-    public static final Block DEEPSLATE_FURTIVIUM_ORE = registerBlock("deepslate_furtivium_ore", new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_ORE).sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block FURTIVIUM_ORE = registerBlock("furtivium_ore", new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_ORE)));
+    public static final Block DEEPSLATE_FURTIVIUM_ORE = registerBlock("deepslate_furtivium_ore", new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_EMERALD_ORE)));
     public static final Block FURTIVIUM_BLOCK = registerBlock("furtivium_block", new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(ModSounds.FURTIVIUM_BLOCK_SOUNDS)));
     public static final Block PURIFIED_FURTIVIUM_BLOCK = registerBlock("purified_furtivium_block", new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(ModSounds.FURTIVIUM_BLOCK_SOUNDS)));
     public static final Block SCULK_BONE_BLOCK = registerBlock("sculk_bone_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK)));
@@ -32,7 +32,6 @@ public class ModBlocks {
 
 
     private static Block registerBlockWithoutItem(String name, Block block) {
-        registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Furtivium.id(name), block);
     }
 
