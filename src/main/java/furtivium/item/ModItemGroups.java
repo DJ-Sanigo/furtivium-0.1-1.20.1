@@ -67,6 +67,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SCULK_MUSHROOM);
                         entries.add(ModBlocks.SCULK_ORCHID);
                         entries.add(ModBlocks.SCULK_CARNATION);
+                        entries.add(ModBlocks.SCULK_SPIDER_PLANT);
+                        entries.add(ModBlocks.SCULK_FAT_CAP);
+                        entries.add(ModItems.WARDENS_SNACK_ITEM);
 
                         entries.add(Items.SCULK);
                         entries.add(Items.SCULK_VEIN);

@@ -1,26 +1,18 @@
 package furtivium.mixin;
 
-import com.llamalad7.mixinextras.expression.Definition;
-import com.llamalad7.mixinextras.expression.Expression;
-import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import furtivium.block.ModBlocks;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.SculkBlock;
-import net.minecraft.block.entity.SculkSpreadManager;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.WorldAccess;
-import org.spongepowered.asm.mixin.Debug;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import java.lang.reflect.Method;
 import java.util.List;
 
 @Mixin(SculkBlock.class)
@@ -31,10 +23,13 @@ public abstract class SculkBlockMixin {
                 ModBlocks.SCULK_ROOTS,
                 ModBlocks.SCULK_CARNATION,
                 ModBlocks.SCULK_MUSHROOM,
-                ModBlocks.SCULK_ORCHID
+                ModBlocks.SCULK_ORCHID,
+                ModBlocks.SCULK_SPIDER_PLANT,
+                ModBlocks.WARDENS_SNACK_BLOCK,
+                ModBlocks.SCULK_FAT_CAP
         );
 
-        if (random.nextInt(3) == 0) {
+        if (random.nextInt(2) == 0) {
 
             int sculkBlockRandom = random.nextInt(sculkBlocks.toArray().length);
             BlockState state;

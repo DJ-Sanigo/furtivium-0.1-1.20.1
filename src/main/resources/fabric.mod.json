@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "furtivium",
+	"id": "furtivium-sculk",
 	"version": "${version}",
 	"name": "Furtivium",
 	"description": "A Mod The Shows The True Power Of The Sculk!",
@@ -28,7 +28,7 @@
 		]
 	},
 	"mixins": [
-		"furtivium.mixins.json"
+		"furtivium-sculk.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.18.4",

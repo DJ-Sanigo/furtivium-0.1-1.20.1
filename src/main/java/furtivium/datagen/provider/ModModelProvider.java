@@ -27,6 +27,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockGen.registerFlowerPotPlant(ModBlocks.SCULK_MUSHROOM, ModBlocks.POTTED_SCULK_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockGen.registerFlowerPotPlant(ModBlocks.SCULK_ORCHID, ModBlocks.POTTED_SCULK_ORCHID, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockGen.registerFlowerPotPlant(ModBlocks.SCULK_CARNATION, ModBlocks.POTTED_SCULK_CARNATION, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_SPIDER_PLANT, ModBlocks.POTTED_SCULK_SPIDER_PLANT, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_FAT_CAP, ModBlocks.POTTED_SCULK_FAT_CAP, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerFlowerPotPlant(ModBlocks.WARDENS_SNACK_BLOCK, ModBlocks.POTTED_WARDENS_SNACK, BlockStateModelGenerator.TintType.NOT_TINTED);
 
     }
 
@@ -52,6 +55,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SCULK_LAMINGTON, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_DOUGHNUT, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_ROOT_GNOCCHI, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARDENS_SNACK_ITEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULKZZARELLA, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_TENDRIL_SPAGHETTI, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_MARGARITA, Models.GENERATED);

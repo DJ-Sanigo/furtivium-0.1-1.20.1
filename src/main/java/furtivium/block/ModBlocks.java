@@ -11,7 +11,6 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
@@ -21,14 +20,21 @@ public class ModBlocks {
     public static final Block PURIFIED_FURTIVIUM_BLOCK = registerBlock("purified_furtivium_block", new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(ModSounds.FURTIVIUM_BLOCK_SOUNDS)));
     public static final Block SCULK_BONE_BLOCK = registerBlock("sculk_bone_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK)));
 
-    public static final Block SCULK_ROOTS = registerBlock("sculk_roots", new SculkBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).nonOpaque().noCollision()));
+    public static final Block SCULK_ROOTS = registerBlock("sculk_roots", new SculkBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).sounds(BlockSoundGroup.SCULK).nonOpaque().noCollision()));
     public static final Block POTTED_SCULK_ROOTS = registerBlockWithoutItem(("potted_sculk_roots"), new FlowerPotBlock(SCULK_ROOTS, FabricBlockSettings.copyOf(Blocks.POTTED_CRIMSON_ROOTS).nonOpaque()));
-    public static final Block SCULK_MUSHROOM = registerBlock("sculk_mushroom", new SculkBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).nonOpaque().noCollision()));
-    public static final Block POTTED_SCULK_MUSHROOM = registerBlockWithoutItem(("potted_sculk_mushroom"), new FlowerPotBlock(SCULK_MUSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_CRIMSON_ROOTS).nonOpaque()));
-    public static final Block SCULK_ORCHID = registerBlock("sculk_orchid", new SculkBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).nonOpaque().noCollision()));
-    public static final Block POTTED_SCULK_ORCHID = registerBlockWithoutItem(("potted_sculk_orchid"), new FlowerPotBlock(SCULK_ORCHID, FabricBlockSettings.copyOf(Blocks.POTTED_CRIMSON_ROOTS).nonOpaque()));
-    public static final Block SCULK_CARNATION = registerBlock("sculk_carnation", new SculkBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).nonOpaque().noCollision()));
-    public static final Block POTTED_SCULK_CARNATION = registerBlockWithoutItem(("potted_sculk_carnation"), new FlowerPotBlock(SCULK_CARNATION, FabricBlockSettings.copyOf(Blocks.POTTED_CRIMSON_ROOTS).nonOpaque()));
+    public static final Block SCULK_MUSHROOM = registerBlock("sculk_mushroom", new SculkBlock(FabricBlockSettings.copyOf(Blocks.BROWN_MUSHROOM).sounds(BlockSoundGroup.SCULK).nonOpaque().noCollision()));
+    public static final Block POTTED_SCULK_MUSHROOM = registerBlockWithoutItem(("potted_sculk_mushroom"), new FlowerPotBlock(SCULK_MUSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_BROWN_MUSHROOM).nonOpaque()));
+    public static final Block SCULK_ORCHID = registerBlock("sculk_orchid", new SculkBlock(FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID).sounds(BlockSoundGroup.SCULK).nonOpaque().noCollision()));
+    public static final Block POTTED_SCULK_ORCHID = registerBlockWithoutItem(("potted_sculk_orchid"), new FlowerPotBlock(SCULK_ORCHID, FabricBlockSettings.copyOf(Blocks.POTTED_BLUE_ORCHID).nonOpaque()));
+    public static final Block SCULK_CARNATION = registerBlock("sculk_carnation", new SculkBlock(FabricBlockSettings.copyOf(Blocks.AZURE_BLUET).sounds(BlockSoundGroup.SCULK).nonOpaque().noCollision()));
+    public static final Block POTTED_SCULK_CARNATION = registerBlockWithoutItem(("potted_sculk_carnation"), new FlowerPotBlock(SCULK_CARNATION, FabricBlockSettings.copyOf(Blocks.POTTED_AZURE_BLUET).nonOpaque()));
+    public static final Block SCULK_SPIDER_PLANT = registerBlock("sculk_spider_plant", new SculkBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH).sounds(BlockSoundGroup.SCULK).nonOpaque().noCollision()));
+    public static final Block POTTED_SCULK_SPIDER_PLANT = registerBlockWithoutItem(("potted_sculk_spider_plant"), new FlowerPotBlock(SCULK_SPIDER_PLANT, FabricBlockSettings.copyOf(Blocks.POTTED_CRIMSON_ROOTS).nonOpaque()));
+    public static final Block SCULK_FAT_CAP = registerBlock("sculk_fat_cap", new SculkBlock(FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM).sounds(BlockSoundGroup.SCULK).nonOpaque().noCollision()));
+    public static final Block POTTED_SCULK_FAT_CAP = registerBlockWithoutItem(("potted_sculk_fat_cap"), new FlowerPotBlock(SCULK_FAT_CAP, FabricBlockSettings.copyOf(Blocks.POTTED_RED_MUSHROOM).nonOpaque()));
+    public static final Block WARDENS_SNACK_BLOCK = registerBlock("wardens_snack_block", new SculkBlock(FabricBlockSettings.copyOf(Blocks.WARPED_FUNGUS).sounds(BlockSoundGroup.SCULK).nonOpaque().noCollision()));
+    public static final Block POTTED_WARDENS_SNACK = registerBlockWithoutItem(("potted_wardens_snack"), new FlowerPotBlock(WARDENS_SNACK_BLOCK, FabricBlockSettings.copyOf(Blocks.POTTED_WARPED_FUNGUS).nonOpaque()));
+
 
 
     private static Block registerBlockWithoutItem(String name, Block block) {

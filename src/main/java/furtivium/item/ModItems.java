@@ -1,6 +1,7 @@
 package furtivium.item;
 
 import furtivium.Furtivium;
+import furtivium.block.ModBlocks;
 import furtivium.item.custom.*;
 import furtivium.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -34,6 +35,8 @@ public class ModItems {
             new StewItem(new FabricItemSettings().food(ModFoodComponents.SCULK_TENDRIL_SPAGHETTI).maxCount(1)));
     public static final Item SCULKZZARELLA = registerItem("sculkzzarella",
             new Item(new FabricItemSettings().food(ModFoodComponents.SCULKZZARELLA)));
+    public static final Item WARDENS_SNACK_ITEM = registerItem("wardens_snack_item",
+            new AliasedBlockItem(ModBlocks.WARDENS_SNACK_BLOCK, new FabricItemSettings().food(ModFoodComponents.WARDENS_SNACK)));
 
     public static final Item RAW_FURTIVIUM = registerItem("raw_furtivium", new Item(new FabricItemSettings()));
     public static final Item INCOMPLETE_FURTIVIUM_INGOT = registerItem("incomplete_furtivium_ingot", new Item(new FabricItemSettings()));

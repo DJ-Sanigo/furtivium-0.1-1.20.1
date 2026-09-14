@@ -27,6 +27,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_ORCHID);
         addDrop(ModBlocks.SCULK_CARNATION);
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_CARNATION);
+        addDrop(ModBlocks.SCULK_SPIDER_PLANT);
+        addPottedPlantDrops(ModBlocks.POTTED_SCULK_SPIDER_PLANT);
+        addDrop(ModBlocks.SCULK_FAT_CAP);
+        addPottedPlantDrops(ModBlocks.POTTED_SCULK_FAT_CAP);
+        addDrop(ModBlocks.WARDENS_SNACK_BLOCK, oreDrops(ModBlocks.WARDENS_SNACK_BLOCK, ModItems.WARDENS_SNACK_ITEM));
+        addPottedPlantDrops(ModBlocks.POTTED_WARDENS_SNACK);
     }
 
 }
