@@ -14,5 +14,5 @@ public class ModEntities {
     public static final EntityType<Broken1Entity> BROKEN1 = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(Furtivium.MOD_ID, "broken1"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, Broken1Entity::new)
-                    .dimensions(EntityDimensions.fixed(1f, 1f)).build());
+                    .dimensions(EntityDimensions.fixed(1f, 2f)).build());
 }

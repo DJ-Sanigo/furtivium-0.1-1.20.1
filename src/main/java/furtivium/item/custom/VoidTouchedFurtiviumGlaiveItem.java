@@ -45,20 +45,32 @@ public class VoidTouchedFurtiviumGlaiveItem extends SwordItem implements TwoHand
 
             target.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.DARKNESS,
-                    50,
-                    0
+                    100,
+                    3
+            ));
+
+            target.addStatusEffect(new StatusEffectInstance(
+                    StatusEffects.BLINDNESS,
+                    100,
+                    3
             ));
 
             target.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.NAUSEA,
-                    50,
-                    0
+                    100,
+                    3
+            ));
+
+            target.addStatusEffect(new StatusEffectInstance(
+                    StatusEffects.NIGHT_VISION,
+                    100,
+                    3
             ));
 
             player.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.REGENERATION,
                     100,
-                    0
+                    1
             ));
 
         }

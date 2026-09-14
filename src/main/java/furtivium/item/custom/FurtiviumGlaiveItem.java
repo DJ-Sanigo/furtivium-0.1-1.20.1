@@ -1,6 +1,7 @@
 package furtivium.item.custom;
 
 import furtivium.item.ModToolMaterial;
+import furtivium.item.TwoHandedItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -14,7 +15,7 @@ import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
 
-public class FurtiviumGlaiveItem extends SwordItem {
+public class FurtiviumGlaiveItem extends SwordItem implements TwoHandedItem {
 
     public FurtiviumGlaiveItem(ModToolMaterial modToolMaterial, int i, float v, FabricItemSettings fabricItemSettings) {
         super(modToolMaterial, i, v, fabricItemSettings);
@@ -43,32 +44,32 @@ public class FurtiviumGlaiveItem extends SwordItem {
         if (attacker instanceof PlayerEntity player && !player.getWorld().isClient) {
 
             target.addStatusEffect(new StatusEffectInstance(
-                    StatusEffects.WEAKNESS,
-                    50,
-                    0
-            ));
-
-            target.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.DARKNESS,
-                    50,
-                    0
+                    100,
+                    3
             ));
 
             target.addStatusEffect(new StatusEffectInstance(
-                    StatusEffects.SLOWNESS,
-                    50,
-                    0
+                    StatusEffects.BLINDNESS,
+                    100,
+                    3
             ));
 
             target.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.NAUSEA,
-                    50,
-                    0
+                    100,
+                    3
+            ));
+
+            target.addStatusEffect(new StatusEffectInstance(
+                    StatusEffects.NIGHT_VISION,
+                    100,
+                    3
             ));
 
             target.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.REGENERATION,
-                    100,
+                    200,
                     1
             ));
 

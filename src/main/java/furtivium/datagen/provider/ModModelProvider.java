@@ -34,7 +34,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 
         itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_GLADIUS, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_GLAVE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_GLAIVE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_SPADONE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_CAZZO_FUCILE, Models.HANDHELD);
 

@@ -93,7 +93,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.QUARTZ), conditionsFromItem(Items.QUARTZ))
                 .criterion(hasItem(Items.LAPIS_LAZULI), conditionsFromItem(Items.LAPIS_LAZULI))
                 .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.THE_ALARM_MUSIC_DISC)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModItems.VIAL_OF_DORMANT_SCULK, 1)
                 .pattern("SSS")
@@ -103,7 +103,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', Items.SCULK)
                 .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(Items.GLASS_BOTTLE))
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.VIAL_OF_DORMANT_SCULK)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModItems.VIAL_OF_ACTIVE_SCULK, 2)
                 .pattern(" E ")
@@ -117,7 +117,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK_CATALYST), conditionsFromItem(Items.SCULK_CATALYST))
                 .criterion(hasItem(Items.EXPERIENCE_BOTTLE), conditionsFromItem(Items.EXPERIENCE_BOTTLE))
                 .criterion(hasItem(ModItems.VIAL_OF_DORMANT_SCULK), conditionsFromItem(ModItems.VIAL_OF_DORMANT_SCULK))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.VIAL_OF_ACTIVE_SCULK)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModItems.VIAL_OF_LIQUID_FURTIVIUM, 1)
                 .pattern("EEE")
@@ -127,7 +127,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('E', Items.EMERALD)
                 .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
                 .criterion(hasItem(ModItems.VIAL_OF_ACTIVE_SCULK), conditionsFromItem(ModItems.VIAL_OF_ACTIVE_SCULK))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.VIAL_OF_LIQUID_FURTIVIUM)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.EXPERIENCE_BOTTLE, 3)
                 .pattern(" V ")
@@ -141,7 +141,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.EXPERIENCE_BOTTLE), conditionsFromItem(Items.EXPERIENCE_BOTTLE))
                 .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(Items.GLASS_BOTTLE))
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
-                .offerTo(exporter, new Identifier(getRecipeName(Items.EXPERIENCE_BOTTLE)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.SCULK_CATALYST, 1)
                 .pattern("SSS")
@@ -153,7 +153,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SCULK_BONE), conditionsFromItem(ModItems.SCULK_BONE))
                 .criterion(hasItem(ModItems.WARDEN_HEART), conditionsFromItem(ModItems.WARDEN_HEART))
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
-                .offerTo(exporter, new Identifier(getRecipeName(Items.SCULK_CATALYST)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.SCULK_SHRIEKER, 1)
                 .pattern("B B")
@@ -165,7 +165,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SCULK_BONE), conditionsFromItem(ModItems.SCULK_BONE))
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(ModItems.WARDEN_HEART), conditionsFromItem(ModItems.WARDEN_HEART))
-                .offerTo(exporter, new Identifier(getRecipeName(Items.SCULK_SHRIEKER)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.SCULK_SENSOR, 1)
                 .pattern("   ")
@@ -175,57 +175,31 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', Items.SCULK)
                 .criterion(hasItem(ModItems.SCULK_TENDRIL), conditionsFromItem(ModItems.SCULK_TENDRIL))
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
-                .offerTo(exporter, new Identifier(getRecipeName(Items.SCULK_SENSOR)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.SCULK, 1)
                 .pattern("VV")
                 .pattern("VV")
                 .input('V', Items.SCULK_VEIN)
                 .criterion(hasItem(Items.SCULK_VEIN), conditionsFromItem(Items.SCULK_VEIN))
-                .offerTo(exporter, new Identifier(getRecipeName(Items.SCULK)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.SCULK_VEIN, 8)
                 .pattern("S ")
                 .pattern("S ")
                 .input('S', Items.SCULK)
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
-                .offerTo(exporter, new Identifier(getRecipeName(Items.SCULK_VEIN)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SCULK_MUSHROOM, 1)
-                .pattern("  ")
-                .pattern("SM")
-                .input('S', Items.SCULK)
-                .input('M', Items.RED_MUSHROOM)
-                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
-                .criterion(hasItem(Items.RED_MUSHROOM), conditionsFromItem(Items.RED_MUSHROOM))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SCULK_MUSHROOM)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SCULK_ORCHID, 1)
-                .pattern("  ")
-                .pattern("SO")
-                .input('S', Items.SCULK)
-                .input('O', Items.BLUE_ORCHID)
-                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
-                .criterion(hasItem(Items.BLUE_ORCHID), conditionsFromItem(Items.BLUE_ORCHID))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SCULK_CARNATION, 1)
-                .pattern("  ")
-                .pattern("SO")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.ECHO_SHARD, 2)
+                .pattern("SSS")
+                .pattern("SAS")
+                .pattern("SSS")
                 .input('S', Items.SCULK)
-                .input('O', Items.AZURE_BLUET)
+                .input('A', Items.AMETHYST_SHARD)
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
-                .criterion(hasItem(Items.AZURE_BLUET), conditionsFromItem(Items.AZURE_BLUET))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SCULK_CARNATION)));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SCULK_ROOTS, 1)
-                .pattern("  ")
-                .pattern("SC")
-                .input('S', Items.SCULK)
-                .input('C', Items.CRIMSON_ROOTS)
-                .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
-                .criterion(hasItem(Items.CRIMSON_ROOTS), conditionsFromItem(Items.CRIMSON_ROOTS))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SCULK_ROOTS)));
+                .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_TENDRIL_AND_TONIC, 1)
                 .pattern(" S ")
@@ -239,7 +213,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(ModItems.VIAL_OF_ACTIVE_SCULK), conditionsFromItem(ModItems.VIAL_OF_ACTIVE_SCULK))
                 .criterion(hasItem(ModItems.SCULK_TENDRIL), conditionsFromItem(ModItems.SCULK_TENDRIL))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_TENDRIL_AND_TONIC)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_MARGARITA, 1)
                 .pattern("   ")
@@ -253,7 +227,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(ModItems.VIAL_OF_ACTIVE_SCULK), conditionsFromItem(ModItems.VIAL_OF_ACTIVE_SCULK))
                 .criterion(hasItem(ModItems.SCULK_TENDRIL), conditionsFromItem(ModItems.SCULK_TENDRIL))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_MARGARITA)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_BONE_AND_TENDRIL_BROTH, 1)
                 .pattern("TB")
@@ -266,7 +240,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(Items.BOWL), conditionsFromItem(Items.BOWL))
                 .criterion(hasItem(ModItems.SCULK_TENDRIL), conditionsFromItem(ModItems.SCULK_TENDRIL))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_BONE_AND_TENDRIL_BROTH)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_ROOT_GNOCCHI, 1)
                 .pattern("SR")
@@ -277,7 +251,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(Items.BOWL), conditionsFromItem(Items.BOWL))
                 .criterion(hasItem(ModBlocks.SCULK_ROOTS), conditionsFromItem(ModBlocks.SCULK_ROOTS))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_ROOT_GNOCCHI)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_LAMINGTON, 4)
                 .pattern("SS")
@@ -286,7 +260,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('O', ModBlocks.SCULK_ORCHID)
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(ModBlocks.SCULK_ORCHID), conditionsFromItem(ModBlocks.SCULK_ORCHID))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_LAMINGTON)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_DOUGHNUT, 8)
                 .pattern("VSV")
@@ -298,7 +272,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(Items.SCULK_VEIN), conditionsFromItem(Items.SCULK_VEIN))
                 .criterion(hasItem(ModBlocks.SCULK_CARNATION), conditionsFromItem(ModBlocks.SCULK_CARNATION))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_DOUGHNUT)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_TENDRIL_SPAGHETTI, 1)
                 .pattern("BC ")
@@ -312,7 +286,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(Items.BOWL), conditionsFromItem(Items.BOWL))
                 .criterion(hasItem(ModItems.SCULK_TENDRIL), conditionsFromItem(ModItems.SCULK_TENDRIL))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_TENDRIL_SPAGHETTI)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULKZZARELLA, 16)
                 .pattern("MMM")
@@ -326,7 +300,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(Items.SCULK_VEIN), conditionsFromItem(Items.SCULK_VEIN))
                 .criterion(hasItem(ModBlocks.SCULK_MUSHROOM), conditionsFromItem(ModBlocks.SCULK_MUSHROOM))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULKZZARELLA)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SCULK_RING_TOKEN, 1)
                 .pattern(" S ")
@@ -336,7 +310,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('V', Items.SCULK_VEIN)
                 .criterion(hasItem(Items.SCULK_VEIN), conditionsFromItem(Items.SCULK_VEIN))
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SCULK_RING_TOKEN)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COPPER_RING_NUKE, 1)
                 .pattern("SE ")
@@ -348,7 +322,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
                 .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.COPPER_RING_NUKE)));
+                .offerTo(exporter);
 
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(ModItems.RAW_FURTIVIUM, ModBlocks.DEEPSLATE_FURTIVIUM_ORE, ModBlocks.FURTIVIUM_ORE),
                         RecipeCategory.MISC, ModItems.INCOMPLETE_FURTIVIUM_INGOT, 0.2f, 1200)
@@ -386,7 +360,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(Furtivium.MOD_ID, "furtivium_glave_recipe"));
 
         SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.FURTIVIUM_INGOT), Ingredient.ofItems(ModItems.VOID_MATTER), Ingredient.ofItems(ModItems.FURTIVIUM_GLAIVE),
-                        RecipeCategory.MISC, ModItems.VOID_TOUCHED_FURTIVIUM_GLAVE)
+                        RecipeCategory.MISC, ModItems.VOID_TOUCHED_FURTIVIUM_GLAIVE)
                 .criterion(hasItem(ModItems.VOID_MATTER), conditionsFromItem(ModItems.VOID_MATTER))
                 .criterion(hasItem(ModItems.FURTIVIUM_INGOT), conditionsFromItem(ModItems.FURTIVIUM_INGOT))
                 .criterion(hasItem(ModItems.FURTIVIUM_GLAIVE), conditionsFromItem(ModItems.FURTIVIUM_GLAIVE))

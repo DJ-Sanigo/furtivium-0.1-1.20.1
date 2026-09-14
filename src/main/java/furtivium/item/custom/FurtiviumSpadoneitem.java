@@ -1,6 +1,7 @@
 package furtivium.item.custom;
 
 import furtivium.item.ModToolMaterial;
+import furtivium.item.TwoHandedItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -9,7 +10,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 
-public class FurtiviumSpadoneitem extends SwordItem {
+public class FurtiviumSpadoneitem extends SwordItem implements TwoHandedItem {
     public FurtiviumSpadoneitem(ModToolMaterial modToolMaterial, int i, float v, FabricItemSettings fabricItemSettings) {
         super(modToolMaterial, i, v, fabricItemSettings);
     }
@@ -20,13 +21,13 @@ public class FurtiviumSpadoneitem extends SwordItem {
 
             player.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.RESISTANCE,
-                    50,
-                    0
+                    100,
+                    3
             ));
 
             player.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.SLOWNESS,
-                    100,
+                    200,
                     1
             ));
 

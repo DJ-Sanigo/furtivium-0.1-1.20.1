@@ -1,19 +1,20 @@
 {
 	"schemaVersion": 1,
-	"id": "furtivium-sculk",
+	"id": "furtivium",
 	"version": "${version}",
 	"name": "Furtivium",
 	"description": "A Mod The Shows The True Power Of The Sculk!",
 	"authors": [
 		"DJ Sanigo",
-		"Ivory Moth"
+		"Ivory Moth",
+		"ItsNyx102"
 	],
 	"contact": {
 		"homepage": "",
 		"sources": ""
 	},
 	"license": "MIT",
-	"icon": "assets/furtivium-sculk/icon.png",
+	"icon": "assets/furtivium/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -27,7 +28,7 @@
 		]
 	},
 	"mixins": [
-		"furtivium-sculk.mixins.json"
+		"furtivium.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.18.4",

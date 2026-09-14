@@ -24,13 +24,13 @@ public abstract class ItemRendererMixin {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Furtivium.MOD_ID, "furtivium_gladius_3d", "inventory"));
         }
         if (stack.isOf(ModItems.FURTIVIUM_GLAIVE) && renderMode != ModelTransformationMode.GUI) {
-            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Furtivium.MOD_ID, "furtivium_glave_3d", "inventory"));
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Furtivium.MOD_ID, "furtivium_glaive_3d", "inventory"));
         }
         if (stack.isOf(ModItems.FURTIVIUM_CAZZO_FUCILE) && renderMode != ModelTransformationMode.GUI) {
-            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Furtivium.MOD_ID, "homo_blaster_3d", "inventory"));
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Furtivium.MOD_ID, "furtivium_cazzo_fucile_3d", "inventory"));
         }
-        if (stack.isOf(ModItems.VOID_TOUCHED_FURTIVIUM_GLAVE) && renderMode != ModelTransformationMode.GUI) {
-            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Furtivium.MOD_ID, "void_touched_furtivium_glave_3d", "inventory"));
+        if (stack.isOf(ModItems.VOID_TOUCHED_FURTIVIUM_GLAIVE) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Furtivium.MOD_ID, "void_touched_furtivium_glaive_3d", "inventory"));
         }
 
         return value;

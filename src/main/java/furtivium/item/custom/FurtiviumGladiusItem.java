@@ -20,14 +20,14 @@ public class FurtiviumGladiusItem extends SwordItem {
 
             player.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.SPEED,
-                    50,
+                    100,
                     3
             ));
 
             player.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.WEAKNESS,
-                    100,
-                    0
+                    200,
+                    1
             ));
 
         }

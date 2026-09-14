@@ -56,20 +56,20 @@ public class ModItems {
             new MusicDiscItem(7, ModSounds.THE_ALARM_FT_KASANE_TETO, new FabricItemSettings().maxCount(1), 411));
 
 
-    //everyone say that Noelle you are the best ever
+    //everyone say that Noelle you are the best ever //Nyx is better
     public static final Item FURTIVIUM_CAZZO_FUCILE = registerItem("furtivium_cazzo_fucile", new FurtiviumCazzoFucileItem(new FabricItemSettings()));
     public static final Item FURTIVIUM_GLADIUS = registerItem("furtivium_gladius", new FurtiviumGladiusItem(ModToolMaterial.FURTIVIUM, 1, -2f, new FabricItemSettings()));
     public static final Item FURTIVIUM_SPADONE = registerItem("furtivium_spadone", new FurtiviumSpadoneitem(ModToolMaterial.FURTIVIUM, 3, -2.8f, new FabricItemSettings()));
     public static final Item FURTIVIUM_GLAIVE = registerItem("furtivium_glaive", new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
 
     public static final Item PURIFIED_FURTIVIUM_CAZZO_FUCILE = registerItem("purified_furtivium_cazzo_fucile", new FurtiviumCazzoFucileItem(new FabricItemSettings().maxCount(1)));
-    public static final Item PURIFIED_FURTIVIUM_GLADIUS = registerItem("purified_furtivium_gladius", new FurtiviumGladiusItem(ModToolMaterial.FURTIVIUM, 1, -2f, new FabricItemSettings().maxCount(1)));
-    public static final Item PURIFIED_FURTIVIUM_SPADONE = registerItem("purified_furtivium_spadone", new FurtiviumSpadoneitem(ModToolMaterial.FURTIVIUM, 3, -2.8f, new FabricItemSettings()));
-    public static final Item PURIFIED_FURTIVIUM_GLAVE = registerItem("purified_furtivium_glave", new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
+    public static final Item PURIFIED_FURTIVIUM_GLADIUS = registerItem("purified_furtivium_gladius", new FurtiviumGladiusItem(ModToolMaterial.FURTIVIUM, 0, -2f, new FabricItemSettings().maxCount(1)));
+    public static final Item PURIFIED_FURTIVIUM_SPADONE = registerItem("purified_furtivium_spadone", new FurtiviumSpadoneitem(ModToolMaterial.FURTIVIUM, 2, -2.8f, new FabricItemSettings()));
+    public static final Item PURIFIED_FURTIVIUM_GLAIVE = registerItem("purified_furtivium_glaive", new FurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 2, -3.2f, new FabricItemSettings()));
 
     public static final Item VOID_MATTER = registerItem("void_matter", new Item(new FabricItemSettings()));
 
-    public static final Item VOID_TOUCHED_FURTIVIUM_GLAVE = registerItem("void_touched_furtivium_glave",
+    public static final Item VOID_TOUCHED_FURTIVIUM_GLAIVE = registerItem("void_touched_furtivium_glaive",
             new VoidTouchedFurtiviumGlaiveItem(ModToolMaterial.FURTIVIUM, 3, -2f, new FabricItemSettings()));
 
 
@@ -90,9 +90,9 @@ public class ModItems {
         entries.add(FURTIVIUM_CAZZO_FUCILE);
         entries.add(PURIFIED_FURTIVIUM_SPADONE);
         entries.add(PURIFIED_FURTIVIUM_GLADIUS);
-        entries.add(PURIFIED_FURTIVIUM_GLAVE);
+        entries.add(PURIFIED_FURTIVIUM_GLAIVE);
         entries.add(PURIFIED_FURTIVIUM_CAZZO_FUCILE);
-        entries.add(VOID_TOUCHED_FURTIVIUM_GLAVE);
+        entries.add(VOID_TOUCHED_FURTIVIUM_GLAIVE);
     }
 
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries) {

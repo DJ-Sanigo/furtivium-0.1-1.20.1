@@ -45,15 +45,14 @@
 
   "item.furtivium.furtivium_spadone": "Furtivium Spadone",
   "item.furtivium.furtivium_gladius": "Furtivium Gladius",
-  "item.furtivium.furtivium_glave": "Furtivium Glaive",
+  "item.furtivium.furtivium_glaive": "Furtivium Glaive",
 
   "item.furtivium.furtivium_cazzo_fucile": "Furtivium Cazzo Fucile",
   "item.furtivium.purified_furtivium_cazzo_fucile": "Purified Furtivium Cazzo Fucile",
 
   "item.furtivium.void_matter": "[1T3M.V01D_M@TT3R]",
 
-  "item.furtivium.void_touched_furtivium_glave": "[V01D_T0UCH3D_FURT1V1UM_GL@1V3]",
-
+  "item.furtivium.void_touched_furtivium_glaive": "[V01D_T0UCH3D_FURT1V1UM_GL@1V3]",
 
   "itemgroup.furtivium": "Furtivium"
 }

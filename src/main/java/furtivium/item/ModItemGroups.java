@@ -56,12 +56,12 @@ public class ModItemGroups {
 
                         entries.add(ModItems.PURIFIED_FURTIVIUM_SPADONE);
                         entries.add(ModItems.PURIFIED_FURTIVIUM_GLADIUS);
-                        entries.add(ModItems.PURIFIED_FURTIVIUM_GLAVE);
+                        entries.add(ModItems.PURIFIED_FURTIVIUM_GLAIVE);
                         entries.add(ModItems.PURIFIED_FURTIVIUM_CAZZO_FUCILE);
 
                         entries.add(ModItems.VOID_MATTER);
 
-                        entries.add(ModItems.VOID_TOUCHED_FURTIVIUM_GLAVE);
+                        entries.add(ModItems.VOID_TOUCHED_FURTIVIUM_GLAIVE);
 
                         entries.add(ModBlocks.SCULK_ROOTS);
                         entries.add(ModBlocks.SCULK_MUSHROOM);

@@ -1,11 +1,14 @@
 package furtivium;
 
+import furtivium.entity.ModEntities;
+import furtivium.entity.custom.Broken1Entity;
 import furtivium.item.ModItemGroups;
 import furtivium.item.ModItems;
 import furtivium.block.ModBlocks;
 import furtivium.sound.ModSounds;
 import furtivium.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,7 +31,7 @@ public class Furtivium implements ModInitializer {
 
 		ModSounds.registerSounds();
 
-
+		FabricDefaultAttributeRegistry.register(ModEntities.BROKEN1, Broken1Entity.createBroken1Attributes());
 
 		LOGGER.info("Hello Fabric world!");
 	}

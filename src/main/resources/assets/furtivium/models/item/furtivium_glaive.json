@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-      "layer0": "furtivium:item/furtivium_glave_2d_texture"
+      "layer0": "furtivium:item/furtivium_glaive_2d_texture"
   }
 }

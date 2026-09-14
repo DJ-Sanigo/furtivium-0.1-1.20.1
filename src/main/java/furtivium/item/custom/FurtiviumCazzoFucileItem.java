@@ -152,7 +152,7 @@ public class FurtiviumCazzoFucileItem extends CrossbowItem {
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (attacker instanceof PlayerEntity player && !player.getWorld().isClient) {
 
-            target.addStatusEffect(new StatusEffectInstance(SLOW_FALLING, 10, 0));
+            target.addStatusEffect(new StatusEffectInstance(SLOW_FALLING, 15, 200));
 
             Vec3d velocity = target.getVelocity();
             target.setVelocity(velocity.x, 1.0D, velocity.z);

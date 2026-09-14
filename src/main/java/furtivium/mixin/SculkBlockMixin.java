@@ -25,19 +25,6 @@ import java.util.List;
 
 @Mixin(SculkBlock.class)
 public abstract class SculkBlockMixin {
-
-//    @Definition(id = "SCULK_SENSOR", field = "Lent/minecraft/world/level/block/Blocks;SCULK_SENSOR:Lent/minecraft/world/level/block/Block;")
-//    @Definition(id = "getDefaultState", method = "Lent/net/minecraft/block/BlockState;getDefaultState()Lent/net/minecraft/block/BlockState;")
-//    @Expression("SCULK_SENSOR.getDefaultState()")
-//    @ModifyExpressionValue(method = "getExtraBlockState", at = @At("MIXINEXTRAS:EXPRESSION"))
-//    private BlockState addSculk(BlockState original, WorldAccess worldAccess, BlockPos blockPos, Random random, boolean bl) {
-//        if (random.nextInt(11) == 0) {
-//            return new SculkBlock();
-//        }
-//        return original;
-//    }
-
-
     @Inject(method = "getExtraBlockState", at = @At("RETURN"), cancellable = true)
     private void furtivium$addSculkRoots(WorldAccess world, BlockPos pos, Random random, boolean allowShrieker, CallbackInfoReturnable<BlockState> cir) {
         List<Block> sculkBlocks = List.of(
@@ -61,5 +48,5 @@ public abstract class SculkBlockMixin {
             cir.setReturnValue(state);
         }
     }
-
-} //Under Construction
+}
+//Nyx Is Like, So Like, Cool. Amarite!
