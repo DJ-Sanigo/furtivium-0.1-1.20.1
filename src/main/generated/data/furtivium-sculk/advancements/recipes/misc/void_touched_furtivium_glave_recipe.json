@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_furtivium_glave": {
+    "has_furtivium_glaive": {
       "conditions": {
         "items": [
           {
             "items": [
-              "furtivium:furtivium_glave"
+              "furtivium:furtivium_glaive"
             ]
           }
         ]
@@ -48,7 +48,7 @@
     [
       "has_void_matter",
       "has_furtivium_ingot",
-      "has_furtivium_glave",
+      "has_furtivium_glaive",
       "has_the_recipe"
     ]
   ],

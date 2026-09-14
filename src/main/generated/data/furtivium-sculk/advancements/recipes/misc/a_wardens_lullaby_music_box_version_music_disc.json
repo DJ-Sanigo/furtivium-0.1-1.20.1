@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:a_wardens_lullaby_music_box_version_music_disc"
+        "recipe": "furtivium:a_wardens_lullaby_music_box_version_music_disc"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:a_wardens_lullaby_music_box_version_music_disc"
+      "furtivium:a_wardens_lullaby_music_box_version_music_disc"
     ]
   },
   "sends_telemetry_event": false

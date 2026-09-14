@@ -15,18 +15,18 @@ public class ModModelProvider extends FabricModelProvider {
     }
 
     @Override
-    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FURTIVIUM_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_FURTIVIUM_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FURTIVIUM_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PURIFIED_FURTIVIUM_BLOCK);
+    public void generateBlockStateModels(BlockStateModelGenerator blockGen) {
+        blockGen.registerSimpleCubeAll(ModBlocks.FURTIVIUM_ORE);
+        blockGen.registerSimpleCubeAll(ModBlocks.DEEPSLATE_FURTIVIUM_ORE);
+        blockGen.registerSimpleCubeAll(ModBlocks.FURTIVIUM_BLOCK);
+        blockGen.registerSimpleCubeAll(ModBlocks.PURIFIED_FURTIVIUM_BLOCK);
 
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.SCULK_BONE_BLOCK, TexturedModel.CUBE_COLUMN);
+        blockGen.registerAxisRotated(ModBlocks.SCULK_BONE_BLOCK, TexturedModel.CUBE_COLUMN);
 
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.SCULK_ROOTS, ModBlocks.POTTED_SCULK_ROOTS, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.SCULK_MUSHROOM, ModBlocks.POTTED_SCULK_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.SCULK_ORCHID, ModBlocks.POTTED_SCULK_ORCHID, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.SCULK_CARNATION, ModBlocks.POTTED_SCULK_CARNATION, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_ROOTS, ModBlocks.POTTED_SCULK_ROOTS, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_MUSHROOM, ModBlocks.POTTED_SCULK_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_ORCHID, ModBlocks.POTTED_SCULK_ORCHID, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_CARNATION, ModBlocks.POTTED_SCULK_CARNATION, BlockStateModelGenerator.TintType.NOT_TINTED);
 
     }
 

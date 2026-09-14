@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "addition": {
-    "item": "furtivium:furtivium_glave"
+    "item": "furtivium:furtivium_glaive"
   },
   "base": {
     "item": "furtivium:void_matter"
