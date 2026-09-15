@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+      "layer0": "furtivium:item/void_touched_furtivium_glaive_2d_texture"
+  }
+}

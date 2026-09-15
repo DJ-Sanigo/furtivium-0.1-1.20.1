@@ -1,15 +1,16 @@
 {
   "required": true,
-  "package": "furtivium.Sculk.Minecraft.Mod.mixin",
+  "package": "furtivium.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "ExampleMixin"
+    "ExampleMixin",
+    "SculkBlockMixin"
   ],
   "client": [
+    "ArmPoseMixin",
     "ItemRendererAccessor",
     "ItemRendererMixin",
-    "ModelLoaderMixin",
-    "ArmPoseMixin"
+    "ModelLoaderMixin"
   ],
   "injectors": {
     "defaultRequire": 1

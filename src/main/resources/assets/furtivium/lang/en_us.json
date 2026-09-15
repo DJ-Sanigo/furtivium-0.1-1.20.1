@@ -1,0 +1,70 @@
+{
+  "item.furtivium.vial_of_dormant_sculk": "Vial Of Dormant Sculk",
+  "item.furtivium.vial_of_active_sculk": "Vial Of Active Sculk",
+  "item.furtivium.vial_of_liquid_furtivium": "Vial Of Liquid Furtivium",
+
+  "item.furtivium.sculk_bone_and_tendril_broth": "Sculk, Bone & Tendril Minestrone",
+  "item.furtivium.sculk_lamington": "Sculk Lamington",
+  "item.furtivium.sculk_root_gnocchi": "Sculk Root Gnocchi",
+  "item.furtivium.sculk_doughnut": "Sculk Doughnut",
+  "item.furtivium.sculk_tendril_spaghetti": "Sculk Tendril Spaghetti",
+  "item.furtivium.sculkzzarella": "Sculkzzarella",
+  "item.furtivium.sculk_tendril_and_tonic": "Sculk Tendril & Tonic",
+  "item.furtivium.sculk_margarita": "Sculk Margarita",
+
+  "item.furtivium.raw_furtivium": "Raw Furtivium",
+  "item.furtivium.incomplete_furtivium_ingot": "Incomplete Furtivium Ingot",
+  "item.furtivium.furtivium_ingot": "Furtivium Ingot",
+  "item.furtivium.purified_furtivium_ingot": "Purified Furtivium Ingot",
+  "item.furtivium.sculk_bone": "Sculk Bone",
+  "item.furtivium.warden_heart": "A Warden's Heart",
+  "item.furtivium.sculk_tendril": "Sculk Tendril",
+
+  "block.furtivium.furtivium_ore": "Furtivium Ore",
+  "block.furtivium.deepslate_furtivium_ore": "Deepslate Furtivium Ore",
+  "block.furtivium.furtivium_block": "Furtivium Block",
+  "block.furtivium.purified_furtivium_block": "Purified Furtivium Block",
+  "block.furtivium.sculk_bone_block": "Sculk Bone Block",
+
+  "item.furtivium.sculk_ring_token": "Sculk Ring",
+  "item.furtivium.copper_ring_nuke": "Copper Ring",
+
+  "block.furtivium.sculk_roots": "Sculk Roots",
+  "block.furtivium.sculk_mushroom": "Sculk Mushroom",
+  "block.furtivium.sculk_carnation": "Sculk Carnation",
+  "block.furtivium.sculk_eye_flower": "Sculk Eye Flower",
+  "block.furtivium.sculk_spider_plant": "Sculk Spider Plant",
+  "block.furtivium.sculk_fat_cap": "Sculk Fat Cap",
+  "block.furtivium.sculk_apples_eye_mushroom": "Sculk Apples Eye Mushroom",
+
+  "block.furtivium.small_sculk_sporer_cluster": "Small Sculk Sporer Cluster",
+  "block.furtivium.medium_sculk_sporer_cluster": "Medium Sculk Sporer Cluster",
+  "block.furtivium.large_sculk_sporer_cluster": "Large Sculk Sporer Cluster",
+
+  "item.furtivium.wardens_snack": "Wardens Snack",
+
+  "item.furtivium.a_wardens_lullaby_music_disc": "Music Disc",
+  "item.furtivium.a_wardens_lullaby_music_disc.desc": "A Warden's Lullaby - DJ Sanigo",
+  "item.furtivium.a_wardens_lullaby_music_box_version_music_disc": "Music Disc",
+  "item.furtivium.a_wardens_lullaby_music_box_version_music_disc.desc": "A Warden's Lullaby (Music Box) - DJ Sanigo",
+  "item.furtivium.immovable_object_music_disc": "Music Disc",
+  "item.furtivium.immovable_object_music_disc.desc": "[Song For 1nk] Immovable Object - DJ Sanigo",
+  "item.furtivium.the_alarm_music_disc": "Music Disc",
+  "item.furtivium.the_alarm_music_disc.desc": "THE ALARM (Ft. Kasane Teto) - DJ Sanigo",
+
+  "item.furtivium.furtivium_spadone": "Furtivium Spadone",
+  "item.furtivium.furtivium_gladius": "Furtivium Gladius",
+  "item.furtivium.furtivium_glaive": "Furtivium Glaive",
+  "item.furtivium.furtivium_cazzo_fucile": "Furtivium Cazzo Fucile",
+
+  "item.furtivium.purified_furtivium_spadone": "Purified Furtivium Spadone",
+  "item.furtivium.purified_furtivium_gladius": "Purified Furtivium Gladius",
+  "item.furtivium.purified_furtivium_glaive": "Purified Furtivium Glaive",
+  "item.furtivium.purified_furtivium_cazzo_fucile": "Purified Furtivium Cazzo Fucile",
+
+  "item.furtivium.void_matter": "[1T3M.V01D_M@TT3R]",
+
+  "item.furtivium.void_touched_furtivium_glaive": "[V01D_T0UCH3D_FURT1V1UM_GL@1V3]",
+
+  "itemgroup.furtivium": "Furtivium"
+}

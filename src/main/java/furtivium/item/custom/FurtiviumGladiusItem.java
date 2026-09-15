@@ -1,0 +1,43 @@
+package furtivium.item.custom;
+
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolMaterial;
+
+public class FurtiviumGladiusItem extends SwordItem {
+    public FurtiviumGladiusItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+        super(toolMaterial, attackDamage, attackSpeed, settings);
+    }
+
+    @Override
+    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        if (attacker instanceof PlayerEntity player && !player.getWorld().isClient) {
+
+
+            player.addStatusEffect(new StatusEffectInstance(
+                    StatusEffects.SPEED,
+                    100,
+                    3
+            ));
+
+            player.addStatusEffect(new StatusEffectInstance(
+                    StatusEffects.WEAKNESS,
+                    200,
+                    1
+            ));
+
+        }
+
+        return super.postHit(stack, target, attacker);
+
+    }
+
+}
+
+    //we all say thank you counter strike i mean noelle
+
+
