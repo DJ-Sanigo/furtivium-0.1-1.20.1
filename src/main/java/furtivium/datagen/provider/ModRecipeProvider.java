@@ -191,9 +191,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.ECHO_SHARD, 2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.ECHO_SHARD, 3)
                 .pattern("SSS")
-                .pattern("SAS")
+                .pattern("AAA")
                 .pattern("SSS")
                 .input('S', Items.SCULK)
                 .input('A', Items.AMETHYST_SHARD)
