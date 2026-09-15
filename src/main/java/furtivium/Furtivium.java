@@ -9,6 +9,8 @@ import furtivium.sound.ModSounds;
 import furtivium.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,6 +34,17 @@ public class Furtivium implements ModInitializer {
 		ModSounds.registerSounds();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.BROKEN1, Broken1Entity.createBroken1Attributes());
+
+		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_CARNATION, 0.10F);
+		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_MUSHROOM, 0.10F);
+		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_EYE_FLOWER, 0.10F);
+		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_ROOTS, 0.10F);
+		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_FAT_CAP, 0.10F);
+		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_SPIDER_PLANT, 0.10F);
+		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SMALL_SCULK_SPORER_CLUSTER, 0.05F);
+		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.MEDIUM_SCULK_SPORER_CLUSTER, 0.10F);
+		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.LARGE_SCULK_SPORER_CLUSTER, 0.15F);
+		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModItems.WARDENS_SNACK, 0.05F);
 
 		LOGGER.info("Hello Fabric world!");
 	}

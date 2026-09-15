@@ -84,10 +84,9 @@ public class ModFoodComponents {
                     .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 100, 4), 1f ).build();
 
     public static final FoodComponent WARDENS_SNACK =
-            new FoodComponent.Builder().hunger(1).saturationModifier(0.5F)
+            new FoodComponent.Builder().hunger(1).saturationModifier(0.5F).snack()
                     .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 1200, 3), 1f)
                     .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 1200, 3), 1f )
-                    .statusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 1200, 3), 1f )
                     .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 600, 3), 1f )
                     .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 1200, 3), 1f ).build();
 

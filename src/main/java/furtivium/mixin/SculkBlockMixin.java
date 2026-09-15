@@ -23,10 +23,16 @@ public abstract class SculkBlockMixin {
                 ModBlocks.SCULK_ROOTS,
                 ModBlocks.SCULK_CARNATION,
                 ModBlocks.SCULK_MUSHROOM,
-                ModBlocks.SCULK_ORCHID,
+                ModBlocks.SCULK_EYE_FLOWER,
                 ModBlocks.SCULK_SPIDER_PLANT,
-                ModBlocks.WARDENS_SNACK_BLOCK,
-                ModBlocks.SCULK_FAT_CAP
+                ModBlocks.SCULK_FAT_CAP,
+                ModBlocks.SCULK_APPLES_EYE_MUSHROOM,
+
+                ModBlocks.SMALL_SCULK_SPORER_CLUSTER,
+                ModBlocks.MEDIUM_SCULK_SPORER_CLUSTER,
+                ModBlocks.LARGE_SCULK_SPORER_CLUSTER,
+
+                ModBlocks.WARDENS_SNACK_CLUSTER
         );
 
         if (random.nextInt(2) == 0) {

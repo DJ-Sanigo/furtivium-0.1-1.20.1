@@ -257,9 +257,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("SS")
                 .pattern("SO")
                 .input('S', Items.SCULK)
-                .input('O', ModBlocks.SCULK_ORCHID)
+                .input('O', ModBlocks.SCULK_EYE_FLOWER)
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
-                .criterion(hasItem(ModBlocks.SCULK_ORCHID), conditionsFromItem(ModBlocks.SCULK_ORCHID))
+                .criterion(hasItem(ModBlocks.SCULK_EYE_FLOWER), conditionsFromItem(ModBlocks.SCULK_EYE_FLOWER))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_DOUGHNUT, 8)

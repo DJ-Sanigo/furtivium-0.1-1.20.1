@@ -32,7 +32,16 @@
   "block.furtivium.sculk_roots": "Sculk Roots",
   "block.furtivium.sculk_mushroom": "Sculk Mushroom",
   "block.furtivium.sculk_carnation": "Sculk Carnation",
-  "block.furtivium.sculk_orchid": "Sculk Orchid",
+  "block.furtivium.sculk_eye_flower": "Sculk Eye Flower",
+  "block.furtivium.sculk_spider_plant": "Sculk Spider Plant",
+  "block.furtivium.sculk_fat_cap": "Sculk Fat Cap",
+  "block.furtivium.sculk_apples_eye_mushroom": "Sculk Apples Eye Mushroom",
+
+  "block.furtivium.small_sculk_sporer_cluster": "Small Sculk Sporer Cluster",
+  "block.furtivium.medium_sculk_sporer_cluster": "Medium Sculk Sporer Cluster",
+  "block.furtivium.large_sculk_sporer_cluster": "Large Sculk Sporer Cluster",
+
+  "item.furtivium.wardens_snack": "Wardens Snack",
 
   "item.furtivium.a_wardens_lullaby_music_disc": "Music Disc",
   "item.furtivium.a_wardens_lullaby_music_disc.desc": "A Warden's Lullaby - DJ Sanigo",
@@ -46,8 +55,11 @@
   "item.furtivium.furtivium_spadone": "Furtivium Spadone",
   "item.furtivium.furtivium_gladius": "Furtivium Gladius",
   "item.furtivium.furtivium_glaive": "Furtivium Glaive",
-
   "item.furtivium.furtivium_cazzo_fucile": "Furtivium Cazzo Fucile",
+
+  "item.furtivium.purified_furtivium_spadone": "Purified Furtivium Spadone",
+  "item.furtivium.purified_furtivium_gladius": "Purified Furtivium Gladius",
+  "item.furtivium.purified_furtivium_glaive": "Purified Furtivium Glaive",
   "item.furtivium.purified_furtivium_cazzo_fucile": "Purified Furtivium Cazzo Fucile",
 
   "item.furtivium.void_matter": "[1T3M.V01D_M@TT3R]",

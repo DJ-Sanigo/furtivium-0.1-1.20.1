@@ -8,6 +8,7 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.data.client.TexturedModel;
+import net.minecraft.item.Item;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -25,17 +26,24 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockGen.registerFlowerPotPlant(ModBlocks.SCULK_ROOTS, ModBlocks.POTTED_SCULK_ROOTS, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockGen.registerFlowerPotPlant(ModBlocks.SCULK_MUSHROOM, ModBlocks.POTTED_SCULK_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_ORCHID, ModBlocks.POTTED_SCULK_ORCHID, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_EYE_FLOWER, ModBlocks.POTTED_SCULK_EYE_FLOWER, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockGen.registerFlowerPotPlant(ModBlocks.SCULK_CARNATION, ModBlocks.POTTED_SCULK_CARNATION, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockGen.registerFlowerPotPlant(ModBlocks.SCULK_SPIDER_PLANT, ModBlocks.POTTED_SCULK_SPIDER_PLANT, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockGen.registerFlowerPotPlant(ModBlocks.SCULK_FAT_CAP, ModBlocks.POTTED_SCULK_FAT_CAP, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockGen.registerFlowerPotPlant(ModBlocks.WARDENS_SNACK_BLOCK, ModBlocks.POTTED_WARDENS_SNACK, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_APPLES_EYE_MUSHROOM, ModBlocks.POTTED_SCULK_APPLES_EYE_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockGen.registerTintableCross(ModBlocks.SMALL_SCULK_SPORER_CLUSTER, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerTintableCross(ModBlocks.MEDIUM_SCULK_SPORER_CLUSTER, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerTintableCross(ModBlocks.LARGE_SCULK_SPORER_CLUSTER, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockGen.registerTintableCrossBlockState(ModBlocks.WARDENS_SNACK_CLUSTER, BlockStateModelGenerator.TintType.NOT_TINTED);
+
 
     }
 
+
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-
         itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_GLADIUS, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_GLAIVE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PURIFIED_FURTIVIUM_SPADONE, Models.HANDHELD);
@@ -52,10 +60,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.VIAL_OF_DORMANT_SCULK, Models.GENERATED);
         itemModelGenerator.register(ModItems.VIAL_OF_LIQUID_FURTIVIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_BONE_AND_TENDRIL_BROTH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WARDENS_SNACK, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_LAMINGTON, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_DOUGHNUT, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_ROOT_GNOCCHI, Models.GENERATED);
-        itemModelGenerator.register(ModItems.WARDENS_SNACK_ITEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULKZZARELLA, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_TENDRIL_SPAGHETTI, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_MARGARITA, Models.GENERATED);
@@ -67,6 +75,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SCULK_RING_TOKEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_RING_NUKE, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_MATTER, Models.GENERATED);
+
+
     }
 
 
