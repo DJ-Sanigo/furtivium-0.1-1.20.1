@@ -37,9 +37,9 @@
   "block.furtivium.sculk_fat_cap": "Sculk Fat Cap",
   "block.furtivium.sculk_apples_eye_mushroom": "Sculk Apples Eye Mushroom",
 
-  "block.furtivium.small_sculk_sporer_cluster": "Small Sculk Sporer Cluster",
-  "block.furtivium.medium_sculk_sporer_cluster": "Medium Sculk Sporer Cluster",
-  "block.furtivium.large_sculk_sporer_cluster": "Large Sculk Sporer Cluster",
+  "block.furtivium.small_sculk_spore_shroom_cluster": "Small Sculk Spore Shroom Cluster",
+  "block.furtivium.medium_sculk_spore_shroom_cluster": "Medium Sculk Spore Shroom Cluster",
+  "block.furtivium.large_sculk_spore_shroom_cluster": "Large Sculk Spore Shroom Cluster",
 
   "item.furtivium.wardens_snack": "Wardens Snack",
 
@@ -56,6 +56,8 @@
   "item.furtivium.furtivium_gladius": "Furtivium Gladius",
   "item.furtivium.furtivium_glaive": "Furtivium Glaive",
   "item.furtivium.furtivium_cazzo_fucile": "Furtivium Cazzo Fucile",
+
+  "trim_material.furtivium.furtivium_ingot": "Furtivium Ingot Material",
 
   "item.furtivium.purified_furtivium_spadone": "Purified Furtivium Spadone",
   "item.furtivium.purified_furtivium_gladius": "Purified Furtivium Gladius",

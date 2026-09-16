@@ -8,7 +8,6 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.data.client.TexturedModel;
-import net.minecraft.item.Item;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -32,9 +31,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockGen.registerFlowerPotPlant(ModBlocks.SCULK_FAT_CAP, ModBlocks.POTTED_SCULK_FAT_CAP, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockGen.registerFlowerPotPlant(ModBlocks.SCULK_APPLES_EYE_MUSHROOM, ModBlocks.POTTED_SCULK_APPLES_EYE_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
 
-        blockGen.registerTintableCross(ModBlocks.SMALL_SCULK_SPORER_CLUSTER, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockGen.registerTintableCross(ModBlocks.MEDIUM_SCULK_SPORER_CLUSTER, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockGen.registerTintableCross(ModBlocks.LARGE_SCULK_SPORER_CLUSTER, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerTintableCross(ModBlocks.SMALL_SCULK_SPORE_SHROOM_CLUSTER, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerTintableCross(ModBlocks.MEDIUM_SCULK_SPORE_SHROOM_CLUSTER, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerTintableCross(ModBlocks.LARGE_SCULK_SPORE_SHROOM_CLUSTER, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockGen.registerTintableCrossBlockState(ModBlocks.WARDENS_SNACK_CLUSTER, BlockStateModelGenerator.TintType.NOT_TINTED);
 

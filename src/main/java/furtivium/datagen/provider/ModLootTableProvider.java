@@ -43,9 +43,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SCULK_APPLES_EYE_MUSHROOM);
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_APPLES_EYE_MUSHROOM);
 
-        addDrop(ModBlocks.SMALL_SCULK_SPORER_CLUSTER);
-        addDrop(ModBlocks.MEDIUM_SCULK_SPORER_CLUSTER);
-        addDrop(ModBlocks.LARGE_SCULK_SPORER_CLUSTER);
+        addDrop(ModBlocks.SMALL_SCULK_SPORE_SHROOM_CLUSTER);
+        addDrop(ModBlocks.MEDIUM_SCULK_SPORE_SHROOM_CLUSTER);
+        addDrop(ModBlocks.LARGE_SCULK_SPORE_SHROOM_CLUSTER);
 
         addDrop(ModBlocks.WARDENS_SNACK_CLUSTER);
 

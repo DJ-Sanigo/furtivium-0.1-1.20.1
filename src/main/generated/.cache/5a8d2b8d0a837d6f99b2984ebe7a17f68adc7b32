@@ -1,4 +1,4 @@
-// 1.20.1	2026-09-15T23:45:52.3555767	Furtivium/Recipes
+// 1.20.1	2026-09-16T19:07:40.2746369	Furtivium/Recipes
 e28aba25e34a06196195d7bb63e3a6a75b535109 data\furtivium\recipes\sculk_tendril_spaghetti.json
 4e9bca73522d3fb322b9717d2217a045d59b26ea data\furtivium\recipes\furtivium_block.json
 0b9cf98281bd83093ea03b3f72de520969ed0581 data\furtivium\advancements\recipes\brewing\vial_of_liquid_furtivium.json
@@ -34,8 +34,8 @@ de8646b5173cab79dc3acaf10ff5ae985713bd13 data\furtivium\recipes\experience_bottl
 81f9f3f273c9954a487c21d106a63e17a491474c data\furtivium\recipes\bone_meal.json
 961bb8ccea92d6d77294d8cc2894792f27a5f3f5 data\furtivium\advancements\recipes\misc\sculk_ring_token.json
 d33f15a4c696d54f4865f779edee5d494fccc4f1 data\furtivium\recipes\furtivium_ingot_recipe.json
-30a79d4633bee57bf6be973acd3c6a24d37c7dce data\furtivium\advancements\recipes\food\sculk_bone_and_tendril_broth.json
 437c71471b1f8608393714a76cba8f66e4cf63fa data\furtivium\recipes\sculk_bone_and_tendril_broth.json
+30a79d4633bee57bf6be973acd3c6a24d37c7dce data\furtivium\advancements\recipes\food\sculk_bone_and_tendril_broth.json
 da2e25bcbc77c5abd896491763818001e561ed11 data\furtivium\advancements\recipes\misc\echo_shard.json
 a7cdb244aa004b33448eefe9aa2e8016601d3e6a data\furtivium\advancements\recipes\misc\experience_bottle.json
 068d6a17f73f81ccd28e7b2b73f7b3c700c9020c data\furtivium\advancements\recipes\misc\copper_ring_nuke.json
@@ -58,7 +58,7 @@ f26dfa40869b4af8f5aeaaffc741cdd6a258284b data\furtivium\advancements\recipes\dec
 a728219f5c79f99c30d7aca583816fc869c7291f data\furtivium\recipes\sculk_lamington.json
 db00869bc336ba139f150442fea44e01e46269cb data\furtivium\recipes\vial_of_active_sculk.json
 b2ce1c7acaf83b90d2ed224bf9d2fc7136834ea3 data\furtivium\advancements\recipes\combat\furtivium_cazzo_fucile.json
-26b8bea2f0a3e0b694d761f4d4c9a4e27a280769 data\furtivium\recipes\echo_shard.json
+ffc83697b9f887995300e41da858f757b6a9386d data\furtivium\recipes\echo_shard.json
 118427e7e1c21ac2f62943d5434eee0ae79a18a5 data\furtivium\advancements\recipes\food\sculk_tendril_and_tonic.json
 84a074bb690cb1774607af84f41ba76f5a31aaac data\furtivium\recipes\sculk_ring_token.json
 96c9859a10b2f04c55c55000cfa149b41c848ebb data\furtivium\recipes\purified_furtivium_block.json

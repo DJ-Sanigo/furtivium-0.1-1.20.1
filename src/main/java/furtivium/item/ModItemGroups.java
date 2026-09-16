@@ -71,9 +71,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SCULK_FAT_CAP);
                         entries.add(ModBlocks.SCULK_APPLES_EYE_MUSHROOM);
 
-                        entries.add(ModBlocks.SMALL_SCULK_SPORER_CLUSTER);
-                        entries.add(ModBlocks.MEDIUM_SCULK_SPORER_CLUSTER);
-                        entries.add(ModBlocks.LARGE_SCULK_SPORER_CLUSTER);
+                        entries.add(ModBlocks.SMALL_SCULK_SPORE_SHROOM_CLUSTER);
+                        entries.add(ModBlocks.MEDIUM_SCULK_SPORE_SHROOM_CLUSTER);
+                        entries.add(ModBlocks.LARGE_SCULK_SPORE_SHROOM_CLUSTER);
 
                         entries.add(ModItems.WARDENS_SNACK);
 

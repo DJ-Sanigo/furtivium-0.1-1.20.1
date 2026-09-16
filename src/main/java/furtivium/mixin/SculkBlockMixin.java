@@ -28,9 +28,9 @@ public abstract class SculkBlockMixin {
                 ModBlocks.SCULK_FAT_CAP,
                 ModBlocks.SCULK_APPLES_EYE_MUSHROOM,
 
-                ModBlocks.SMALL_SCULK_SPORER_CLUSTER,
-                ModBlocks.MEDIUM_SCULK_SPORER_CLUSTER,
-                ModBlocks.LARGE_SCULK_SPORER_CLUSTER,
+                ModBlocks.SMALL_SCULK_SPORE_SHROOM_CLUSTER,
+                ModBlocks.MEDIUM_SCULK_SPORE_SHROOM_CLUSTER,
+                ModBlocks.LARGE_SCULK_SPORE_SHROOM_CLUSTER,
 
                 ModBlocks.WARDENS_SNACK_CLUSTER
         );

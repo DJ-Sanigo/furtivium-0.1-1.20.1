@@ -1,6 +1,7 @@
 package furtivium.block;
 
 import furtivium.Furtivium;
+import furtivium.block.custom.SculkSporeShroomCluster;
 import furtivium.item.ModItems;
 import furtivium.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -35,9 +36,9 @@ public class ModBlocks {
     public static final Block SCULK_APPLES_EYE_MUSHROOM = registerBlock("sculk_apples_eye_mushroom", new SculkBlock(FabricBlockSettings.copyOf(Blocks.BROWN_MUSHROOM).sounds(BlockSoundGroup.SCULK).nonOpaque().noCollision()));
     public static final Block POTTED_SCULK_APPLES_EYE_MUSHROOM = registerBlockWithoutItem(("potted_sculk_apples_eye_mushroom"), new FlowerPotBlock(SCULK_APPLES_EYE_MUSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_BROWN_MUSHROOM).nonOpaque()));
 
-    public static final Block SMALL_SCULK_SPORER_CLUSTER = registerBlock("small_sculk_sporer_cluster", new SculkBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).sounds(BlockSoundGroup.SCULK).nonOpaque().noCollision()));
-    public static final Block MEDIUM_SCULK_SPORER_CLUSTER = registerBlock("medium_sculk_sporer_cluster", new SculkBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).sounds(BlockSoundGroup.SCULK).nonOpaque().noCollision()));
-    public static final Block LARGE_SCULK_SPORER_CLUSTER = registerBlock("large_sculk_sporer_cluster", new SculkBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).sounds(BlockSoundGroup.SCULK).nonOpaque().noCollision()));
+    public static final Block SMALL_SCULK_SPORE_SHROOM_CLUSTER = registerBlock("small_sculk_spore_shroom_cluster", new SculkSporeShroomCluster(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).sounds(BlockSoundGroup.SCULK).nonOpaque().noCollision()));
+    public static final Block MEDIUM_SCULK_SPORE_SHROOM_CLUSTER = registerBlock("medium_sculk_spore_shroom_cluster", new SculkSporeShroomCluster(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).sounds(BlockSoundGroup.SCULK).nonOpaque().noCollision()));
+    public static final Block LARGE_SCULK_SPORE_SHROOM_CLUSTER = registerBlock("large_sculk_spore_shroom_cluster", new SculkSporeShroomCluster(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).sounds(BlockSoundGroup.SCULK).nonOpaque().noCollision()));
 
     public static final Block WARDENS_SNACK_CLUSTER = registerBlockWithoutItem("wardens_snack_cluster", new SculkBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH).sounds(BlockSoundGroup.SCULK)));
 
