@@ -31,15 +31,17 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDropWithSilkTouch(ModBlocks.SCULK_ROOTS);
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_ROOTS);
-        addDropWithSilkTouch(ModBlocks.SCULK_MUSHROOM);
-        addPottedPlantDrops(ModBlocks.POTTED_SCULK_MUSHROOM);
-        addDropWithSilkTouch(ModBlocks.SCULK_EYE_FLOWER);
-        addPottedPlantDrops(ModBlocks.POTTED_SCULK_EYE_FLOWER);
+        addDropWithSilkTouch(ModBlocks.SCULK_FLAT_CAP_MUSHROOM);
+        addDropWithSilkTouch(ModBlocks.SCULK_FLAT_CAP_MUSHROOM_BLOCK);
+        addDropWithSilkTouch(ModBlocks.SCULK_FLAT_CAP_MUSHROOM_STEM);
+        addPottedPlantDrops(ModBlocks.POTTED_SCULK_FLAT_CAP_MUSHROOM);
+        addDropWithSilkTouch(ModBlocks.SCULK_FAKE_EYE_FLOWER_MUSHROOM);
+        addPottedPlantDrops(ModBlocks.POTTED_SCULK_FAKE_EYE_FLOWER_MUSHROOM);
         addDropWithSilkTouch(ModBlocks.SCULK_CARNATION);
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_CARNATION);
-        addDropWithSilkTouch(ModBlocks.SCULK_SPIDER_PLANT);
-        addPottedPlantDrops(ModBlocks.POTTED_SCULK_SPIDER_PLANT);
-        addDropWithSilkTouch(ModBlocks.SCULK_FAT_CAP);
+        addDropWithSilkTouch(ModBlocks.SCULK_SPIDER_MUSHROOM);
+        addPottedPlantDrops(ModBlocks.POTTED_SCULK_SPIDER_MUSHROOM);
+        addDropWithSilkTouch(ModBlocks.SCULK_FAT_CAP_MUSHROOM);
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_FAT_CAP);
         addDropWithSilkTouch(ModBlocks.SCULK_APPLES_EYE_MUSHROOM);
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_APPLES_EYE_MUSHROOM);

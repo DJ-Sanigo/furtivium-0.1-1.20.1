@@ -6,7 +6,6 @@ import furtivium.item.ModItemGroups;
 import furtivium.item.ModItems;
 import furtivium.block.ModBlocks;
 import furtivium.sound.ModSounds;
-import furtivium.trim.ModTrimMaterials;
 import furtivium.util.ModLootTableModifiers;
 import furtivium.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
@@ -40,11 +39,11 @@ public class Furtivium implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.BROKEN1, Broken1Entity.createBroken1Attributes());
 
 		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_CARNATION, 0.10F);
-		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_MUSHROOM, 0.10F);
-		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_EYE_FLOWER, 0.10F);
+		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_FLAT_CAP_MUSHROOM, 0.10F);
+		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_FAKE_EYE_FLOWER_MUSHROOM, 0.10F);
 		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_ROOTS, 0.10F);
-		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_FAT_CAP, 0.10F);
-		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_SPIDER_PLANT, 0.10F);
+		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_FAT_CAP_MUSHROOM, 0.10F);
+		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SCULK_SPIDER_MUSHROOM, 0.10F);
 		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.SMALL_SCULK_SPORE_SHROOM_CLUSTER, 0.05F);
 		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.MEDIUM_SCULK_SPORE_SHROOM_CLUSTER, 0.10F);
 		CompostingChanceRegistry.INSTANCE.add((ItemConvertible) ModBlocks.LARGE_SCULK_SPORE_SHROOM_CLUSTER, 0.15F);

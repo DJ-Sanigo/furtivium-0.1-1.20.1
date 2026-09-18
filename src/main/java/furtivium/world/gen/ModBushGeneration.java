@@ -11,7 +11,7 @@ public class ModBushGeneration {
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_DARK, BiomeKeys.DEEP_DARK),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SCULK_ROOTS_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_DARK, BiomeKeys.DEEP_DARK),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SCULK_MUSHROOM_PLACED_KEY);
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SCULK_FLAT_CAP_MUSHROOM_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_DARK, BiomeKeys.DEEP_DARK),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SCULK_EYE_FLOWER_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_DARK, BiomeKeys.DEEP_DARK),
@@ -19,7 +19,7 @@ public class ModBushGeneration {
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_DARK, BiomeKeys.DEEP_DARK),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SCULK_SPIDER_PLANT_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_DARK, BiomeKeys.DEEP_DARK),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SCULK_FAT_CAP_PLACED_KEY);
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SCULK_FAT_CAP_MUSHROOM_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_DARK, BiomeKeys.DEEP_DARK),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SCULK_APPLES_EYE_MUSHROOM_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_DARK, BiomeKeys.DEEP_DARK),

@@ -84,7 +84,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.075f))
+                        .conditionally(RandomChanceLootCondition.builder(0.015f))
                         .with(ItemEntry.builder(ModItems.A_WARDENS_LULLABY_MUSIC_DISC))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -161,7 +161,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.25f))
+                        .conditionally(RandomChanceLootCondition.builder(0.025f))
                         .with(ItemEntry.builder(ModItems.SCULK_DOUGHNUT))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 5.0f)).build());
 
@@ -172,7 +172,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.25f))
+                        .conditionally(RandomChanceLootCondition.builder(0.025f))
                         .with(ItemEntry.builder(ModItems.SCULK_LAMINGTON))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 5.0f)).build());
 
@@ -183,7 +183,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.25f))
+                        .conditionally(RandomChanceLootCondition.builder(0.025f))
                         .with(ItemEntry.builder(ModItems.WARDENS_SNACK))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 5.0f)).build());
 
@@ -194,7 +194,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.25f))
+                        .conditionally(RandomChanceLootCondition.builder(0.025f))
                         .with(ItemEntry.builder(ModItems.SCULKZZARELLA))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 5.0f)).build());
 
@@ -205,7 +205,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
                         .with(ItemEntry.builder(ModItems.SCULK_MARGARITA))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -216,7 +216,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
                         .with(ItemEntry.builder(ModItems.SCULK_TENDRIL_AND_TONIC))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -227,7 +227,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
                         .with(ItemEntry.builder(ModItems.SCULK_BONE_AND_TENDRIL_BROTH))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -238,7 +238,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
                         .with(ItemEntry.builder(ModItems.SCULK_TENDRIL_SPAGHETTI))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -249,7 +249,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
                         .with(ItemEntry.builder(ModItems.SCULK_ROOT_GNOCCHI))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -260,7 +260,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.01f))
+                        .conditionally(RandomChanceLootCondition.builder(0.10f))
                         .with(ItemEntry.builder(ModItems.IMMOVABLE_OBJECT_MUSIC_DISC))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -271,7 +271,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.01f))
+                        .conditionally(RandomChanceLootCondition.builder(0.10f))
                         .with(ItemEntry.builder(ModItems.MAGICAL_DOCTOR_MUSIC_DISC))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -282,7 +282,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.01f))
+                        .conditionally(RandomChanceLootCondition.builder(0.015f))
                         .with(ItemEntry.builder(ModItems.MAGICAL_DOCTOR_SNACK_REMIX_MUSIC_DISC))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -293,7 +293,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.01f))
+                        .conditionally(RandomChanceLootCondition.builder(0.10f))
                         .with(ItemEntry.builder(ModItems.THE_ALARM_MUSIC_DISC))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -304,7 +304,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.25f))
+                        .conditionally(RandomChanceLootCondition.builder(0.025f))
                         .with(ItemEntry.builder(ModBlocks.SCULK_ROOTS))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 5.0f)).build());
 
@@ -315,8 +315,8 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.25f))
-                        .with(ItemEntry.builder(ModBlocks.SCULK_MUSHROOM))
+                        .conditionally(RandomChanceLootCondition.builder(0.025f))
+                        .with(ItemEntry.builder(ModBlocks.SCULK_FLAT_CAP_MUSHROOM))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 5.0f)).build());
 
                 builder.pool(poolBuilder.build());
@@ -326,8 +326,8 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.25f))
-                        .with(ItemEntry.builder(ModBlocks.SCULK_EYE_FLOWER))
+                        .conditionally(RandomChanceLootCondition.builder(0.025f))
+                        .with(ItemEntry.builder(ModBlocks.SCULK_FAKE_EYE_FLOWER_MUSHROOM))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 5.0f)).build());
 
                 builder.pool(poolBuilder.build());
@@ -337,7 +337,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.25f))
+                        .conditionally(RandomChanceLootCondition.builder(0.025f))
                         .with(ItemEntry.builder(ModBlocks.SCULK_CARNATION))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 5.0f)).build());
 
@@ -348,8 +348,8 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.25f))
-                        .with(ItemEntry.builder(ModBlocks.SCULK_SPIDER_PLANT))
+                        .conditionally(RandomChanceLootCondition.builder(0.025f))
+                        .with(ItemEntry.builder(ModBlocks.SCULK_SPIDER_MUSHROOM))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 5.0f)).build());
 
                 builder.pool(poolBuilder.build());
@@ -359,8 +359,8 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.25f))
-                        .with(ItemEntry.builder(ModBlocks.SCULK_FAT_CAP))
+                        .conditionally(RandomChanceLootCondition.builder(0.025f))
+                        .with(ItemEntry.builder(ModBlocks.SCULK_FAT_CAP_MUSHROOM))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 5.0f)).build());
 
                 builder.pool(poolBuilder.build());
@@ -370,7 +370,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.25f))
+                        .conditionally(RandomChanceLootCondition.builder(0.025f))
                         .with(ItemEntry.builder(ModBlocks.SCULK_APPLES_EYE_MUSHROOM))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 5.0f)).build());
 
@@ -381,7 +381,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.25f))
+                        .conditionally(RandomChanceLootCondition.builder(0.025f))
                         .with(ItemEntry.builder(ModBlocks.SMALL_SCULK_SPORE_SHROOM_CLUSTER))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 5.0f)).build());
 
@@ -392,7 +392,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.25f))
+                        .conditionally(RandomChanceLootCondition.builder(0.025f))
                         .with(ItemEntry.builder(ModBlocks.MEDIUM_SCULK_SPORE_SHROOM_CLUSTER))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 5.0f)).build());
 
@@ -403,7 +403,7 @@ public class ModLootTableModifiers {
             if(ANCIENT_CITY_ID.equals(identifier)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.25f))
+                        .conditionally(RandomChanceLootCondition.builder(0.025f))
                         .with(ItemEntry.builder(ModBlocks.LARGE_SCULK_SPORE_SHROOM_CLUSTER))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 5.0f)).build());
 

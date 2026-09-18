@@ -66,11 +66,13 @@ public class ModItemGroups {
                         entries.add(ModItems.VOID_TOUCHED_FURTIVIUM_GLAIVE);
 
                         entries.add(ModBlocks.SCULK_ROOTS);
-                        entries.add(ModBlocks.SCULK_MUSHROOM);
-                        entries.add(ModBlocks.SCULK_EYE_FLOWER);
+                        entries.add(ModBlocks.SCULK_FLAT_CAP_MUSHROOM);
+                        entries.add(ModBlocks.SCULK_FLAT_CAP_MUSHROOM_BLOCK);
+                        entries.add(ModBlocks.SCULK_FLAT_CAP_MUSHROOM_STEM);
+                        entries.add(ModBlocks.SCULK_FAKE_EYE_FLOWER_MUSHROOM);
                         entries.add(ModBlocks.SCULK_CARNATION);
-                        entries.add(ModBlocks.SCULK_SPIDER_PLANT);
-                        entries.add(ModBlocks.SCULK_FAT_CAP);
+                        entries.add(ModBlocks.SCULK_SPIDER_MUSHROOM);
+                        entries.add(ModBlocks.SCULK_FAT_CAP_MUSHROOM);
                         entries.add(ModBlocks.SCULK_APPLES_EYE_MUSHROOM);
 
                         entries.add(ModBlocks.SMALL_SCULK_SPORE_SHROOM_CLUSTER);

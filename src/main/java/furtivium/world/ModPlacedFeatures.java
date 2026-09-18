@@ -1,13 +1,11 @@
 package furtivium.world;
 
 import furtivium.Furtivium;
-import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
@@ -19,11 +17,11 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> SCULK_ROOTS_PLACED_KEY = registerKey("sculk_roots_placed");
-    public static final RegistryKey<PlacedFeature> SCULK_MUSHROOM_PLACED_KEY = registerKey("sculk_mushroom_placed");
+    public static final RegistryKey<PlacedFeature> SCULK_FLAT_CAP_MUSHROOM_PLACED_KEY = registerKey("sculk_mushroom_placed");
     public static final RegistryKey<PlacedFeature> SCULK_EYE_FLOWER_PLACED_KEY = registerKey("sculk_eye_flower_placed");
     public static final RegistryKey<PlacedFeature> SCULK_CARNATION_PLACED_KEY = registerKey("sculk_carnation_placed");
     public static final RegistryKey<PlacedFeature> SCULK_SPIDER_PLANT_PLACED_KEY = registerKey("sculk_spider_plant_placed");
-    public static final RegistryKey<PlacedFeature> SCULK_FAT_CAP_PLACED_KEY = registerKey("sculk_fat_cap_placed");
+    public static final RegistryKey<PlacedFeature> SCULK_FAT_CAP_MUSHROOM_PLACED_KEY = registerKey("sculk_fat_cap_mushroom_placed");
     public static final RegistryKey<PlacedFeature> SCULK_APPLES_EYE_MUSHROOM_PLACED_KEY = registerKey("sculk_apples_eye_mushroom_placed");
     public static final RegistryKey<PlacedFeature> SMALL_SCULK_SPORE_SHROOM_CLUSTER_PLACED_KEY = registerKey("small_sculk_spore_shroom_cluster_placed");
     public static final RegistryKey<PlacedFeature> MEDIUM_SCULK_SPORE_SHROOM_CLUSTER_PLACED_KEY = registerKey("medium_sculk_spore_shroom_cluster_placed");
@@ -36,7 +34,7 @@ public class ModPlacedFeatures {
 
         register(context, SCULK_ROOTS_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SCULK_ROOTS_KEY),
                 RarityFilterPlacementModifier.of(2), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
-        register(context, SCULK_MUSHROOM_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SCULK_MUSHROOM_KEY),
+        register(context, SCULK_FLAT_CAP_MUSHROOM_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SCULK_FLAT_CAP_MUSHROOM_KEY),
                 RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
         register(context, SCULK_EYE_FLOWER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SCULK_EYE_FLOWER_KEY),
                 RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
@@ -44,7 +42,7 @@ public class ModPlacedFeatures {
                 RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
         register(context, SCULK_SPIDER_PLANT_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SCULK_SPIDER_PLANT_KEY),
                 RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
-        register(context, SCULK_FAT_CAP_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SCULK_FAT_CAP_KEY),
+        register(context, SCULK_FAT_CAP_MUSHROOM_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SCULK_FAT_CAP_MUSHROOM_KEY),
                 RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
         register(context, SCULK_APPLES_EYE_MUSHROOM_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SCULK_APPLES_EYE_MUSHROOM_KEY),
                 RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());

@@ -24,11 +24,15 @@ public class ModModelProvider extends FabricModelProvider {
         blockGen.registerAxisRotated(ModBlocks.SCULK_BONE_BLOCK, TexturedModel.CUBE_COLUMN);
 
         blockGen.registerFlowerPotPlant(ModBlocks.SCULK_ROOTS, ModBlocks.POTTED_SCULK_ROOTS, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_MUSHROOM, ModBlocks.POTTED_SCULK_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_EYE_FLOWER, ModBlocks.POTTED_SCULK_EYE_FLOWER, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_FLAT_CAP_MUSHROOM, ModBlocks.POTTED_SCULK_FLAT_CAP_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerSimpleCubeAll(ModBlocks.SCULK_FLAT_CAP_MUSHROOM_BLOCK);
+
+        blockGen.registerSingleton(ModBlocks.SCULK_FLAT_CAP_MUSHROOM_STEM, TexturedModel.CUBE_COLUMN);
+
+        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_FAKE_EYE_FLOWER_MUSHROOM, ModBlocks.POTTED_SCULK_FAKE_EYE_FLOWER_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockGen.registerFlowerPotPlant(ModBlocks.SCULK_CARNATION, ModBlocks.POTTED_SCULK_CARNATION, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_SPIDER_PLANT, ModBlocks.POTTED_SCULK_SPIDER_PLANT, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_FAT_CAP, ModBlocks.POTTED_SCULK_FAT_CAP, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_SPIDER_MUSHROOM, ModBlocks.POTTED_SCULK_SPIDER_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockGen.registerFlowerPotPlant(ModBlocks.SCULK_FAT_CAP_MUSHROOM, ModBlocks.POTTED_SCULK_FAT_CAP, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockGen.registerFlowerPotPlant(ModBlocks.SCULK_APPLES_EYE_MUSHROOM, ModBlocks.POTTED_SCULK_APPLES_EYE_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockGen.registerTintableCross(ModBlocks.SMALL_SCULK_SPORE_SHROOM_CLUSTER, BlockStateModelGenerator.TintType.NOT_TINTED);

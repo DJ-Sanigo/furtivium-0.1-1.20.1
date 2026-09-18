@@ -22,10 +22,10 @@ public abstract class SculkBlockMixin {
         List<Block> sculkBlocks = List.of(
                 ModBlocks.SCULK_ROOTS,
                 ModBlocks.SCULK_CARNATION,
-                ModBlocks.SCULK_MUSHROOM,
-                ModBlocks.SCULK_EYE_FLOWER,
-                ModBlocks.SCULK_SPIDER_PLANT,
-                ModBlocks.SCULK_FAT_CAP,
+                ModBlocks.SCULK_FLAT_CAP_MUSHROOM,
+                ModBlocks.SCULK_FAKE_EYE_FLOWER_MUSHROOM,
+                ModBlocks.SCULK_SPIDER_MUSHROOM,
+                ModBlocks.SCULK_FAT_CAP_MUSHROOM,
                 ModBlocks.SCULK_APPLES_EYE_MUSHROOM,
 
                 ModBlocks.SMALL_SCULK_SPORE_SHROOM_CLUSTER,

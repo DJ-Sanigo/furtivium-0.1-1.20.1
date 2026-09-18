@@ -281,9 +281,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("SS")
                 .pattern("SO")
                 .input('S', Items.SCULK)
-                .input('O', ModBlocks.SCULK_EYE_FLOWER)
+                .input('O', ModBlocks.SCULK_FAKE_EYE_FLOWER_MUSHROOM)
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
-                .criterion(hasItem(ModBlocks.SCULK_EYE_FLOWER), conditionsFromItem(ModBlocks.SCULK_EYE_FLOWER))
+                .criterion(hasItem(ModBlocks.SCULK_FAKE_EYE_FLOWER_MUSHROOM), conditionsFromItem(ModBlocks.SCULK_FAKE_EYE_FLOWER_MUSHROOM))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SCULK_DOUGHNUT, 8)
@@ -319,11 +319,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', Items.SCULK)
                 .input('V', Items.SCULK_VEIN)
                 .input('B', Items.MILK_BUCKET)
-                .input('M', ModBlocks.SCULK_MUSHROOM)
+                .input('M', ModBlocks.SCULK_FLAT_CAP_MUSHROOM)
                 .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(Items.MILK_BUCKET))
                 .criterion(hasItem(Items.SCULK), conditionsFromItem(Items.SCULK))
                 .criterion(hasItem(Items.SCULK_VEIN), conditionsFromItem(Items.SCULK_VEIN))
-                .criterion(hasItem(ModBlocks.SCULK_MUSHROOM), conditionsFromItem(ModBlocks.SCULK_MUSHROOM))
+                .criterion(hasItem(ModBlocks.SCULK_FLAT_CAP_MUSHROOM), conditionsFromItem(ModBlocks.SCULK_FLAT_CAP_MUSHROOM))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SCULK_RING_TOKEN, 1)

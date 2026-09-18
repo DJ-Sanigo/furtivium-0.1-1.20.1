@@ -30,11 +30,13 @@
   "item.furtivium.copper_ring_nuke": "Copper Ring",
 
   "block.furtivium.sculk_roots": "Sculk Roots",
-  "block.furtivium.sculk_mushroom": "Sculk Mushroom",
+  "block.furtivium.sculk_flat_cap_mushroom": "Sculk Flat Cap Mushroom",
+  "block.furtivium.sculk_flat_cap_mushroom_block": "Sculk Flat Cap Mushroom Block",
+  "block.furtivium.sculk_flat_cap_mushroom_stem": "Sculk Flat Cap Mushroom Stem",
   "block.furtivium.sculk_carnation": "Sculk Carnation",
-  "block.furtivium.sculk_eye_flower": "Sculk Eye Flower",
-  "block.furtivium.sculk_spider_plant": "Sculk Spider Plant",
-  "block.furtivium.sculk_fat_cap": "Sculk Fat Cap",
+  "block.furtivium.sculk_eye_fake_flower_mushroom": "Sculk Fake Eye Flower Mushroom",
+  "block.furtivium.sculk_spider_mushroom": "Sculk Spider Mushroom",
+  "block.furtivium.sculk_fat_cap_mushroom": "Sculk Fat Cap Mushroom",
   "block.furtivium.sculk_apples_eye_mushroom": "Sculk Apples Eye Mushroom",
 
   "block.furtivium.small_sculk_spore_shroom_cluster": "Small Sculk Spore Shroom Cluster",
