@@ -14,7 +14,7 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 
-public class SculkSporeShroomCluster extends SculkBlock {
+public class SculkSporeShroomCluster extends SculkFloraBlock {
     public SculkSporeShroomCluster(Settings settings) {
         super(settings);
     }

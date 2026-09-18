@@ -111,5 +111,21 @@
         "stream": true
       }
     ]
+  },
+  "magical_doctor": {
+    "sounds": [
+      {
+        "name": "furtivium:magical_doctor",
+        "stream": true
+      }
+    ]
+  },
+  "magical_doctor_snack_remix": {
+    "sounds": [
+      {
+        "name": "furtivium:magical_doctor_snack_remix",
+        "stream": true
+      }
+    ]
   }
 }

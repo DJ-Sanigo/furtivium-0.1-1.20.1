@@ -57,6 +57,10 @@ public class ModItems {
             new MusicDiscItem(7, ModSounds.IMMOVABLE_OBJECT, new FabricItemSettings().maxCount(1), 303));
     public static final Item THE_ALARM_MUSIC_DISC = registerItem("the_alarm_music_disc",
             new MusicDiscItem(7, ModSounds.THE_ALARM_FT_KASANE_TETO, new FabricItemSettings().maxCount(1), 411));
+    public static final Item MAGICAL_DOCTOR_MUSIC_DISC = registerItem("magical_doctor_music_disc",
+            new MusicDiscItem(7, ModSounds.MAGICAL_DOCTOR, new FabricItemSettings().maxCount(1), 250));
+    public static final Item MAGICAL_DOCTOR_SNACK_REMIX_MUSIC_DISC = registerItem("magical_doctor_snack_remix_music_disc",
+            new MusicDiscItem(7, ModSounds.MAGICAL_DOCTOR_SNACK_REMIX, new FabricItemSettings().maxCount(1), 250));
 
 
     //everyone say that Noelle you are the best ever //Nyx is better

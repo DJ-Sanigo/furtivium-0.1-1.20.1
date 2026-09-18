@@ -28,26 +28,25 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.FURTIVIUM_ORE, oreDrops(ModBlocks.FURTIVIUM_ORE, ModItems.RAW_FURTIVIUM));
         addDrop(ModBlocks.DEEPSLATE_FURTIVIUM_ORE, oreDrops(ModBlocks.DEEPSLATE_FURTIVIUM_ORE, ModItems.RAW_FURTIVIUM));
 
-        addDrop(ModBlocks.SCULK_ROOTS);
+
+        addDropWithSilkTouch(ModBlocks.SCULK_ROOTS);
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_ROOTS);
-        addDrop(ModBlocks.SCULK_MUSHROOM);
+        addDropWithSilkTouch(ModBlocks.SCULK_MUSHROOM);
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_MUSHROOM);
-        addDrop(ModBlocks.SCULK_EYE_FLOWER);
+        addDropWithSilkTouch(ModBlocks.SCULK_EYE_FLOWER);
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_EYE_FLOWER);
-        addDrop(ModBlocks.SCULK_CARNATION);
+        addDropWithSilkTouch(ModBlocks.SCULK_CARNATION);
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_CARNATION);
-        addDrop(ModBlocks.SCULK_SPIDER_PLANT);
+        addDropWithSilkTouch(ModBlocks.SCULK_SPIDER_PLANT);
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_SPIDER_PLANT);
-        addDrop(ModBlocks.SCULK_FAT_CAP);
+        addDropWithSilkTouch(ModBlocks.SCULK_FAT_CAP);
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_FAT_CAP);
-        addDrop(ModBlocks.SCULK_APPLES_EYE_MUSHROOM);
+        addDropWithSilkTouch(ModBlocks.SCULK_APPLES_EYE_MUSHROOM);
         addPottedPlantDrops(ModBlocks.POTTED_SCULK_APPLES_EYE_MUSHROOM);
 
-        addDrop(ModBlocks.SMALL_SCULK_SPORE_SHROOM_CLUSTER);
-        addDrop(ModBlocks.MEDIUM_SCULK_SPORE_SHROOM_CLUSTER);
-        addDrop(ModBlocks.LARGE_SCULK_SPORE_SHROOM_CLUSTER);
-
-        addDrop(ModBlocks.WARDENS_SNACK_CLUSTER);
+        addDropWithSilkTouch(ModBlocks.SMALL_SCULK_SPORE_SHROOM_CLUSTER);
+        addDropWithSilkTouch(ModBlocks.MEDIUM_SCULK_SPORE_SHROOM_CLUSTER);
+        addDropWithSilkTouch(ModBlocks.LARGE_SCULK_SPORE_SHROOM_CLUSTER);
 
         this.addDrop
                 (ModBlocks.WARDENS_SNACK_CLUSTER,
@@ -57,7 +56,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                                 (ModBlocks.WARDENS_SNACK_CLUSTER).properties
                                                 (StatePredicate.Builder.create())).with(ItemEntry.builder
                                                 (ModItems.WARDENS_SNACK)).apply(SetCountLootFunction.builder
-                                                (UniformLootNumberProvider.create(2.0F, 3.0F))).apply
+                                                (UniformLootNumberProvider.create(1.0F, 3.0F))).apply
                                                 (ApplyBonusLootFunction.uniformBonusCount(Enchantments.FORTUNE)))));
 
 

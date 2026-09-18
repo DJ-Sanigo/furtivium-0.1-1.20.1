@@ -71,6 +71,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.IMMOVABLE_OBJECT_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.THE_ALARM_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAGICAL_DOCTOR_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAGICAL_DOCTOR_SNACK_REMIX_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.SCULK_RING_TOKEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_RING_NUKE, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_MATTER, Models.GENERATED);

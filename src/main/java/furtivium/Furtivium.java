@@ -8,6 +8,7 @@ import furtivium.block.ModBlocks;
 import furtivium.sound.ModSounds;
 import furtivium.trim.ModTrimMaterials;
 import furtivium.util.ModLootTableModifiers;
+import furtivium.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
@@ -33,6 +34,8 @@ public class Furtivium implements ModInitializer {
 		ModLootTableModifiers.modifyLootTables();
 
 		ModSounds.registerSounds();
+
+		ModWorldGeneration.generateModWorldGen();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.BROKEN1, Broken1Entity.createBroken1Attributes());
 

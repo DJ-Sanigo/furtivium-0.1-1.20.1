@@ -48,6 +48,8 @@ public class ModItemGroups {
                         entries.add(ModItems.A_WARDENS_LULLABY_MUSIC_BOX_VERSION_MUSIC_DISC);
                         entries.add(ModItems.IMMOVABLE_OBJECT_MUSIC_DISC);
                         entries.add(ModItems.THE_ALARM_MUSIC_DISC);
+                        entries.add(ModItems.MAGICAL_DOCTOR_MUSIC_DISC);
+                        entries.add(ModItems.MAGICAL_DOCTOR_SNACK_REMIX_MUSIC_DISC);
 
                         entries.add(ModItems.FURTIVIUM_SPADONE);
                         entries.add(ModItems.FURTIVIUM_GLADIUS);

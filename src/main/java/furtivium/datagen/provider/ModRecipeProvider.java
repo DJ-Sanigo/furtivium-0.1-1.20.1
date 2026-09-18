@@ -95,6 +95,30 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MAGICAL_DOCTOR_MUSIC_DISC, 1)
+                .pattern("RRR")
+                .pattern("LDL")
+                .pattern("BBB")
+                .input('D', ItemTags.MUSIC_DISCS)
+                .input('L', Items.LIGHT_BLUE_DYE)
+                .input('R', Items.RED_MUSHROOM)
+                .input('B', Items.BROWN_MUSHROOM)
+                .criterion(hasItem(Items.LAPIS_LAZULI), conditionsFromItem(Items.LAPIS_LAZULI))
+                .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
+                .criterion(hasItem(Items.BROWN_MUSHROOM), conditionsFromItem(Items.BROWN_MUSHROOM))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MAGICAL_DOCTOR_SNACK_REMIX_MUSIC_DISC, 1)
+                .pattern("SSS")
+                .pattern("LDL")
+                .pattern("SSS")
+                .input('D', ItemTags.MUSIC_DISCS)
+                .input('L', Items.LIGHT_BLUE_DYE)
+                .input('S', ModItems.WARDENS_SNACK)
+                .criterion(hasItem(Items.LIGHT_BLUE_DYE), conditionsFromItem(Items.LIGHT_BLUE_DYE))
+                .criterion(hasItem(ModItems.WARDENS_SNACK), conditionsFromItem(ModItems.WARDENS_SNACK))
+                .offerTo(exporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.BREWING, ModItems.VIAL_OF_DORMANT_SCULK, 1)
                 .pattern("SSS")
                 .pattern("SSS")
