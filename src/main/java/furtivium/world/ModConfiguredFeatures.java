@@ -82,12 +82,12 @@ public class ModConfiguredFeatures {
 
         register(context, HUGE_SCULK_FLAT_CAP_MUSHROOM_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.SCULK_FLAT_CAP_MUSHROOM_STEM),
-                new StraightTrunkPlacer(5, 4, 3),
+                new StraightTrunkPlacer(2, 5, 2),
 
                 BlockStateProvider.of(ModBlocks.SCULK_FLAT_CAP_MUSHROOM_BLOCK),
-                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 2),
+                new BlobFoliagePlacer(ConstantIntProvider.create(5), ConstantIntProvider.create(1), 0),
 
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(1, 1, 1)).build());
 
 
     }

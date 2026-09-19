@@ -3,7 +3,7 @@ package furtivium.block;
 import furtivium.Furtivium;
 import furtivium.block.custom.SculkBrambleBushBlock;
 import furtivium.block.custom.SculkFloraBlock;
-import furtivium.block.custom.SculkMushroomSaplingFloraTypeBlock;
+import furtivium.block.custom.SculkMushroomSaplingFloraBlock;
 import furtivium.block.custom.SculkSporeShroomCluster;
 import furtivium.item.ModItems;
 import furtivium.sound.ModSounds;
@@ -28,7 +28,7 @@ public class ModBlocks {
     public static final Block SCULK_ROOTS = registerBlock("sculk_roots", new SculkBrambleBushBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).sounds(BlockSoundGroup.SCULK).nonOpaque().noCollision()));
     public static final Block POTTED_SCULK_ROOTS = registerBlockWithoutItem(("potted_sculk_roots"), new FlowerPotBlock(SCULK_ROOTS, FabricBlockSettings.copyOf(Blocks.POTTED_CRIMSON_ROOTS).nonOpaque()));
 
-    public static final Block SCULK_FLAT_CAP_MUSHROOM = registerBlock("sculk_flat_cap_mushroom", new SaplingBlock(new HugeSculkFlatCapMushroomGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).sounds(BlockSoundGroup.SCULK)));
+    public static final Block SCULK_FLAT_CAP_MUSHROOM = registerBlock("sculk_flat_cap_mushroom", new SculkMushroomSaplingFloraBlock(new HugeSculkFlatCapMushroomGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).sounds(BlockSoundGroup.SCULK)));
     public static final Block POTTED_SCULK_FLAT_CAP_MUSHROOM = registerBlockWithoutItem(("potted_sculk_flat_cap_mushroom"), new FlowerPotBlock(SCULK_FLAT_CAP_MUSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_BROWN_MUSHROOM).nonOpaque()));
     public static final Block SCULK_FLAT_CAP_MUSHROOM_STEM = registerBlock("sculk_flat_cap_mushroom_stem", new MushroomBlock(FabricBlockSettings.copyOf(Blocks.MUSHROOM_STEM)));
     public static final Block SCULK_FLAT_CAP_MUSHROOM_BLOCK = registerBlock("sculk_flat_cap_mushroom_block", new MushroomBlock(FabricBlockSettings.copyOf(Blocks.BROWN_MUSHROOM_BLOCK)));
