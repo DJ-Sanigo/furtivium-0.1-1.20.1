@@ -36,12 +36,12 @@ public class ParryEffects {
 
         world.spawnParticles(
                 ParticleTypes.FLASH, player.getX(), player.getY() + 1.0, player.getZ(),
-                1, 0.5, 0.5, 0.5, 0.1
+                5, 0.5, 0.5, 0.5, 0.1
         );
 
         world.spawnParticles(
                 ParticleTypes.SCULK_CHARGE_POP, player.getX(), player.getY() + 1.0, player.getZ(),
-                20, 0.5, 0.5, 0.5, 0.1
+                30, 0.5, 0.5, 0.5, 0.1
         );
     }
 }
