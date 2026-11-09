@@ -4,13 +4,15 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "ExampleMixin",
-    "SculkBlockMixin"
+    "SculkBlockMixin",
+    "LivingEntityMixin"
   ],
   "client": [
     "ArmPoseMixin",
     "ItemRendererAccessor",
     "ItemRendererMixin",
-    "ModelLoaderMixin"
+    "ModelLoaderMixin",
+    "HeldItemRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

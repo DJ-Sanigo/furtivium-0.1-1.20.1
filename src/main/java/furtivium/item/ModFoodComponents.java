@@ -90,4 +90,11 @@ public class ModFoodComponents {
                     .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 600, 3), 1f )
                     .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 1200, 3), 1f ).build();
 
+    public static final FoodComponent SCULK_APPLE =
+            new FoodComponent.Builder().hunger(3).saturationModifier(0.5F)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 600, 0), 1f)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 600, 1), 1f )
+                    .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 100, 4), 1f ).build();
+
+
 }

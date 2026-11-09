@@ -21,6 +21,8 @@ public class ModItems {
 
     public static final Item SCULK_MARGARITA = registerItem("sculk_margarita",
             new VialOfSculkItem(new FabricItemSettings().food(ModFoodComponents.SCULK_MARGARITA).maxCount(16)));
+    public static final Item SCULK_APPLE = registerItem("sculk_apple",
+            new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_APPLE)));
     public static final Item SCULK_TENDRIL_AND_TONIC = registerItem("sculk_tendril_and_tonic",
             new VialOfSculkItem(new FabricItemSettings().food(ModFoodComponents.SCULK_TENDRIL_AND_TONIC).maxCount(16)));
     public static final Item SCULK_BONE_AND_TENDRIL_BROTH = registerItem("sculk_bone_and_tendril_broth",
@@ -104,6 +106,7 @@ public class ModItems {
 
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries) {
         entries.add(SCULK_DOUGHNUT);
+        entries.add(SCULK_APPLE);
         entries.add(SCULK_LAMINGTON);
         entries.add(SCULKZZARELLA);
         entries.add(SCULK_MARGARITA);

@@ -51,6 +51,17 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(ModBlocks.LARGE_SCULK_SPORE_SHROOM_CLUSTER);
 
         this.addDrop
+                (ModBlocks.SCULK_APPLES_EYE_MUSHROOM,
+                        (block) -> (LootTable.Builder)this.applyExplosionDecay
+                                (block, LootTable.builder()
+                                        .pool(LootPool.builder().conditionally(BlockStatePropertyLootCondition.builder
+                                                (ModBlocks.SCULK_APPLES_EYE_MUSHROOM).properties
+                                                (StatePredicate.Builder.create())).with(ItemEntry.builder
+                                                (ModItems.SCULK_APPLE)).apply(SetCountLootFunction.builder
+                                                (UniformLootNumberProvider.create(2.0F, 5.0F))).apply
+                                                (ApplyBonusLootFunction.uniformBonusCount(Enchantments.FORTUNE)))));
+
+        this.addDrop
                 (ModBlocks.WARDENS_SNACK_CLUSTER,
                         (block) -> (LootTable.Builder)this.applyExplosionDecay
                                 (block, LootTable.builder()

@@ -36,6 +36,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SCULK_RING_TOKEN);
 
                         entries.add(ModItems.SCULK_LAMINGTON);
+                        entries.add(ModItems.SCULK_APPLE);
                         entries.add(ModItems.SCULK_DOUGHNUT);
                         entries.add(ModItems.SCULKZZARELLA);
                         entries.add(ModItems.SCULK_BONE_AND_TENDRIL_BROTH);

@@ -30,55 +30,49 @@ public class FurtiviumGlaiveItem extends SwordItem implements TwoHandedItem {
     }
 
     @Override
-    public UseAction getUseAction(ItemStack stack) {
-        return UseAction.BLOCK;
-    }
-
-    @Override
-    public int getMaxUseTime(ItemStack stack) {
-        return 200;
-    }
+    public int getMaxUseTime(ItemStack stack) {return 200;}
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (attacker instanceof PlayerEntity player && !player.getWorld().isClient) {
 
-            target.addStatusEffect(new StatusEffectInstance(
+            if (!((PlayerEntity) attacker).getItemCooldownManager().isCoolingDown(this)) {
+
+                target.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.DARKNESS,
                     100,
                     3
-            ));
+                ));
 
-            target.addStatusEffect(new StatusEffectInstance(
+                target.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.BLINDNESS,
                     100,
                     3
-            ));
+                ));
 
-            target.addStatusEffect(new StatusEffectInstance(
+                target.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.NAUSEA,
                     100,
                     3
-            ));
+                ));
 
-            target.addStatusEffect(new StatusEffectInstance(
+                target.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.NIGHT_VISION,
                     100,
                     3
-            ));
+                ));
 
-            target.addStatusEffect(new StatusEffectInstance(
+                target.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.REGENERATION,
                     200,
                     1
-            ));
+                ));
 
-            player.getItemCooldownManager().set(this, 70);
+                ((PlayerEntity) attacker).getItemCooldownManager().set(this, 50);
+
+            }
         }
-
         return super.postHit(stack, target, attacker);
-
     }
-
 }
 

@@ -30,11 +30,6 @@ public class VoidTouchedFurtiviumGlaiveItem extends SwordItem implements TwoHand
     }
 
     @Override
-    public UseAction getUseAction(ItemStack stack) {
-        return UseAction.BLOCK;
-    }
-
-    @Override
     public int getMaxUseTime(ItemStack stack) {
         return 72000;
     }
