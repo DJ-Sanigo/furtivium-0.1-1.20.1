@@ -12,6 +12,7 @@
     "ItemRendererAccessor",
     "ItemRendererMixin",
     "ModelLoaderMixin",
+    "HeldItemFeatureRendererMixin",
     "HeldItemRendererMixin"
   ],
   "injectors": {

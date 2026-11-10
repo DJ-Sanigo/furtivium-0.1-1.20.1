@@ -42,8 +42,7 @@ public class HeldItemRendererMixin {
         }
 
         // Check whether the item is one of our swords
-        if (!(item.getItem() instanceof FurtiviumGlaiveItem) && !(item.getItem() instanceof VoidTouchedFurtiviumGlaiveItem)
-                && !(item.getItem() instanceof FurtiviumSpadoneitem) && !(item.getItem() instanceof FurtiviumGladiusItem)) {
+        if (!(item.getItem() instanceof FurtiviumGlaiveItem) && !(item.getItem() instanceof VoidTouchedFurtiviumGlaiveItem)) {
             return;
         }
 
@@ -57,13 +56,13 @@ public class HeldItemRendererMixin {
         if (arm == Arm.RIGHT) {
 
             // Right-handed blocking pose
-            matrices.translate(0.0F, 0.10F, -0.15F);
+            matrices.translate(0.0F, 0.10F, 0.15F);
 
-            matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(-15.0F));
+            matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(-40.0F));
 
             matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(0.0F));
 
-            matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(-15.0F));
+            matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(0.0F));
 
         } else {
 
@@ -75,6 +74,61 @@ public class HeldItemRendererMixin {
             matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(2.0F));
 
             matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(25.0F));
+        }
+    }
+
+    @Inject(
+            method = "renderFirstPersonItem",
+            at = @At("HEAD")
+    )
+    private void parryPose(AbstractClientPlayerEntity player,
+                           float tickDelta, float pitch, Hand hand, float swingProgress, ItemStack item,
+                           float equipProgress, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, CallbackInfo ci
+    ) {
+
+        // Only animate while actively using an item
+        if (!player.isUsingItem()) {
+            return;
+        }
+
+        // Only animate the hand currently being used
+        if (hand != player.getActiveHand()) {
+            return;
+        }
+
+        // Check whether the item is one of our swords
+        if (!(item.getItem() instanceof FurtiviumSpadoneitem)) {
+            return;
+        }
+
+        Arm arm = hand == Hand.MAIN_HAND
+                ? player.getMainArm()
+                : player.getMainArm().getOpposite();
+
+        // Isolate the rendering transformations
+        matrices.push();
+
+        if (arm == Arm.RIGHT) {
+
+            // Right-handed blocking pose
+            matrices.translate(0.0F, 0.10F, 0.15F);
+
+            matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(-35.0F));
+
+            matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(30.0F));
+
+            matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(-25.0F));
+
+        } else {
+
+            // Left-handed blocking pose
+            matrices.translate(-0.20F, -0.10F, -0.15F);
+
+            matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(-35.0F));
+
+            matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(30.0F));
+
+            matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(-25.0F));
         }
     }
 

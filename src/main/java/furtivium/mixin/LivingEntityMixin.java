@@ -66,12 +66,12 @@ public abstract class LivingEntityMixin {
 
                 player.getWorld().playSound(
                         null, player.getX(), player.getY(), player.getZ(),
-                        SoundEvents.ENTITY_WARDEN_HURT, SoundCategory.PLAYERS, 1F, 1.0F
+                        SoundEvents.ENTITY_WARDEN_HURT, SoundCategory.PLAYERS, 2F, 1.0F
                 );
 
                 player.getWorld().playSound(
                         null, player.getX(), player.getY(), player.getZ(),
-                        SoundEvents.BLOCK_AMETHYST_BLOCK_BREAK, SoundCategory.PLAYERS, 1.5F, 2.0F
+                        SoundEvents.BLOCK_AMETHYST_BLOCK_BREAK, SoundCategory.PLAYERS, 3F, 3.0F
                 );
 
             }
@@ -81,12 +81,12 @@ public abstract class LivingEntityMixin {
 
                 player.getWorld().playSound(
                         null, player.getX(), player.getY(), player.getZ(),
-                        SoundEvents.ENTITY_WARDEN_HURT, SoundCategory.PLAYERS, 1F, 1.0F
+                        SoundEvents.ENTITY_WARDEN_HURT, SoundCategory.PLAYERS, 2F, 1.0F
                 );
 
                 player.getWorld().playSound(
                         null, player.getX(), player.getY(), player.getZ(),
-                        SoundEvents.BLOCK_AMETHYST_BLOCK_BREAK, SoundCategory.PLAYERS, 1.5F, 2.0F
+                        SoundEvents.BLOCK_AMETHYST_BLOCK_BREAK, SoundCategory.PLAYERS, 3F, 3.0F
                 );
 
             }
